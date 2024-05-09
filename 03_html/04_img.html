@@ -11,7 +11,7 @@
     <!-- img 요소는 display:inline; -->
     <!-- 이미지는 가로로 배치된다. -->
 
-    <h2>상대경로(폴더/폴더/파일명)</h2>
+<h2>상대경로(폴더/폴더/파일명)</h2>
 
     <!-- 기호:./(현재위치), ../(상위위치), /(루트)-->
     <h3>./와 폴더/파일명 이용방법</h3>
@@ -19,17 +19,20 @@
 <!-- 같은폴더: HTML 문서 기준으로 이미지가 같은 폴더에 있음 =파일명만 기재 -->
 <!-- 상위폴더: HTML 문서 기준으로 이미지가 상위폴더에 있음 =../파일명-->
 <!-- 하위폴더: HTML 문서 기준으로 이미지가 하위폴더에 있음 =폴더명/파일명-->
-<img src="figma.png" alt="">
-<img src="./figma.png" alt="">
 
-<img src="../assets/facebook.png" alt="">
-<img src="./../assets/facebook.png" alt="">
+<!-- 등록 단축키: alt+w -->
+<!-- 다중커서: alt+클릭 -->
+<img src="figma.png" alt="figma">
+<img src="./figma.png" alt="figma">
 
-<img src="evan/instagram.png" alt="">
-<img src="./evan/instagram.png" alt="">
+<img src="../assets/facebook.png" alt="facebook">
+<img src="./../assets/facebook.png" alt="facebook">
 
-<img src="evan/assets-빵/twitter.png" alt="">
-<img src="./evan/assets-빵/twitter.png" alt="">
+<img src="evan/instagram.png" alt="instagram">
+<img src="./evan/instagram.png" alt="instagram">
+
+<img src="evan/assets-빵/twitter.png" alt="twitter">
+<img src="./evan/assets-빵/twitter.png" alt="twitter">
 <!-- 더이상 나갈 파일이 없을 경우 '../'를 연속사용해도 동일한 결과임 -->
 <!-- 이미지가 작성중인 파일 밖에 있는 다른 파일에 있는 경우 '../'를 이용하여 나갈 수 있다.(다른 파일로 방문할 수 있다) -->
 
@@ -47,5 +50,6 @@
 
 <!-- 깃허브-> 레퍼짙리(저장소), 업/다운로드 -->
 <!-- 깃허브를 깃페이지로-> 웹사이트 -->
+<img src="https://heejin55.github.io/web0422/03_html/evan/assets-%EB%B9%B5/Frame%20icon.svg" alt="">
 </body>
 </html>
