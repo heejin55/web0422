@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>볼록/인라인</title>
+</head>
+
+<body>
+    <h1>블록과 인라인</h1>
+    <h2>블록 레벨 요소</h2>
+    <!-- 정렬(들여쓰기): sift+alt+f -->
+    <p>1. 블록 레벨 요소는 텍스트(문자)와 <span>인라인 요소</span>를 자식 요소로 포함할 수 있다.</p>
+    <div>
+        <p>2. 블록레벨요소는 중에는 블록레벨요소를 자식 요소로 포함 할 수 있는 요소와 포함할 수 없는 요소가 있다.</p>
+    </div><!-- 맞는 예시 div(div or p)/div-->
+    <p>
+    <p>h1~h6, p, div</p>
+    </p> <!-- 잘못된 예시 p(p/p)/p-->
+
+    <h2>인라인 요소</h2>
+    <p>3. 인라인 요소는 <span>텍스트(문자)와 <a href="#">인라인 요소</a>를 자식 요소로 포함</span>할 수 있다.</p>
+    <!-- span은 p를 자식 요소로 가질 수 없다. 아래 예시는 틀림! -->
+    <span>
+        <p>4. 인라인 요소는 블록레벨요소를 자식 요소로 포함할 수 없다.</p>
+    </span> <!-- 잘못된 문법 span(p/p)/span -->
+    <a href="#">
+        <p>a, img, span</p>
+    </a> <!-- a 예외 -->
+    <p><a href="#">a, img, span</a></p> <!-- 가능하면 요렇게.. 이게 더 좋은 표현 -->
+</body>
+
+</html>
