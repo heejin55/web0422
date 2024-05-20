@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.contents {
+    display: flex;
+} /* 부모요소: display: flex; = 플렉스 컨테이너 */
+
+.contents div {
+    width: 400px;
+    height: 200px;
+}
+/* 
+    선택자
+    1.클래스
+    2.그룹
+    3.요소(태그,타입): 태그명
+    4.하위: 부모 자식(손자)
+*/
+.tabs {
+    background: #eee;
+} /* 자식요소: 플렉스 아이템 */;
+
+.banner {
+    background: #ccc;
+} /* 자식요소: 플렉스 아이템 */
+
+.shortcut {
+    background: #aaa;
+} /* 자식요소: 플렉스 아이템 */

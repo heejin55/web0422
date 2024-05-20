@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 플렉스 컨테이너: width:auto; -> w100%(창100%) */
+.wrap {
+    display: flex;
+}
+/* 플렉스 아이템: width:auto; -> w내용; */
+.header {
+    width: 200px;
+    background: #999;
+}
+.righContents{
+    width: 1000px;
+    background: red;
+}
+/* 부모에 display:flex;를 지정하면
+    부모는 플렉스 컨테이너가 되고, 자식만 플렉스 아이템이 된다.
+    단, 손자는 플렉스와 관계없다.
+*/
+.slide {
+    height: 400px;
+    background: #eee;
+} 
+
+.banner {
+    height: 200px;
+    background: #ccc;
+} 
+
+.notice {
+    height: 250px;
+    background: #aaa;
+} 
