@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul,ol,li</title>
+</head>
+<body>
+    <h1>목록</h1>
+    <!-- emmit -->
+    <!--
+        '>' = 자식
+        '*' = 개수
+        '{텍스트}' 
+        '{텍스트$}' = $는 순번
+     ex)    ul>li*3{목록$}
+            ol>li*3{목록$}
+    -->
+    <p>ul, ol의 자식은 li만 사용할 수 있다!!!</p>
+    <p>ul, ol 없이는 li를 사용할 수 없다!!!</p>
+    <p>ul안에 ol, ol안에 ul 사용 가능 단, li안에서만 가능(손자사용)</p>
+
+    <h2>커피 메뉴</h2>
+    <p>순서가 없는 목록은 ul을 사용한다.</p>
+    <ul>
+        <li>
+            아메리카노
+            <h3>아메리카노의 순위는 ?!</h3>
+            <p>정말 품질이 좋아요 ! 선택하시면 후회 안 하실 거에요 ~.</p>
+            <ol>
+                <li>아이스 아메리카노</li>
+                <li>핫 아메리카노</li>
+            </ol>
+        </li>
+        <li>카페라테</li>
+        <li>카페모카</li>
+    </ul>
+
+    <h2>야구 순위</h2>
+    <p>순서가 있는 목록은 ol을 사용한다.</p>
+    <ol>
+        <li>기아</li>
+        <li>엘지</li>
+        <li>삼성</li>
+    </ol>
+</body>
+</html>

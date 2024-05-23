@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* 
+아래 속성은 ul, ol, li에 적용 가능한 속성
+    list-style-type
+    -> "https://www.w3schools.com/cssref/pr_list-style-type.php"
+    -> ul에 지정할 수 있는 값은 [disc(기본값), circle, square] 나머지는 ol에 지정
+
+    
+    list-style-image: url("폴더/파 일 명");
+    *폴더오 ㅏ파일명에 띄어쓰기가 있으며 반드시 "" 또는 ''로 묶는다.
+
+    list-style-position (인사이드)
+    list-style-type: none; (개별형)
+    list-style: none; (속기형)
+*/
+
+/* ul은 왼쪽 패딩이 있고 위아래 여백 있다. */
+ul {
+    padding-left: 40px;
+    margin: 16px 0;
+    border: 5px solid;
+    list-style:none;
+    color: burlywood;
+}
+li {
+    border: 1px solid yellowgreen;
+    list-style: none;
+}
+li:nth-of-type(1) {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+li:nth-of-type(2) {
+    list-style-type: square;
+}
+li:nth-of-type(3) {
+    list-style-type: circle;
+    list-style-image: url(../assets/list.svg);
+}
