@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* 
     요소 선택자: 태그명
     그룹 선택자: ,
@@ -7,21 +8,42 @@
      *는 모든요소
  */
 /* body안에 들어있는 모든 요소를 일컫는다. */
-body * {
+/* temp */
+/* body * {
     outline: 1px solid lime;
-}
-
-body {
+} */
+/* reset(초기화) */
+body,ul,h1,h2,h3 {
     margin: 0;
 }
-
-nav {
-    height: 100px;
+ul {
+    padding: 0;
+    list-style-type: none;
 }
+a {
+    /* 텍스트 밑줄: 제거; */
+    text-decoration: none;
+}
+/* layout(배치) */
+/* 박스모델 속성, display, position */
+nav {
+    /* height: 100px; */
+    line-height: 100px;
+}
+nav li {
+    display:inline-block;
+}
+nav section {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center;
+    height: 100px; */
 
+}
 header {
-    height: 200px;
-    background: url(../style/evan_bg.png);
+    /* height: 200px; */
+    line-height: 200px;
+    /* align-content: center; -- ?????-확인할것 */ 
 }
 
 section {
@@ -31,6 +53,7 @@ section {
 
 .home-card {
     display: flex;
+    justify-content: space-between;
 }
 
 .home-icon {
@@ -42,6 +65,13 @@ section {
     width: 790px;
     height: 140px;
 }
+
+/* header */
+header {
+    background: url(../style/evan_bg.png);
+}
+/* section */
+/* footer */
 
 /* 
     color: 색
