@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 /* 
     요소 선택자: 태그명
     그룹 선택자: ,
@@ -50,7 +49,9 @@ section {
     width: 940px;
     margin: 0 auto;
 }
-
+h2 {
+    margin: 56px 0;
+}
 .home-card {
     display: flex;
     justify-content: space-between;
@@ -68,7 +69,8 @@ section {
 
 /* header */
 header {
-    background: url(../style/evan_bg.png);
+    /* 패럴렉스 스크롤링 기법 */
+    background: url(../style/evan_bg.png) no-repeat 50% 50%/cover fixed;
 }
 /* section */
 /* footer */
