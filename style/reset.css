@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 
+    요소 선택자: 태그명
+    그룹 선택자: ,
+    전체 선택자: *
+     *는 모든요소
+ */
+/* body안에 들어있는 모든 요소를 일컫는다. */
+/* temp */
+/* body * {
+    outline: 1px solid lime;
+} */
+/* reset */
+body,
+ul,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    /* 텍스트 밑줄: 제거; */
+    text-decoration: none;
+}
