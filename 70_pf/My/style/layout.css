@@ -2,7 +2,11 @@
 @import url(reset.css);
 @import url(typo.css);
 
-
+/* :root는 HTML */
+:root {
+    /* to the top 버튼을 부드럽게 스크롤 */
+    scroll-behavior: smooth;
+}
 /* layout(배치) */
 /* 박스모델 속성, display, position */
 nav {
@@ -30,11 +34,16 @@ nav li:first-child::after {
     background: #999;
 }
 
-
+/* header */
 header {
-    /* height: 200px; */
+    /* 패럴렉스 스크롤링 기법 */
     line-height: 200px;
-    /* align-content: center; -- ?????-확인할것 */
+    background: url(../assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
+}
+
+/* main */
+main {
+    padding-bottom: 200px;
 }
 
 section {
@@ -64,11 +73,7 @@ h3 span {
     font-weight: 400;
 }
 
-/* header */
-header {
-    /* 패럴렉스 스크롤링 기법 */
-    background: url(../assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
-}
-
-/* section */
 /* footer */
+footer {
+    text-align: center;
+}
