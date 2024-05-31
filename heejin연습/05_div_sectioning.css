@@ -3,7 +3,7 @@
 #wrapper {
     margin: 0 auto;
     width: 1004px;
-    height: 808px;
+    height: 812px;
 }
 
 #header {
@@ -17,11 +17,23 @@
     height: 400px;
 }
 
-#content1 {
+.content_wrap {
     margin-right: 4px;
     width: 500px;
     height: 400px;
+}
+
+#content1 {
+    margin-bottom: 4px;
+    width: 500px;
+    height: 200px;
     background: blanchedalmond;
+}
+
+#content2 {
+    width: 500px;
+    height: 200px;
+    background: antiquewhite;
 }
 
 #aside {
