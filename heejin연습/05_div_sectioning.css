@@ -13,6 +13,7 @@
 }
 
 #container {
+    margin-bottom: 8px;
     display: flex;
     height: 400px;
 }
@@ -20,7 +21,7 @@
 .content_wrap {
     margin-right: 4px;
     width: 500px;
-    height: 400px;
+    height: 404px;
 }
 
 #content1 {
@@ -38,11 +39,11 @@
 
 #aside {
     width: 500px;
+    height: 404px;
     background: aquamarine;
 }
 
 #footer {
-    margin-top: 4px;
     height: 200px;
     background: lavender;
 }
