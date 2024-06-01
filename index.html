@@ -1,48 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>heejin</title>
-    <!-- <link rel="stylesheet" href="폴더명/CSS파일명"> -->
-    <link rel="stylesheet" href="section.css">
-    <!-- main.html, main.css -->
-    <style>
-        /* 선택자 {속성:값;} */
-        h2 {color:blue;}
-    </style>
+    <link rel="stylesheet" href="style/layout.css">
 </head>
-    <!-- <body style="CSS(컬러:레드;)"> -->
-    <body style="color:red;">
-        <h2> 2024 Portfolio </h2>
-        <!-- <img src=:"폴더명/파일명" alt=""> -->
-        <!-- 파일명: 파일이름.확장자=""> -->
-        <img src="./03_html/evan/assets-빵/Frame icon.svg" width="100" alt="피그마 아이콘">
-        <h3>Figma (2012-2021)</h3>
-        <p>I'm one of the cofounders of Figma, a collaborative browser-based interface design tool. My main contributions were to the rendering engine, the multiplayer collboration service, the vector and text editors, and the plugin system.</p>
-        <!-- html 유효성 검사: https://validator.w3.org/#validate_by_upload -->
-        <!-- alt+방향키 -->
-        <!-- a href="" 사이에 링크가 없을 경우 '#'을 꼭 입력->#은 현재 페이지를 가리키는 임시링크 -->
-        <a href="#">Read more...   </a>
-    </body>
-</html>
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evan</title>
-</head>
 <body>
-    <h2>Professional Work</h2>
-    <img src="논픽션 공식 온라인 스토어/cake.abb7f9.png" alt="케이크 사진">
-<h3> </h3>
-<p>I'm one of the cofounders of Figma, a collaborative browser-based interface design tool. My main contributions were to the rendering engine, the multiplayer collboration service, the vector and text editors, and the plugin system.</p>
+    <!-- https://madebyevan.com/ -->
+    <nav>
+        <section>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="https://heejin55.github.io/web0422/">Github</a></li>
+            </ul>
+        </section>
+    </nav>
+    <header>
+        <section>
+            <h1>heejin</h1>
+        </section>
+    </header>
+    <main>
+        <section>
+            <!-- about me -->
+            <h2>About me</h2>
+            <div class="home-card">
+                <div class="home-icon">
+                    <img src="https://picsum.photos/100" alt="더미이미지">
+                </div>
+                <div class="home-description">
+                    <h3>daily<span> (2023~2024)</span></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure natus ratione tempore quidem. Enim facilis mollitia, distinctio nobis quo quidem atque error minus at, omnis dolor voluptatem a aspernatur perferendis in cumque vel facere similique perspiciatis. Repudiandae nulla nesciunt magnam ratione in sed hic illum illo adipisci incidunt. Modi ab vero debitis. Sunt cum veritatis quis libero ratione corrupti, dicta expedita. Harum commodi culpa quis assumenda eveniet, voluptatum qui ab laudantium? Distinctio non autem minima possimus? Velit, assumenda! Et ut unde, quod corrupti vel aspernatur, repellendus consectetur voluptas vero eos fuga excepturi! Perspiciatis minus voluptatibus tempora, adipisci eligendi atque illo.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure natus ratione tempore quidem. Enim facilis mollitia, distinctio nobis quo quidem atque error minus at, omnis dolor voluptatem a aspernatur perferendis in cumque vel facere similique perspiciatis. Repudiandae nulla nesciunt magnam ratione in sed hic illum illo adipisci incidunt. Modi ab vero debitis. Sunt cum veritatis quis libero ratione corrupti, dicta expedita. Harum commodi culpa quis assumenda eveniet, voluptatum qui ab laudantium? Distinctio non autem minima possimus? Velit, assumenda! Et ut unde, quod corrupti vel aspernatur, repellendus consectetur voluptas vero eos fuga excepturi! Perspiciatis minus voluptatibus tempora, adipisci eligendi atque illo.</p>
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> <!-- //about me -->
 
-<a href="#">Read more...</a>
+            <!-- I'm Rady Good at -->
+            <h2>I'm Rady Good at</h2>
+            <div class="home-card">
+                <div class="home-icon">
+                    <img src="https://picsum.photos/100" alt="더미이미지">
+                </div>
+                <div class="home-description">
+                    <h3>Graphics &amp; Plan<span> (2023~2024)</span></h3>
+                    <p>I'm one of the cofounders of Figma, a collaborative browser-based interface design tool. My main contributions were to the rendering engine, the multiplayer collboration service, the vector and text editors, and the plugin system..</p> 
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> 
+
+            <!-- <h2>I'm Rady Good at</h2> -->
+            <div class="home-card">
+                <div class="home-icon">
+                    <img src="https://picsum.photos/100" alt="더미이미지">
+                </div>
+                <div class="home-description">
+                    <h3>Web Coding<span> (2023~2024)</span></h3>
+                    <p>HTML, CSS, JavaScript... I'm one of the cofounders of Figma, a collaborative browser-based interface design tool. My main contributions were to the rendering engine, the multiplayer collboration service, the vector and text editors, and the plugin system..</p> 
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> <!-- //I'm Rady Good at -->
+
+            <!-- My Work -->
+            <h2>My Work</h2>
+            <div class="home-card">
+                <div class="home-icon">
+                    <img src="https://picsum.photos/100" alt="더미이미지">
+                </div>
+                <div class="home-description">
+                    <h3>Depound<span> (드파운드)</span></h3>
+                    <p>Carousel(캐로셀), Scroll Motion(스크롤 모션), Parallax Scrolling(패럴렉스 스크롤링), Tab(탭), Video Player(비디오 플레이어)를 반영한 적응형 페이지 입니다.</p> 
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> 
+
+            <div class="home-card">
+                <div class="home-icon">
+                    <img src="https://picsum.photos/100" alt="더미이미지">
+                </div>
+                <div class="home-description">
+                    <h3>Tanat<span>(타낫)</span></h3>
+                    <p>Fixed Header Navigation(고정 헤더 내비게이션), Slide Animation Image(슬라이드 애니메이션 이미지), Tab(탭), To the top(탑 버튼)를 반영한 RWD(반응형) 페이지 입니다.</p> 
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> 
+
+            <div class="home-card">
+                <div class="home-icon">
+                    <a href="70_pf/team" target="_blank"> <img src="assets/thumb.svg" alt="컴포즈커피"></a>
+                </div>
+                <div class="home-description">
+                    <h3>ComPose Coffee<span>(컴포즈커피)</span></h3>
+                    <p>2depth Topdown Navigation(2뎁스 탑다운 내비게이션), Slide Animation Image(슬라이드 애니메이션 이미지), Tab(탭), Family Site(패밀리 사이트)를 반영한 적응형 페이지 입니다.</p> 
+                    <p>왼쪽에 썸네일 이미지를 클릭하면 사이트를 보실 수 있습니다.</p>
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> 
+            
+            <div class="home-card">
+                <div class="home-icon">
+                    <img src="https://picsum.photos/100" alt="더미이미지">
+                </div>
+                <div class="home-description">
+                    <h3>Persona Site<span>(개인 사이트)</span></h3>
+                    <p>Parallax Scrolling(패럴렉스 스크롤링), Digital Clock(디지털 시계), Scroll Motion(스크롤 모션), Bootstrap4(부트스크랩4)를 반영한 반응형 페이지 입니다.
+                    </p> 
+                    <p><a href="#">Read more...</a></p>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <footer>
+        <!-- #top: #은 현재 문서, top은 맨 위 -->
+        <div><a href="#top">To the top</a></div>
+        <p>&copy; 2024. heejin. All rights reserved</p>
+    </footer>
 </body>
+
 </html>

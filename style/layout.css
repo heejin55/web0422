@@ -63,6 +63,8 @@ h2 {
 .home-icon {
     width: 100px;
     height: 100px;
+    background: #eee;
+    border-radius: 5px;
 }
 
 .home-description {

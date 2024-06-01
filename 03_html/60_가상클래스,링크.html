@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스_링크</title>
+    <!-- W3C -> HTML과 CSS문서를 분리하라 !!! -->
+    <!-- 내부 CSS -->
+    <style>
+        /* 아래 순서대로 사용할 것 */
+        /* a:link {color:aqua;} /* a:link -> 방문 전(현재 상태) */
+        /* a:visited {color:coral;} /* a:visited -> 방문 후 */
+        /* a:hover {color:darkkhaki;} 선택자:hover -> 올렸을 때 */
+        /* a:active {color:cornflowerblue;} 선택자:active -> 눌렀을 때 */ 
+
+        a {color :blue; text-decoration: none;}
+        a:hover{color:aqua;}
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 선택자</h1>
+    <p>링크 관련하여 :link, :visited, :hover, :active가 있다.</p>
+    <p>가상 클래스는 ':' 기호를 쓴다.</p>
+    <p>링크 텍스트는 기본 스타일이 파란색 밑줄이다.</p>
+    <!-- 
+        a {color:blue; text-decoration: underline;}
+     -->
+    <a href="#">링크</a>
+</body>
+</html>
