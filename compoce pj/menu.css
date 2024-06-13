@@ -1,11 +1,14 @@
 @charset "utf-8";
 
+body {
+    margin: 0 auto;
+}
+
 /* 섹션1 */
 .section1 {
     height: 430px;
     text-align: center;
-    background: url() no-repeat;
-    margin: 0 auto;
+    background: url(assets/이디야.png) no-repeat;
 }
 
 .section1>h1 {
