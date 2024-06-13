@@ -8,7 +8,7 @@ body {
 .section1 {
     height: 430px;
     text-align: center;
-    background: url(assets/이디야.png) no-repeat;
+    background: url(assets/bg.png) no-repeat;
 }
 
 .section1>h1 {
