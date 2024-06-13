@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* 섹션1 */
+.section1 {
+    height: 430px;
+    text-align: center;
+    background: url(assets/bg.png) no-repeat;
+    margin: 0 auto;
+}
+
+.section1>h1 {
+    margin-top: 65px;
+}
+.section1>h2 {
+    margin-top: 5px;
+    margin-bottom: 75px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+li {
+    display: inline-block;
+    width: 177px;
+    border: 1px solid #ccc;
+    line-height: 40px;
+}
