@@ -21,7 +21,7 @@
 
     <form action="login.jsp">
         <!-- 한 줄 텍스트 입력-->
-        <!-- value는 초기값을 지정 -->
+        <!-- 입력란의 경우 value는 초기값을 지정 -->
          <!-- for와 id값이 같아야한다 -->
         <label for="user_id">로그인</label>
         <input id="user_id" type="text" placeholder="아이디 입력"><br>
@@ -30,6 +30,7 @@
         <input id="user_pw" type="password"><br>
         <!-- 브라우저 표시되지 않는 텍스트 입력 -->
         <input type="hidden"><br>
+
         <!-- 이메일 -->
         이메일<input type="email"><br>
         <!-- 검색어 -->
@@ -49,11 +50,12 @@
         <label><input type="radio" name="radiogroup" value="yes">동의함</label>
         <label><input type="radio" name="radiogroup" value="no">동의안함</label>
         <hr>
-        <!-- 전송 제출 -->
+        <!-- 전송(제출) -->
         <input type="submit" value="로그인">
         <!-- 초기화 -->
         <input type="reset" value="리셋">
-        <input type="button" value="버튼버튼 !"> <!-- value는 버튼 이름 지정 -->
+         <!-- value는 버튼 이름 지정 -->
+        <input type="button" value="버튼버튼 !">
         <!-- 이미지 버튼(전송과 초기화 제외) -->
         <input type="image" src="../assets/abtn.svg" alt="로그인">
         <button type="submit">로그인</button>
@@ -62,30 +64,24 @@
         <!-- 파일 첨부 -->
         <input type="file">
         <hr>
-        <!-- 스핀버튼,  -->
-        <input type="nimber">
+        <!-- 스핀버튼,  카운트-->
+        <input type="number">
+        <!-- 범위 -->
         <input type="range">
         <hr>
-        <!--  여러개 중에서 여러개 선택 -->
-        <input type="checkbox">
-        <!-- 년-월-일 사파리 지원x-->
+
+        <!-- 2024-06-14, safari (x) -->
         <input type="date">
-        <!-- 년-월-일 오전 00:00, 파이어폭스 지원x -->
+         <!-- 2024-06-14 오전 09:50, safari (x), firefox는(x) -->
         <input type="datetime-local">
-        <!-- 0000년 0월, 파이어폭스 지원x -->
+        <!-- 2024년 06월, safari (x), firefox는(x) -->
         <input type="month">
-        <input type="number">
-        <input type="radio">
-        <input type="range">
-        <input type="search">
-        <input type="tel">
-        <!-- 오전 00시00분, 사파리/파이어폭스 지원 x -->
+        <!-- 오전 10:10, safari (x), firefox는(x) -->
         <input type="time">
-        <input type="url">
         <!-- 0000년, 00번째 주, 사파리/파이어폭스 지원x -->
         <input type="week">
         <hr>
-        <!-- 사파리 지원x -->
+        <!-- safari (x) -->
         <input type="color">
 
         <select name="" id="">
