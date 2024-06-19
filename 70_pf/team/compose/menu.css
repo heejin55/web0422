@@ -28,12 +28,13 @@ h1 {
     justify-content: center;
     margin-bottom: 141px;
 }
-.section1 ul>li {
+.section1 ul>li a{
     display: inline-block;
     width: 177px;
     border: 1px solid #fff;
     line-height: 40px;
     text-align: center;
+    text-decoration: none;
 }
 /* //섹션1 */
 
@@ -49,16 +50,15 @@ h1 {
 .section2 div {
     display: flex;
     justify-content: center;
-
+    border: 1px solid blue;
 }
 .Big_menu {
     display: flex;
     list-style: none;
-    /* margin-left: 344px; */
     width: 1292px;
     justify-content: space-between;
-    border: 1px solid red;
 }
-.Big_menu>li {
+.Big_menu>li a{
     line-height: 42px;
+    text-decoration-line: none;
 }
