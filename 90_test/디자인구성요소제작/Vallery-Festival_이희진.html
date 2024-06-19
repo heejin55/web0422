@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -41,6 +41,7 @@
         .sub li a {
             color: #fff;
         }
+
         footer {
             color: #fff
         }
@@ -60,6 +61,7 @@
         .menu {
             display: flex;
             text-align: center;
+            margin-right: 50px;
         }
 
         .menu>li {
@@ -79,8 +81,9 @@
             overflow: hidden;
             visibility: hidden;
             opacity: 0;
-            padding: 10px 0 20px;
+            padding: 10px 0 10px;
             transition: .2s;
+            width: 100%;
         }
 
         .menu:hover .sub {
@@ -92,30 +95,77 @@
         /* 슬라이드&애니메이션 */
         .slide {
             overflow: hidden;
+            width: 1903px;
+            height: 1000px;
         }
         .slide ul {
             position: relative;
-            display: flex; 
+            display: flex;
             animation: Festival 15s infinite;
         }
 
-        @keyframes Festival{
-            100% {right: 0%;}
-            99.99% {left: -100%;}
-            76% {left: -100%;}
-            66% {left: -200%;}
-            43% {left: -200%;}
-            33% {left: -300%;}
-            10% {left: -300%;}
-            0% {right: 0%;}
+        @keyframes Festival {
+            100% {
+                right: 0%;
+            }
+
+            99.99% {
+                left: -100%;
+            }
+
+            76% {
+                left: -100%;
+            }
+
+            66% {
+                left: -200%;
+            }
+
+            43% {
+                left: -200%;
+            }
+
+            33% {
+                left: -300%;
+            }
+
+            10% {
+                left: -300%;
+            }
+
+            0% {
+                right: 0%;
+            }
         }
-        .slide li {
-            flex: 0 0 25%
+
+        span {
+            color: black;
+            animation: _logo 10s infinite;
         }
+
+        @keyframes _logo {
+            0% {
+                color: black;
+            }
+
+            25% {
+                color: red
+            }
+
+            50% {
+                color: blue;
+            }
+
+            100% {
+                color: yellow;
+            }
+        }
+
         /* 푸터 */
         footer {
             height: 100px;
             background: #111;
+            text-align: center;
         }
     </style>
 </head>
@@ -123,63 +173,63 @@
 <body>
     <!-- 헤더영역 -->
     <header>
-        <h1>Valley Festival</h1>
-        <div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">축제소개</a>
-                        <ul class="sub">
-                            <li><a href="#">Festival 소개</a></li>
-                            <li><a href="#">행사장 안내</a></li>
-                            <li><a href="#">조직위원회</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="menu">
-                    <li><a href="#">예약안내</a>
-                        <ul class="sub">
-                            <li><a href="#">예약하기</a></li>
-                            <li><a href="#">예약확인/취소</a></li>
-                            <li><a href="#">단체예약문의</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="menu">
-                    <li><a href="#">아티스트</a>
-                        <ul class="sub">
-                            <li><a href="#">고릴라즈</a></li>
-                            <li><a href="#">메이저 레이저</a></li>
-                            <li><a href="#">아우스게인</a></li>
-                            <li><a href="#">타임로드</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="menu">
-                    <li><a href="#">커뮤니티</a>
-                        <ul class="sub">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">사진갤러리</a></li>
-                            <li><a href="#">영상갤러리</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+
+        <h1><span>Valley Festival</span></h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">축제소개</a>
+                    <ul class="sub">
+                        <li><a href="#">Festival 소개</a></li>
+                        <li><a href="#">행사장 안내</a></li>
+                        <li><a href="#">조직위원회</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">예약안내</a>
+                    <ul class="sub">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인/취소</a></li>
+                        <li><a href="#">단체예약문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">아티스트</a>
+                    <ul class="sub">
+                        <li><a href="#">고릴라즈</a></li>
+                        <li><a href="#">메이저 레이저</a></li>
+                        <li><a href="#">아우스게인</a></li>
+                        <li><a href="#">타임로드</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">사진갤러리</a></li>
+                        <li><a href="#">영상갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     <!-- 슬라이드 -->
     <div class="slide">
         <ul>
             <li>
-                <img src="images/슬라이드1.jpg" alt="축제_밤">
+                <img src="images/슬라이드1.jpg" alt="축제_노을">
             </li>
             <li>
-                <img src="images/슬라이드2.jpg" alt="축제_노을">
+                <img src="images/슬라이드3.jpg" alt="축제_밤">
             </li>
             <li>
-                <img src="images/슬라이드3.jpg" alt="축제_푸드박스">
+                <img src="images/슬라이드2.jpg" alt="축제_푸드박스">
             </li>
             <li>
-                <img src="images/슬라이드1.jpg" alt="축제_밤">
+                <img src="images/슬라이드1.jpg" alt="축제_노을">
             </li>
         </ul>
     </div>
