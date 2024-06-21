@@ -3,7 +3,6 @@
 body {
     margin: 0 auto;
 }
-
  /* header */
  .top {
     font-size: 15px;
@@ -163,14 +162,13 @@ header {
 
 .main_tt {
     display: inline-block;
-    padding-top: 116px;
-    padding-bottom: 19px;
+    margin-top: 94px;
     
 }
 .con_tt {
-    margin-top: 33px;
+    margin-top: 17px;
 }
-.section1 ul {
+.Big_menu {
     display: flex;
     justify-content: center;
     margin-top: 86px;
@@ -197,11 +195,11 @@ header {
 .section2>h2 {
     text-align: center;
     margin-top: 98px;
+    margin-bottom: 67px;
 }
 .section2 div {
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
 }
 .sub_menu {
     display: flex;
@@ -209,8 +207,14 @@ header {
     width: 1292px;
     justify-content: space-between;
 }
-.sub_menu>li a{
+.sub_menu_li {
+    position: relative;
+    list-style-position: outside;
+}
+.sub_menu a{
     line-height: 42px;
+    color: #757575;
+    cursor: pointer;
 }
 
 /* 푸터 */
@@ -258,9 +262,34 @@ header {
     top: 100px;
 }
 
-.footer pre{
+.footer_right{
+    display: flex;
+    position: relative;
+    left:1000px;
+    top:50px;
+    margin:10px;
     color:#909090;
     position: absolute;
-    top:50px;
-    right:320px;
+}
+
+.footer_right ul li{
+    margin-right:30px;
+    margin-top:10px;
+}
+
+.s4_text p{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+}
+
+.s4_text div{
+    margin-top:20px;
+    margin-left:875px;
+    width: 164px;
+    line-height:50px;
+    background: #F0CD00;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }

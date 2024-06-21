@@ -10,11 +10,6 @@
     font-style: normal;
 }
 
-html {
-    font-size: 20px;
-    line-height: 1.5%;
-}
-
 body {
     font-family: "Pretendard-Regular";
 }
@@ -28,6 +23,7 @@ body {
 
 .con_tt {
     font-size: 28px;
+    font-weight: 200;
     color: #fff;
 }
 
