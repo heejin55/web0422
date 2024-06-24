@@ -21,6 +21,7 @@ footer .flogo {
 /* 하단 메뉴 */
 footer ul {
     display: flex;
+    margin-bottom: 16px;
 }
 
 footer ul a {
