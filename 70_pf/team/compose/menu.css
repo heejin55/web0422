@@ -228,28 +228,47 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 100px 0 100px 0;
+    width: 1300px;
     height: 2233px;
-    border: 1px solid red;
+    margin: 0 auto;
 }
 
-#coffee img {
+.coffee img {
     position: relative;
+    /* align-items: flex-start; */
+    justify-content: space-between;
     width: 305px;
     height: 305px;
     margin-right: 25px;
-    border: 1px solid black;
 }
 
-#H_I img {
+
+.drink4>.coffee img {
+    margin-right: 0;
+}
+.drink8>.coffee img {
+    margin-right: 0;
+}
+.drink12>.coffee img {
+    margin-right: 0;
+}
+.drink16>.coffee img {
+    margin-right: 0;
+}
+
+.H_I img {
     width: 56px;
     height: 33px;
+    bottom: 58px;
+    left: 242px;
 }
 
-#tt div b{
+.tt div b{
     width: 143px;
     height: 24px;
 }
-#tt div p {
+.tt div p {
     width: 290px;
     height: 48px;
 }
