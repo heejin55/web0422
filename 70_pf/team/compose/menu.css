@@ -224,7 +224,7 @@ header {
 }
 
 /* 이미지 영역 */
-.con_img {
+.menu_img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

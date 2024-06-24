@@ -43,3 +43,14 @@ body {
     font-size: 28px;
     color: #757575;
 }
+
+#tt div>b {
+    font-size: 20px;
+    color: #3E3A39;
+}
+
+#tt div>p {
+    font-size: 16px;
+    color: #757575;
+    opacity: 80%;
+}
