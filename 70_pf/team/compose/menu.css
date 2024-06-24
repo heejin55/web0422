@@ -222,13 +222,14 @@ header {
 /* 이미지_드링크 */
 .con_img {
     margin: 120px 319px 0 310px;
+    width: 1920px;
     height: 2233px;
 }
 
 .drink {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
     border: 1px solid red;
 }
 
