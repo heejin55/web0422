@@ -1,6 +1,39 @@
 @charset "utf-8";
 
 
+/* 리셋 */
+@charset "utf-8";
+
+
+body {
+    margin-left:0;
+    margin-top:0;
+    margin:0;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+h1,
+p,
+h2 {
+    margin: 0;
+}
+
+ul, li {
+    padding: 0;
+    list-style-type: none;
+}
+
+.s4 li {
+    margin-left: 0;
+}
+
+
+/* 타이포 */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 @font-face {
@@ -12,6 +45,18 @@
 
 body {
     font-family: "Pretendard-Regular";
+}
+/* 헤더 */
+.s2 h1{
+    font-size:35px;
+}
+
+.s2 .new{
+    font-size:23px;
+}
+
+.new2 div{
+    font-size:23px;
 }
 
 /* 섹션1 */
