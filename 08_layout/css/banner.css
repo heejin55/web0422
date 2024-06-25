@@ -4,16 +4,16 @@
 @import url(typo.css);
 
 /* 배너영역 */
+/* 플렉스 아이템 요소는 display가 block;이다. */
 #banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:1340px;
     padding: 50px;
     background: lavenderblush;
 }
 
-#banner a div {
+#banner span {
     width: 120px;
     height: 100px;
     background: #ccc;

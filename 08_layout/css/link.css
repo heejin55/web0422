@@ -5,7 +5,7 @@
 
 /* 링크 영역 */
 #link {
-    width: 1340px;
+    /* width: 1340px; */
     height: 100px;
     padding: 20px;
     background: lightcyan;
@@ -14,16 +14,16 @@
     display: flex;
     justify-content: space-evenly;
 }
-#link li {
+#link li a{
     display: flex;
     align-items: center;
 }
 /* 아이콘 이미지 */
-#link div {
+#link span {
     width: 60px;
     height: 60px;
     background: #ccc;
     /* 인라인요소 수직배치 */
-    /* vertical-align: middle; */
+    vertical-align: middle;
     margin-right: 24px;
 }

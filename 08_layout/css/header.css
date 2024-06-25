@@ -8,15 +8,13 @@ header {
     position: relative;
 }
 
-.container {
+header .container {
     display: flex;
     justify-content: space-between; /* 양쪽 다 붙이기 */
     align-items: center;
     /* 위드와 마진 0 오토 -> 블록레벨 요소의 가운데 배치 */
     width: 1340px;
     height: 100px;
-    margin: 0 auto;/* 컨테이너 자체 가운데 */
-    border: 1px solid;
 }
 
 /* 로고 영역 */
@@ -55,7 +53,6 @@ header {
 .main::before { /* 회색 영역 */
     content: "";
     position: absolute;
-    z-index: -1;
     top: 100px;
     left: 0;
     width: 100%;
