@@ -1,15 +1,14 @@
 @charset "utf-8";
 
-/* @import는 상단에 기록해야한다. */
-@import url(reset.css);
-@import url(typo.css);
-@import url(header.css);
-@import url(footer.css);
+/* @import는 상단에 기록 */
+@import url(common/reset.css);
+@import url(common/typo.css);
+@import url(common/header.css);
+@import url(common/footer.css);
 
-/* 슬라이드 */
 #slide {
     height: 350px;
-    background: rgba(240, 68, 103, 0.5);
+    background: rgba(67,67,67,0.1);
 }
 
 /* 메인 콘텐츠 */
@@ -19,17 +18,17 @@
     border: 1px solid;
 }
 
-/* 링크 */
+/* 링크 영역 */
 #link {
     height: 100px;
     padding: 20px;
-    background: bisque;
+    background: lightcyan;
 }
 #link ul {
     display: flex;
     justify-content: space-evenly;
 }
-#link li a {
+#link li a{
     display: flex;
     align-items: center;
 }
@@ -38,20 +37,22 @@
     width: 60px;
     height: 60px;
     background: #ccc;
+    /* 인라인요소 수직배치 */
+    /* vertical-align: middle; */
     margin-right: 24px;
 }
 
-/* 배너 */
+/* 배너영역 */
 #banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background: aliceblue;
+    background: lavenderblush;
 }
 
 /* 배너 이미지 */
-/* 플렉스 아이템 요소는 display:block; 이다. */
+/* 플렉스 아이템 요소는 display가 block;이다. */
 #banner span {
     width: 120px;
     height: 100px;
@@ -63,6 +64,7 @@
     width: 1000px;
     padding-right: 200px;
 }
+
 #banner>div h2 {
     margin-bottom: 16px;
 }
@@ -71,7 +73,6 @@
 #tab_wrap {
     height: 300px;
 }
-
 .tabs {
     position: relative;
     left: 50px;
@@ -94,13 +95,13 @@
     padding: 4px 24px;
     background: #999;
     color: #777;
-    /* 손 모양 */
     cursor: pointer;
 }
 
-/* .tabs 안의 하위요소인 체크된 input 아래 동생 label을 선택 */
+/* .tabs 안의 하우요소인 체크된 input 아래 동생 label을 선택 */
 .tabs input:checked+label {
     z-index: 99;
+    /* 1보다 크기만하면 됨. */
     background: #fff;
     color: #111;
     border: 1px solid #ccc;
@@ -110,25 +111,25 @@
 /* 탭의 콘텐츠 */
 .tabs>div {
     display: none;
-    /* position:absolute;이면 width는 콘텐츠 크기 */
     position: absolute;
     width: 100%;
-    /* 32px은 label의 높이 */
+    /* 32px은 label의 높이다. */
     height: calc(100% - 32px);
     padding: 16px 24px;
-    border: 1px solid #ccc;
+    border: 1px solid lavender
 }
 
-/* 체크된 input의 아래 label 아래 div만 보이게한다. */
+/* 체크된 input의 아래 label 아래 div만 보이게 한다. */
 .tabs input:checked+label+div {
     display: block;
 }
 
-/* 공지사항의 콘텐츠 */
+/* 공지사항 콘텐츠*/
 .tab1 li {
     line-height: 2.3;
     border-bottom: 1px dotted #ccc;
 }
+
 .tab1 li a {
     display: inline-block;
     width: 422px;
@@ -137,17 +138,14 @@
 /* 갤러리의 콘텐츠 */
 .tab2 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     line-height: 2.3;
     margin-top: 8px;
 }
+
 .tab2 span {
     display: block;
     width: 150px;
     height: 100px;
     background: #ccc;
 }
-
-
-
-

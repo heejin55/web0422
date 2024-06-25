@@ -2,6 +2,11 @@
 
 @import url(reset.css);
 @import url(typo.css);
+
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
 }
@@ -284,6 +289,22 @@ header {
     position: absolute;
     width: 298px;
     margin: 0 0 5px 0;
+}
+
+/* 더보기 및 탑버튼 영역 */
+.look {
+    text-align: center;
+
+}
+
+._top {
+    width: 70px;
+    height: 70px;
+   text-align: end;
+}
+
+._top a{
+    display: block;
 }
 
 /* 푸터 */

@@ -1,9 +1,13 @@
+@charset "utf-8";
+
 * {
-    /* border와 padding 값이 width/height에 포함 */
     box-sizing: border-box;
 }
-
-body,h1,h2,ul,p {
+body,
+h1,
+h2,
+ul,
+p {
     margin: 0;
 }
 body {
@@ -17,5 +21,5 @@ ul {
 
 a {
     text-decoration: none;
-    color: #666666;
+    color: #666;
 }
