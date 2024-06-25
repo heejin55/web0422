@@ -159,7 +159,7 @@ header {
 .section1 {
     height: 460px;
     text-align: center;
-    background: url(assets/bg.png) no-repeat;
+    background: url(../assets/bg.png) no-repeat;
 }
 
 .main_tt {
