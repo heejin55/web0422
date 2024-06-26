@@ -117,7 +117,7 @@ h1 {
 
 .sub {
     position: relative;
-    left: 100px;
+    left: 50px;
     overflow: hidden;
     visibility: hidden;
     height: 0;
@@ -255,9 +255,10 @@ footer a {
     margin-left: 10px;
 }
 
-footer div {
+.copy {
     text-align: end;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 footer span a {
@@ -266,5 +267,4 @@ footer span a {
     position: relative;
     top: -40px;
     left: 2px;
-
 }
