@@ -104,3 +104,57 @@ body {
 }
 
 /* 로그인 페이지 */
+.login_section input {
+    font-family: "Pretendard-Regular";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login_section>h2 {
+    font-size: 24px;
+}
+
+.login_section span {
+    color: #FFD900;
+}
+
+/* 로그인 */
+.login_wrap input {
+    font-size: 16px;
+    color: #757575;
+}
+
+/* 로그인 입력 */
+.login_1>a>b {
+    font-size: 16px;
+    color: #1D1D1D;
+}
+.login_tt input>b {
+    font-size: 12px;
+}
+
+.login_tt>a {
+    font-size: 12px;
+    color: #757575;
+}
+
+/* 간편 로그인 */
+login_2>a {
+    font-size: 16px;
+    color: #000;
+}
+
+/* 회원가입 유도 */
+.login_3>h3 {
+    font-size: 16px;
+    color: #000;
+}
+
+.login_3 span {
+    color: #FFD900;
+}
+
+.login_3 a {
+    font-size: 16px;
+    color: #1D1D1D;
+}
