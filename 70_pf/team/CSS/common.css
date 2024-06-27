@@ -59,7 +59,7 @@ body {
     font-size:23px;
 }
 
-/* 섹션1 */
+/* 메뉴 섹션1 */
 
 .main_tt {
     font-size: 48px;
@@ -78,7 +78,7 @@ body {
 }
 /* //섹션1 */
 
-/* 섹션2 */
+/* 메뉴 섹션2 */
 .section2 h2 {
     font-size: 44px;
     color: #3E3A39;
@@ -102,3 +102,5 @@ body {
     color: #757575;
     opacity: 80%;
 }
+
+/* 로그인 페이지 */
