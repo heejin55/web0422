@@ -1,7 +1,9 @@
 @charset "utf-8";
 
-
-body,h1,h2,h3,ul {
+* {
+    box-sizing: border-box;
+}
+body,h1,h2,h3,ul,p {
     margin: 0;
 }
 ul {
@@ -10,3 +12,7 @@ ul {
 body {
     background: #fff;
 }
+button {
+    border: 0;
+}
+

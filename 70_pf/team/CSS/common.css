@@ -4,6 +4,9 @@
 /* 리셋 */
 @charset "utf-8";
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin-left:0;
@@ -19,7 +22,8 @@ a {
 ul,
 h1,
 p,
-h2 {
+h2,
+ul {
     margin: 0;
 }
 
@@ -30,6 +34,11 @@ ul, li {
 
 .s4 li {
     margin-left: 0;
+}
+
+/* 로그인 */
+button {
+    border: none;
 }
 
 
@@ -104,8 +113,12 @@ body {
 }
 
 /* 로그인 페이지 */
-.login_section input {
+input,
+button {
     font-family: "Pretendard-Regular";
+}
+
+.login_section input {
     font-weight: 400;
     font-style: normal;
 }
@@ -125,8 +138,9 @@ body {
 }
 
 /* 로그인 입력 */
-.login_1>a>b {
+.login_button>span{
     font-size: 16px;
+    font-weight: 600;
     color: #1D1D1D;
 }
 .login_tt input>b {

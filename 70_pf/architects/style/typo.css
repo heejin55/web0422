@@ -49,3 +49,15 @@ h2 {
 a {
   color: #111;
 }
+
+::placeholder {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+input, button {
+  font: 1.5rem 'Noto Sans KR' 'sans-serif';
+}
+
+button {
+  color: #fff;
+}
