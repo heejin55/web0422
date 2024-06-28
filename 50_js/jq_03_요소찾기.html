@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>요소찾기</title>
+    <title>jq요소찾기</title>
     <style>
         /* 
             선택자
@@ -48,30 +48,33 @@
         <li>목록3</li>
     </ul>
 
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script>
-        // 변수 = 값;
-        // *오른쪽의 값을 왼쪽에 대입(할당)한다.
 
-        // 변수 = 변수;
-        // 변수는 저장공간입니다.
-        // 변수는 지갑(폴더), 값은 돈(파일)
-        // 값 = 변수; (x!!!!!)
+        // 문서에서 아이디가 orange인 요소를 가져와서 =  $('#orange')
+        // 글자색을 "orange"를 지정한다. = .css("color", "orange");
 
-        // *문서의 아이디가 orange인 요소를 가져와서 글자색을 "orange"로 지정한다. (동작)
-        document.getElementById('orange').style.color = "orange";
-        // index 순서는 0번부터
-        document.getElementsByClassName('red')[0].style.color = "red";
-        document.getElementsByTagName('li')[5].style.borderTop = "1px solid";
 
-        // 단일 요소
-        document.querySelector('ul').style.borderLeft = "5px solid";
-        // 같은 요소가 한 개 이상
-        document.querySelectorAll('ul')[0].style.borderTop = "1px solid";
-        // 객체: document
-        // 메소드: getElementById() - 동작
-        // 속성: style, color - 특징
-        // 대입(할당) 연산자: =
-        // 리터럴: 문자열 데이터 -> "orange"
+        // 형식
+        // $(선택자).eq(숫자);
+        // $(선택자).eq({속성:값, 속성:값, ...})
+
+        $('#orange').css("color", "orange");
+        $('#orange').css("background-color", "lavender");
+
+        $('.red').eq(0).css({"color":"red", "background-color":"lavender"});
+
+        // :eq(), eq()의 index는 0번 부터
+        //문서에서 여섯번째인 li 태그를 가져와서 보더탑을 1px 솔리드로 지정한다
+        $('li:eq(5)').css("borderTop", "1px solid");
+        $('ul').css("borderLeft", "5px solid");
+        $('ul').eq(0).css("borderTop", "1px solid");
+
+        // 객체: $()
+        // 메소드: eq(숫자), css("문자열", "문자열")
         // 문장의 끝은 ;을 기록한다.
 
 
