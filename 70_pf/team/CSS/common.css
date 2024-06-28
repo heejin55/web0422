@@ -112,6 +112,11 @@ body {
     opacity: 80%;
 }
 
+.look a {
+    font-size: 20px;
+    color: #757575;
+}
+
 /* 로그인 페이지 */
 input,
 button {
@@ -138,22 +143,23 @@ button {
 }
 
 /* 로그인 입력 */
-.login_button>span{
+.login_button span{
     font-size: 16px;
     font-weight: 600;
     color: #1D1D1D;
 }
-.login_tt input>b {
+.login_checkbox input>b {
     font-size: 12px;
 }
 
-.login_tt>a {
+.login_look a{
     font-size: 12px;
     color: #757575;
 }
 
 /* 간편 로그인 */
-login_2>a {
+.login_2 span {
+    font-weight: 600;
     font-size: 16px;
     color: #000;
 }

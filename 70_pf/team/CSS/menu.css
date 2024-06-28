@@ -225,26 +225,43 @@ header {
 }
 
 /* 라인 호버전 */
-/* .section2>h2::after {
+.section2>h2::after {
     content: "";
-    display: block;
+    position: absolute;
     width: 1500px;
-    margin: 60px 0 0 211px;
-    border-top: 2px solid #D9D9D9;
-} */
-
-.section2>h2 {
-    width: 1500px;
-    border-bottom: 2px solid #D9D9D9;
-    padding-bottom: 40px;
-    margin-bottom: 27px;
-    margin-left: 211px;
+    bottom: 32px;
+    left: 211px;
+    border: 1px solid #D9D9D9;
+    opacity: 0.5;
 }
 
+/* .section2>h2 {
+    width: 1500px;
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 30px;
+    margin-bottom: 48px;
+    margin-left: 211px;
+    opacity: 0.5;
+} */
+
 /* 라인 호버 후 */
-.sub_menu li>a:hover {
-    border-top: 2px solid #9E6F57;
-    padding-top: 31px;
+.sub_menu li {
+    position: relative;
+}
+.sub_menu li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -37px;
+    height: 2px;
+    background: #9E6F57;
+    opacity: 0.7;
+    transform: scale(0,1);
+    transition: .3s ease-in;
+}
+
+.sub_menu li:hover::before {
+    transform: scale(1,1);
 }
 
 .sub_menu {
@@ -252,6 +269,7 @@ header {
     list-style: none;
     width: 1292px;
     justify-content: space-between;
+    margin-top: 37px;
 }
 
 .sub_menu a {
@@ -328,22 +346,21 @@ header {
 
 /* 더보기 및 탑버튼 영역 */
 .look {
+    width: 170px;
+    height: 40px;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 146px;
+    line-height: 40px;
+    margin-bottom: 145px;
+    border: 2px solid #FFD900;
 }
 
-._top {
-    text-align: end;
-    margin-bottom: 20px;
-    margin-right: 20px;
-}
-
-
-._top a>img {
+._top a {
     display: block;
     position: fixed;
-    right: 70px;
-    bottom: 150px;
+    z-index: 99;
+    right: 45px;
+    bottom: 0px;
 }
 
 /* 푸터 */

@@ -111,15 +111,18 @@
                 <label for="user_password"></label>
                 <input id="user_password" type="password" placeholder="비밀번호 입력"><br>
                 <button class="login_button">
-                    <span>로그인</span>
+                    <a href="#"><span>로그인</span></a>
                 </button>
 
-                <!-- 체크박스 -->
-                <div class="login_tt">
-                    <label><input type="checkbox" name="check" value="check" checked><b>자동 로그인</b></label>
+                <!-- 자동로그인(체크박스) -->
+                <div class="login_checkbox">
+                    <label><input type="checkbox" name="check" value="check" ><b>자동 로그인</b></label>
+
                     <!-- 아이디,비번 찾기 -->
-                    <a href="#">아이디 찾기</a>
-                    <a href="#">비밀번호 찾기</a>
+                    <div class="login_look">
+                        <a href="#">아이디 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                </div>
                 </div>
             </div>
 

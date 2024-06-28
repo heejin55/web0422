@@ -3,9 +3,15 @@
 @import url(reset.css);
 @import url(typo.css);
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* 헤더 영역 */
 header {
+    /* 포지션이 픽스드나 앱솔루트 이면 위드가 콘텐츠 크기로 줄어든다. */
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +69,13 @@ nav ul li {
 section {
     width: 1480px;
     margin: 0 auto;
-    padding-bottom: 96px 0;
+    padding-top: 80px;
+}
+
+/* 섹션2,3 공통 */
+section li {
+    width: 355px;
+    margin-right: 20px;
 }
 
 /* 섹션2 */
@@ -80,9 +92,7 @@ section {
 }
 
 #sec2 li {
-    width: 355px;
     height: 240px;
-    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -108,30 +118,33 @@ section {
     padding-bottom: 24px;
     margin-bottom: 24px;
 }
-#sec3 >p {
+
+#sec3>p {
     margin-bottom: 48px;
 }
+
 #sec3 div {
     height: 240px;
     background: #ccc;
 }
+
 #sec3 h3 {
     font-size: 2.4rem;
     margin: 24px 0;
 }
+
 #sec3 li p {
     margin: 24px 0;
 }
+
 #sec3 ul {
     display: flex;
 }
-#sec3 li {
-    width: 355px;
-    margin-right: 20px;
-}
+
 #sec3 li:last-child {
     margin-right: 0;
 }
+
 #sec3 a {
     display: block;
     background: #ccc;
