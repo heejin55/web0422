@@ -161,10 +161,15 @@ header {
 /* 로그인페이지 */
 .login_section {
     margin: 0 auto;
-    margin-top: 125px;
+    margin-top: 120px;
+    margin-bottom: 153px;
     width: 450px;
     height: 560px;
     text-align: center;
+}
+
+.login_section h2 {
+    margin-bottom: 40px;
 }
 
 /* 로그인 박스 크기 공통 */
@@ -198,6 +203,9 @@ header {
 /* 자동로그인(체크박스) */
 .login_checkbox {
     display: flex;
+    width: 420px;
+    margin-top: 17px;
+    margin-bottom: 29px;
 }
 .login_checkbox label::before {
     content: "";
@@ -211,26 +219,114 @@ header {
     background-image: url(../assets/images/자동로그인_호버후.png);
 }
 
+
 /* 아이디/비밀번호 찾기 */
 .login_look {
-    width: 420px;
-    text-align: end;
+    position: relative;
+    right: -197px;
+    bottom: -6px;
 }
 
 /* 간편 로그인 */
 .login_2 a{
+    position: relative;
     line-height: 44px;
     text-align: center;
     border: 1px solid #DDE0E3;
+    margin-bottom: 12px;
+}
+
+.login_2 img:nth-of-type(1) {
+    width: 20px;
+    height: 19px;
+    left: 24px;
+    bottom: 13px;
+    position: absolute;
+}
+
+.login_2 img:nth-of-type(2) {
+    width: 15px;
+    height: 14px;
+    left: 24px;
+    bottom: 13px;
+    position: absolute;
 }
 
 /* 회원가입 유도 */
-.login_3 {
+.login_3 h3{
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 12px;
 }
 
 .login_3 a {
+    text-align: center;
     line-height: 44px;
     background-color: rgba(255, 217, 0, 70%)
+}
+
+/* 푸터 */
+.footer {
+    width: 100%;
+    height: 253.5px;
+    position: absolute;
+    background: #212121;
+    margin-bottom: 0;
+
+}
+
+.footer_line {
+    display: flex;
+    align-items: center;
+    background: #F0CD00;
+    height: 60px;
+}
+
+.footer_line p {
+    margin-left: 320px;
+    margin-right: -290px;
+}
+
+
+.footer img {
+    margin-top: 60px;
+    margin-left: 320px;
+}
+
+.footer_sns img {
+    position: relative;
+    left: 655px;
+    bottom: 100px;
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.footer p {
+    display: flex;
+    position: absolute;
+    font-weight: 500;
+    line-height: 24.16px;
+    color: #989B98;
+    font-size: 14.5px;
+    left: 320px;
+    top: 100px;
+}
+
+.footer_right {
+    display: flex;
+    position: relative;
+    left: 1000px;
+    top: 50px;
+    margin: 10px;
+    color: #909090;
+    position: absolute;
+}
+
+.footer_right a {
+    color: #909090;
+}
+
+.footer_right ul li {
+    margin-right: 30px;
+    margin-top: 10px;
 }
