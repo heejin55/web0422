@@ -227,6 +227,11 @@ header {
     bottom: -6px;
 }
 
+.login_look a:nth-of-type(1)::after {
+    content: "|";
+    margin: 0 6px;
+}
+
 /* 간편 로그인 */
 .login_2 a{
     position: relative;
