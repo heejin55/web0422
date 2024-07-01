@@ -149,8 +149,9 @@ button {
     font-weight: 600;
     color: #1D1D1D;
 }
-.login_checkbox input>b {
+.login_checkbox label {
     font-size: 12px;
+    color: #000;
 }
 
 .login_look a{

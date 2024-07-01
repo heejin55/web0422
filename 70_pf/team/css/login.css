@@ -212,24 +212,29 @@ header {
     display:none;
 }
 
-.login_checkbox input::before {
+#check1+label::before {
     content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
+    margin: -5px 5px 20px 15px;
+    cursor: pointer;
     background-image: url(../assets/images/자동로그인_호버전.png);
 }
 
-.login_checkbox input::before {
+#check1:checked+label::before {
     background-image: url(../assets/images/자동로그인_호버후.png);
+}
+
+.login_checkbox span {
+    position: absolute;
 }
 
 
 /* 아이디/비밀번호 찾기 */
 .login_look {
     position: relative;
-    right: -173px;
-    bottom: -6px;
+    right: -245px;
 }
 
 .login_look a:nth-of-type(1)::after {
