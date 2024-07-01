@@ -207,7 +207,12 @@ header {
     margin-top: 17px;
     margin-bottom: 29px;
 }
-.login_checkbox label::before {
+
+#check1 {
+    display:none;
+}
+
+.login_checkbox input::before {
     content: "";
     display: inline-block;
     width: 24px;
@@ -215,7 +220,7 @@ header {
     background-image: url(../assets/images/자동로그인_호버전.png);
 }
 
-.login_checkbox label::after {
+.login_checkbox input::before {
     background-image: url(../assets/images/자동로그인_호버후.png);
 }
 
@@ -223,13 +228,14 @@ header {
 /* 아이디/비밀번호 찾기 */
 .login_look {
     position: relative;
-    right: -197px;
+    right: -173px;
     bottom: -6px;
 }
 
 .login_look a:nth-of-type(1)::after {
     content: "|";
-    margin: 0 6px;
+    margin: 0 8px;
+    color: #757575;
 }
 
 /* 간편 로그인 */
