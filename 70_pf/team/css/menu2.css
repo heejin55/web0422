@@ -291,7 +291,7 @@ header {
     margin: 0 auto;
 }
 
-.coffee img {
+.BR img {
     position: relative;
     /* align-items: flex-start; */
     justify-content: space-between;
@@ -300,32 +300,25 @@ header {
     margin-right: 25px;
 }
 
-.coffee a img:hover {
+.BR a img:hover {
     transform: scale(1.2, 1.2);
     transition: .5s;
 }
 
-.drink4>.coffee img {
+.bread4>.BR img {
     margin-right: 0;
 }
 
-.drink8>.coffee img {
+.bread8>.BR img {
     margin-right: 0;
 }
 
-.drink12>.coffee img {
+.bread12>.BR img {
     margin-right: 0;
 }
 
-.drink16>.coffee img {
+.bread14>.BR img {
     margin-right: 0;
-}
-
-.H_I img {
-    width: 56px;
-    height: 33px;
-    bottom: 58px;
-    left: 242px;
 }
 
 .tt div {
