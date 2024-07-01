@@ -120,7 +120,8 @@ body {
 
 /* 로그인 페이지 */
 input,
-button {
+button,
+label {
     font-family: "Pretendard-Regular";
 }
 
@@ -130,7 +131,8 @@ button {
 }
 
 .login_section>h2 {
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .login_section span {
@@ -138,19 +140,21 @@ button {
 }
 
 /* 로그인 */
-.login_wrap input {
-    font-size: 16px;
+.login_1>input::placeholder {
+    font-size: 14px;
     color: #757575;
 }
 
 /* 로그인 입력 */
 .login_button span{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #1D1D1D;
 }
-.login_checkbox label {
-    font-size: 12px;
+
+/* 자동로그인(체크박스) */
+.login_checkbox span {
+    font-size: 13px;
     color: #000;
 }
 
@@ -162,21 +166,23 @@ button {
 /* 간편 로그인 */
 .login_2 span {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
 }
 
 /* 회원가입 유도 */
 .login_3>h3 {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
     color: #000;
 }
 
 .login_3 span {
+    font-weight: 600;
     color: #FFD900;
 }
 
 .login_3 a {
-    font-size: 16px;
+    font-size: 14px;
     color: #1D1D1D;
 }
