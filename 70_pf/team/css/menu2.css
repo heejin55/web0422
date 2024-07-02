@@ -212,6 +212,7 @@ header {
 /* 섹션2 */
 .section2 {
     height: 100%;
+    margin-bottom: 200px;
 }
 
 .section2>h2 {
@@ -286,21 +287,23 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 150px 0 100px 0;
-    width: 1920px;
+    width: 1300px;
     margin: 0 auto;
 }
 
 .BR img {
+    position: relative;
     justify-content:space-between;
-    /* width: 305px;
-    height: 305px; */
+    width: 305px;
+    height: 305px;
     margin-right: 25px;
 }
 
 .BR a img:hover {
-    transform: scale(1.2, 1.2);
-    transition: .5s;
+    transform: scale(1.1, 1.1);
+    transition: .3s;
 }
 
 .bread4>.BR img {
@@ -314,7 +317,6 @@ header {
 .bread12>.BR img {
     margin-right: 0;
 }
-
 .tt div {
     margin-bottom: 18px;
 }
@@ -333,22 +335,12 @@ header {
 }
 
 /* 더보기 및 탑버튼 영역 */
-.look {
-    width: 170px;
-    height: 40px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 40px;
-    margin-bottom: 145px;
-    border: 2px solid #FFD900;
-}
-
 ._top a {
     display: block;
     position: fixed;
     z-index: 99;
     right: 45px;
-    bottom: 0px;
+    bottom: 0;
 }
 
 /* 푸터 */
