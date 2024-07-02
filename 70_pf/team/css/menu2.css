@@ -222,7 +222,8 @@ header {
 
 .section2 .bar {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 330px;
 }
 
 /* 라인 호버전 */
@@ -268,7 +269,7 @@ header {
 .sub_menu {
     display: flex;
     list-style: none;
-    width: 1292px;
+    width: 677px;
     justify-content: space-between;
     margin-top: 37px;
 }
@@ -285,18 +286,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px 0 100px 0;
-    width: 1300px;
-    height: 2233px;
+    padding: 150px 0 100px 0;
+    width: 1920px;
     margin: 0 auto;
 }
 
 .BR img {
-    position: relative;
-    /* align-items: flex-start; */
-    justify-content: space-between;
-    width: 305px;
-    height: 305px;
+    justify-content:space-between;
+    /* width: 305px;
+    height: 305px; */
     margin-right: 25px;
 }
 
@@ -314,10 +312,6 @@ header {
 }
 
 .bread12>.BR img {
-    margin-right: 0;
-}
-
-.bread14>.BR img {
     margin-right: 0;
 }
 
