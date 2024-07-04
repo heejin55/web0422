@@ -289,7 +289,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 150px 0 100px 0;
-    width: 1300px;
+    width: 1295px;
     margin: 0 auto;
 }
 
@@ -306,17 +306,13 @@ header {
     transition: .3s;
 }
 
-.bread4>.BR img {
+.bread4>.BR img,
+.bread8>.BR img,
+.bread12>.BR img,
+.bread14>.BR img {
     margin-right: 0;
 }
 
-.bread8>.BR img {
-    margin-right: 0;
-}
-
-.bread12>.BR img {
-    margin-right: 0;
-}
 .tt div {
     margin-bottom: 18px;
 }
