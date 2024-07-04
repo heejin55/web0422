@@ -311,8 +311,19 @@ header {
 .bread14>.BR img {
     margin-right: 0;
 }
-.tt {
-    margin-bottom: 116px;
+.bread1,
+.bread2,
+.bread3,
+.bread4,
+.bread5,
+.bread6,
+.bread7,
+.bread8,
+.bread9,
+.bread10,
+.bread11,
+.bread12 {
+    margin-bottom: 110px;
 }
 
 .tt div {

@@ -319,9 +319,21 @@ header {
     left: 242px;
 }
 
-.tt {
-    margin-bottom: 116px;
+.drink1,
+.drink2,
+.drink3,
+.drink4,
+.drink5,
+.drink6,
+.drink7,
+.drink8,
+.drink9,
+.drink10,
+.drink11,
+.drink12 {
+    margin-bottom: 110px;
 }
+
 
 .tt div {
     margin-bottom: 18px;
