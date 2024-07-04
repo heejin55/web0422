@@ -285,7 +285,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 150px 0 100px 0;
+    padding: 200px 0 100px 0;
     width: 1300px;
     margin: 0 auto;
 }
@@ -304,19 +304,10 @@ header {
     transition: .3s;
 }
 
-.drink4>.coffee img {
-    margin-right: 0;
-}
-
-.drink8>.coffee img {
-    margin-right: 0;
-}
-
-.drink12>.coffee img {
-    margin-right: 0;
-}
-
-.drink16>.coffee img {
+.drink4>.coffee img,
+.drink8>.coffee img,
+.drink12>.coffee img,
+.drink16>.coffee img   {
     margin-right: 0;
 }
 

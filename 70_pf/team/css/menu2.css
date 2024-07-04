@@ -286,15 +286,12 @@ header {
 .menu_img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     padding: 150px 0 100px 0;
-    width: 1295px;
+    width: 1300px;
     margin: 0 auto;
 }
 
-.BR img {
-    position: relative;
+.BR a img {
     justify-content:space-between;
     width: 305px;
     height: 305px;
