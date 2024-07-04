@@ -291,7 +291,7 @@ header {
     margin: 0 auto;
 }
 
-.BR a img {
+.md_s a img {
     position: relative;
     justify-content: space-between;
     width: 305px;
@@ -300,15 +300,12 @@ header {
     transform: scale(0.9);
 }
 
-.BR a img:hover {
+.md_s a img:hover {
     transform: scale(1);
     transition: .3s;
 }
 
-.bread4>.BR img,
-.bread8>.BR img,
-.bread12>.BR img,
-.bread14>.BR img {
+.MD_4>.md_s img {
     margin-right: 0;
 }
 

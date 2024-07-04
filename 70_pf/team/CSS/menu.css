@@ -162,8 +162,9 @@ header {
     background: rgb(239, 238, 238);
 }
 
+/* 메뉴페이지 */
 /* 섹션1 */
-.section1 {
+.menu_section1 {
     height: 460px;
     text-align: center;
     background: url(../assets/images/bg.png) no-repeat;
@@ -185,12 +186,12 @@ header {
     margin-top: 86px;
 }
 
-.section1 ul>li:first-child a {
+.menu_section1 ul>li:first-child a {
     background: #fff;
     color: #000;
 }
 
-.section1 ul>li a {
+.menu_section1 ul>li a {
     display: block;
     width: 177px;
     border: 1px solid #fff;
@@ -208,25 +209,25 @@ header {
 /* //섹션1 */
 
 /* 섹션2 */
-.section2 {
+.menu_section2 {
     height: 100%;
     margin-bottom: 200px;
 }
 
-.section2>h2 {
+.menu_section2>h2 {
     text-align: center;
     margin-top: 98px;
     margin-bottom: 67px;
 }
 
-.section2 .bar {
+.menu_section2 .bar {
     display: flex;
     position: absolute;
     left: 330px;
 }
 
 /* 라인 호버전 */
-.section2>h2::after {
+.menu_section2>h2::after {
     content: "";
     position: absolute;
     width: 1500px;
@@ -296,10 +297,11 @@ header {
     width: 305px;
     height: 305px;
     margin-right: 25px;
+    transform: scale(0.9);
 }
 
 .coffee a img:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1);
     transition: .3s;
 }
 
