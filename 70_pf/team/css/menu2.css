@@ -292,7 +292,8 @@ header {
 }
 
 .BR a img {
-    justify-content:space-between;
+    position: relative;
+    justify-content: space-between;
     width: 305px;
     height: 305px;
     margin-right: 25px;

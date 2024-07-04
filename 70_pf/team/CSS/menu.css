@@ -292,7 +292,6 @@ header {
 
 .coffee img {
     position: relative;
-    /* align-items: flex-start; */
     justify-content: space-between;
     width: 305px;
     height: 305px;
