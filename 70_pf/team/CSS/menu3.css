@@ -254,7 +254,7 @@ header {
 .sub_menu li::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 100px;
     top: -37px;
     height: 2px;
     background: #9E6F57;
@@ -270,7 +270,7 @@ header {
 .sub_menu {
     display: flex;
     list-style: none;
-    width: 677px;
+    width: 300px;
     justify-content: space-between;
     margin-top: 37px;
 }
@@ -287,7 +287,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 150px 0 100px 0;
-    width: 1300px;
+    width: 1350px;
     margin: 0 auto;
 }
 
