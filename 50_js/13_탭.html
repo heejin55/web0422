@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classlist</title>
+</head>
+<style>
+    #tabs>div{
+        font-size: 20px;
+        display: none;
+    }
+    #tabs>div.on {
+        display: block;
+    }
+</style>
+<body>
+    <h1>탭</h1>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab1">공지사항</a></li>
+            <li><a href="#tab2">갤러리</a></li>
+        </ul>
+        <div class="on" id="tab1">첫 번째 콘텐츠</div>
+        <div id="tab2">두 번째 콘텐츠</div>
+    </div>
+
+    <script>
+        // 버튼1을 클릭하면 첫 번째 콘텐츠가 보이고, 두 번째 콘텐츠는 숨기고, 버튼2를 클릭하면 두 번째 콘텐츠는 보이고 첫 번째 콘텐츠는 숨기시오. (단, classList를 사용할 것)
+
+        const btn1 = document.querySelectorAll('#tabs a').item(0);
+        const btn2 = document.querySelectorAll('#tabs a').item(1);
+        const cont1 = document.querySelectorAll('#tabs>div')[0];
+        const cont2 = document.querySelectorAll('#tabs>div')[1];
+        // console.log(cont1);
+        // console.log(cont2);
+
+        // 버튼1을 클릭하면 = 함수를 실행하라
+        btn1.onclick = function(){
+            // p에 .on 클래스를 추가한다.
+            cont1.classList.add('on');
+            cont2.classList.remove('on');
+        };
+        // 버튼2를 클릭하면
+        btn2.onclick = function(){
+            // p에 .on을 제거한다.
+            cont2.classList.add('on');
+            cont1.classList.remove('on');
+        };
+    </script>
+</body>
+</html>
