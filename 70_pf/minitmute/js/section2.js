@@ -1,3 +1,4 @@
+// 요소 찾기
 const btn1 = document.querySelectorAll('#tabs a').item(0);
 const btn2 = document.querySelectorAll('#tabs a').item(1);
 const cont1 = document.querySelectorAll('#tabs>div')[0];
@@ -13,3 +14,4 @@ btn2.onclick = function(){
     cont2.classList.add('on');
     cont1.classList.remove('on');
 };
+console.log(btn1);

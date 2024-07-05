@@ -190,6 +190,10 @@ header {
     border-radius: 4px;
 }
 
+input:focus {
+    outline-color: #FFD900;
+}
+
 .login_1 input {
     padding-left: 18px;
     border: 1px solid #DDE0E3;
