@@ -51,6 +51,11 @@ body {
     color: #BCB5B5;
 }
 
+.tt {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
 /* 레이아웃 */
 #section1 {
     width: 100%;
@@ -116,22 +121,16 @@ img {
     display: block;
 }
 
-
-/* #tt {
-    display: inline-block;
+.tt {
+    position: relative;
+    line-height: 44px;
+    bottom: 60px;
     width: 292px;
-    height: 45px;
-    background-color: #333;
-    opacity: 0.4;
-    position: absolute;
-    bottom: 325px;
-    left: 18px;
+    height: 44px;
+    background: #333;
+    opacity: 0.5;
 }
 
-#tt>img {
-    position: absolute;
-    width: 14px;
-    height: 16px;
-    left: 250px;
-    top: 14px
-} */
+.tt>p {
+    margin-left: 10px;
+}
