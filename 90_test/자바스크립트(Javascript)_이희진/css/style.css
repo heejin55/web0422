@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* 초기화 */
+:root {
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body, h2, ul {
+    margin: 0;
+}
+
+
+/* 타이포 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    font-size: 10px;
+}
+
+#section1>h2 {
+    font-size: 4.4rem;
+    font-weight: 100;
+    color: #111;
+}
+
+#tabs a {
+    font-size: 1.6rem;
+    letter-spacing: 1.6%;
+    font-weight: 500;
+    color: #BCB5B5;
+}
+
+/* 레이아웃 */
+#section1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 140px 0 91px 0;
+}
+
+#section1>h2 {
+    margin-bottom: 30px;
+}
+
+#tabs ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    vertical-align: top;
+}
+
+#tabs>div {
+    width: 1907px;
+    height: 292px;
+}
+
+#tabs>div a {
+    display: block;
+    justify-content: center;
+    margin-right: 25px;
+    width: 292px;
+    height: 365px;
+    border: 1px solid #eee;
+}
+
+#tabs>div {
+    display: none;
+}
+
+#tabs>div.on {
+    display: block;
+}
