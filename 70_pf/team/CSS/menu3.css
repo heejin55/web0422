@@ -217,7 +217,7 @@ header {
 
 .menu_section2>h2 {
     text-align: center;
-    margin-top: 98px;
+    margin-top: 90px;
     margin-bottom: 67px;
 }
 
@@ -232,7 +232,7 @@ header {
     content: "";
     position: absolute;
     width: 1500px;
-    bottom: 32px;
+    bottom: 54px;
     left: 211px;
     border: 1px solid #D9D9D9;
     opacity: 0.5;
@@ -254,8 +254,8 @@ header {
 .sub_menu li::before {
     content: "";
     position: absolute;
-    width: 100px;
-    top: -37px;
+    width: 100%;
+    top: -29px;
     height: 2px;
     background: #9E6F57;
     opacity: 0.7;
