@@ -81,3 +81,12 @@
     height: 48px;
     text-wrap: nowrap;
 }
+
+/* 택의 기능 핵심 */
+#S2 #tabs>div {
+    display: none;
+}
+
+#S2 #tabs>div.on{
+    display: block;
+}
