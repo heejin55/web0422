@@ -73,12 +73,12 @@ body {
 
 .main_tt {
     font-size: 48px;
+    font-weight: 100;
     color: #fff;
 }
 
 .con_tt {
     font-size: 28px;
-    font-weight: 200;
     color: #fff;
 }
 
