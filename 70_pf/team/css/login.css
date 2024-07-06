@@ -235,11 +235,11 @@ input:focus {
     height: 24px;
     margin: -1px 5px 0 15px;
     cursor: pointer;
-    background-image: url(../assets/images/자동로그인_호버전.png);
+    background-image: url(../assets/images/login_hover1.png);
 }
 
 #check1:checked+label::before {
-    background-image: url(../assets/images/자동로그인_호버후.png);
+    background-image: url(../assets/images/login_hover2.png);
 }
 
 .login_checkbox span {
