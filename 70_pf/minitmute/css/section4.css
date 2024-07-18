@@ -12,7 +12,7 @@
 */
 section {
     height: 100vh;
-    background: url(../assets/s4_bg.png) no-repeat -285px 0/cover;
+    background: url(../assets/s4_bg.jpg) no-repeat 960px 0/cover;
 }
 
 .ibx {
@@ -26,5 +26,48 @@ section {
 /* 섹션4 */
 #s4 .cont {
     width: 560px;
-    background: yellow;
+    /* background: #FAF1C6; */
+}
+
+#s4 h3{
+    position: relative;
+    margin: 24px 0 48px 0;
+}
+
+#s4 h3::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: -4px;
+    top: 100px;
+    width: 350px; height: 40px;
+    background: #FAF1C6;
+}
+
+#s4 p:last-of-type {
+    margin: 24px 0;
+}
+
+#s4 .link a {
+    display: inline-block;
+    padding: 16px 24px;
+    background: #353535;
+    /* background: #FAF1C6; */
+    transition: .1s;
+}
+
+/* 
+    변형(transform)
+        1. scale(1,1), scaleX(1), scaleY(1)
+        2. rotate(0deg)
+        3. translae(0px, 0px), translateX(0px), translateY(0px)
+        4. skew(0deg, 0deg), skewX(0deg), skewY(0deg)
+*/
+#s4 .link a:hover {
+    transform: translateY(-4px);
+    background: #1b1b1b;
+}
+
+#s4 .link a:first-child {
+    margin-right: 20px;
 }

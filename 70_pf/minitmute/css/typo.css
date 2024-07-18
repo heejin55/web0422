@@ -23,6 +23,10 @@ h3 {
   font-weight: 600;
 }
 
+p {
+  font-weight: 300;
+}
+
 span {
   font-size: 2rem;
   font-weight: 600;
@@ -44,4 +48,39 @@ a {
 #S2 h3.rank1 {
   font-size: 4rem;
   font-weight: 600;
+}
+
+/* 섹션4 */
+#s4 h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* 
+  text-transform: 영문의 대소문자;
+    값: uppercase: 모두 대문자
+        lowercase: 모두 소문자
+        capitalize: 단어별 첫 글자만 대문자
+
+    <h3>upper lower upper lower</h3>
+    <h3>Upper Lower Upper Lower</h3>
+*/
+
+#s4 h3 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#s4 p:first-of-type {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+#s4 a {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff;
 }
