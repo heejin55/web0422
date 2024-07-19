@@ -1,4 +1,4 @@
-// 탭 - tabs.js
+// 탭 - tabs.js 바닐라스크립트
 
 window.addEventListener("DOMContentLoaded", function () {
 

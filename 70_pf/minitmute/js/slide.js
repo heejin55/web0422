@@ -1,5 +1,3 @@
-
-
 // section1 - carousel
 // bx Slider.js Plug-in
 
@@ -28,7 +26,7 @@ $(function(){
 $('.slider').bxSlider({
     // General
     // mode: 'horizontal'(기본값), 'fade', 'vertical'
-    mode: 'fade',
+    // mode: 'fade',
 
     // speed: 500(=.5s 기본값)
     // speed: 1000,

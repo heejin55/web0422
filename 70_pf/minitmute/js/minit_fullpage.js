@@ -1,8 +1,9 @@
 // Minitmute fullpage.js
+// 제이쿼리
+
 
 // (document).ready 생략 가능
 $(function(){
-
     /* 
         데이터 유형
             1. 숫자
