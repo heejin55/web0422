@@ -10,10 +10,9 @@
     3. vmin
     4. vmax
 */
-section {
+/* section {
     height: 100vh;
-    background: url(../assets/s4_bg.jpg) no-repeat 960px 0/cover;
-}
+} */
 
 .ibx {
     display: flex;
@@ -24,6 +23,10 @@ section {
 }
 
 /* 섹션4 */
+#s4 {
+    background: url(../assets/s4_bg.jpg) no-repeat 960px 0/cover;
+}
+
 #s4 .cont {
     width: 560px;
     /* background: #FAF1C6; */
@@ -63,6 +66,7 @@ section {
         3. translae(0px, 0px), translateX(0px), translateY(0px)
         4. skew(0deg, 0deg), skewX(0deg), skewY(0deg)
 */
+
 #s4 .link a:hover {
     transform: translateY(-4px);
     background: #1b1b1b;

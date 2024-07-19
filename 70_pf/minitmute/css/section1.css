@@ -62,3 +62,8 @@ section {
     right: 48px;
     background: url(../assets/next.png) no-repeat 0px 0px;
 }
+
+/* next 버튼 호버시 사라지는 현상 초기화 */
+.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover {
+    background-position: 0 0;
+}

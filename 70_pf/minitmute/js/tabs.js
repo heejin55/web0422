@@ -1,3 +1,7 @@
+// 탭 - tabs.js
+
+window.addEventListener("DOMContentLoaded", function () {
+
 // 요소 찾기
 const btn1 = document.querySelectorAll('#tabs a').item(0);
 const btn2 = document.querySelectorAll('#tabs a').item(1);
@@ -35,3 +39,5 @@ function resetF() {
     cont3.classList.remove('on');
     cont4.classList.remove('on');
 }
+
+});

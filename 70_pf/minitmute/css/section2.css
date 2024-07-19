@@ -14,11 +14,11 @@
     padding: 72px 0;
 }
 
-#S2>.inner>h2 {
+#S2 .ibx>h2 {
     text-align: center;
 }
 
-#S2>.inner>h2+p {
+#S2 .ibx h2+p {
     text-align: center;
     margin: 24px 0 48px;
 }
@@ -44,17 +44,22 @@
    margin: 0 16px;
 }
 
+#s2 #tabs>ul>li:not(:first-child)::before {
+    content: '|';
+    margin-right: 15px;
+}
+
 /* 탭의 콘텐츠 */
+#S2 #tabs>div ul {
+    height: 432px;
+}
+
 #S2 #tabs>div ul li:nth-child(1) {
     align-self: flex-start;
 }
 
 #S2 #tabs>div ul li:nth-child(2) {
     margin: 0 30px 0 75px;
-}
-
-#S2 #tabs>div ul {
-    height: 432px;
 }
 
 #S2 #tabs>div ul li {

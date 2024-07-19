@@ -1,3 +1,5 @@
+
+
 // section1 - carousel
 // bx Slider.js Plug-in
 
@@ -20,11 +22,10 @@
 }); */
 
 // 제이쿼리
-$(document).ready(function(){
+$(function(){
     // 문서가 준비되면 실행할 코드;
 
-
-$('.slide').bxSlider({
+$('.slider').bxSlider({
     // General
     // mode: 'horizontal'(기본값), 'fade', 'vertical'
     mode: 'fade',
