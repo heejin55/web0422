@@ -1,23 +1,11 @@
 // Minitmute fullpage.js
 // 제이쿼리
 
-
-// (document).ready 생략 가능
-$(function(){
-    /* 
-        데이터 유형
-            1. 숫자
-            2. 문자열
-            3. 불
-            4. undefined
-            5. 객체: {속성: 값, 속성: 값, ...}
-                - 배열: [값, 값, 값, 값, ...]
-    */
-
+$(function () {
     $('#wrap').fullpage({
         menu: '#minit_nav',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        sectionsColor: ['#f1f1f1', '#f1f1f1', '#f1f1f1', '#f1f1f1'],
+        sectionsColor: ['#f1f1f1', '#ffffff', '#f1f1f1', '#f1f1f1'],
         // 오른쪽 인디케이터
         navigation: true,
         // 오른쪽 인디케이터 마우스 올렸을 때
@@ -26,4 +14,61 @@ $(function(){
         //slidesNavigation: true,
         //loopHorizontal: false,
     });
+});
+
+// slide
+$(function () {
+    $('.slider').bxSlider({
+        auto: true,
+        autoControls: false,
+        stopAutoOnClick: true,
+        pager: true,
+        autoStart: true,
+        autoHover: true,
+        autoDelay: 4000
+    });
+
+}); // document.ready() 
+
+// tabs
+window.addEventListener("DOMContentLoaded", function () {
+
+    // 요소 찾기
+    const btn1 = document.querySelectorAll('#tabs a').item(0);
+    const btn2 = document.querySelectorAll('#tabs a').item(1);
+    const btn3 = document.querySelectorAll('#tabs a').item(2);
+    const btn4 = document.querySelectorAll('#tabs a').item(3);
+    // console.log(btn1,btn2,btn3,btn4);
+
+    const cont1 = document.querySelector('#tab1');
+    const cont2 = document.querySelector('#tab2');
+    const cont3 = document.querySelector('#tab3');
+    const cont4 = document.querySelector('#tab4');
+
+
+    // 이벤트 처리
+    btn1.onclick = function () {
+        resetF();
+        cont1.classList.add('on');
+    };
+    btn2.onclick = function () {
+        resetF();
+        cont2.classList.add('on');
+    };
+    btn3.onclick = function () {
+        resetF();
+        cont3.classList.add('on');
+    };
+    btn4.onclick = function () {
+        resetF();
+        cont4.classList.add('on');
+    };
+
+    function resetF() {
+        cont1.classList.remove('on');
+        cont2.classList.remove('on');
+        cont3.classList.remove('on');
+        cont4.classList.remove('on');
+    }
+
 });
