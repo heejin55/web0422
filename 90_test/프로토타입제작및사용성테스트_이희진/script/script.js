@@ -72,3 +72,26 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+// S3
+// 로드 이벤트
+window.addEventListener("DOMContentLoaded", function(){
+    // 요소 찾기
+    const p = document.querySelector("#s3 h2");
+    const mbx = document.querySelector(".mbx");
+
+    // 스크롤 이벤트
+    window.addEventListener("scroll", function(){
+
+        p.innerHTML = Math.floor(pageYOffset);
+        console.log(p);
+
+        if(p.innerHTML >= 1300) {
+            //.active 클래스를 추가
+            mbx.classList.add("active");
+        } else {
+             //.active 클래스를 제거
+            mbx.classList.remove("active");
+        }
+    });
+});
