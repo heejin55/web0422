@@ -5,11 +5,11 @@ $(function () {
     $('#wrap').fullpage({
         menu: '#minit_nav',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        sectionsColor: ['#f1f1f1', '#ffffff', '#f1f1f1', '#f1f1f1'],
+        sectionsColor: ['#f1f1f1', '#f8f8f8', '#ffffff', '#f8f8f8'],
         // 오른쪽 인디케이터
         navigation: true,
         // 오른쪽 인디케이터 마우스 올렸을 때
-        navigationTooltips: ['minitmute', 'best product', 'section3', 'brand story'],
+        navigationTooltips: ['minitmute', 'best product', 'in tokyo', 'brand story'],
         showActiveTooltip: true,
         //slidesNavigation: true,
         //loopHorizontal: false,
@@ -75,22 +75,22 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // S3
 // 로드 이벤트
-window.addEventListener("DOMContentLoaded", function(){
+window.addEventListener("DOMContentLoaded", function () {
     // 요소 찾기
     const p = document.querySelector("#s3 h2");
     const mbx = document.querySelector(".mbx");
 
     // 스크롤 이벤트
-    window.addEventListener("scroll", function(){
+    window.addEventListener("scroll", function () {
 
         p.innerHTML = Math.floor(pageYOffset);
         console.log(p);
 
-        if(p.innerHTML >= 1300) {
+        if (p.innerHTML >= 1300) {
             //.active 클래스를 추가
             mbx.classList.add("active");
         } else {
-             //.active 클래스를 제거
+            //.active 클래스를 제거
             mbx.classList.remove("active");
         }
     });
