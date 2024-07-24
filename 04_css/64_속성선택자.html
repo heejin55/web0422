@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자</title>
+    <style>
+        [target] {
+            text-decoration: none;
+        }
+
+        [target="_blank"] {
+            color: #555;
+        }
+
+        /* title 속성 값이 com을 포함하는 요소 -> com, com on 등 단어에 com이 포함되면 가능 ! */
+        [title~="com"] {
+            border: 5px solid lawngreen;
+        }
+
+        /* title 속성 값이 en으로 시작하는 요소 */
+        [title|="en"] {
+            background: lavenderblush;
+        }
+
+        /* div 중에서 class 속성 값이 test로 시작하는 요소 */
+        div[class^="test"] {
+            background: lavenderblush;
+        }
+        /* div 중에서 class 속성 값이 test로 끝나는 요소 */
+        div[class$="test"] {
+            border: 2px solid lawngreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>속성 선택자</h1>
+    <h2>[속성]</h2>
+    <h2>[속성="값"]</h2>
+    <a href="https://www.w3schools.com">w3schools.com</a><br>
+    <a href="https://www.google.com" target="_self">Google.com</a><br>
+    <a href="https://www.w3schools.com" target="_blank">Microsoft.com</a>
+
+    <!-- tilde, 틸더, ~은 특정 값(단어)를 포함하는 -->
+    <h2>[속성~="값"]</h2>
+    <!-- vertical bar 또는 pipe, 파이프, |는 값으로 시작하는 -->
+    <h2>[속성|="값"]</h2>
+    <a href="https://www.w3schools.com" title="en com">w3schools.com</a>
+    <a href="https://www.google.com" target="_self" title="en-us Google. com">Google.com</a>
+    <a href="https://www.w3schools.com" target="_blank" title="en-koMicrosoft.com">Microsoft.com</a>
+
+    <a href="https://www.naver.com" target="_blank" title="ko Naver.com">Microsoft.com</a>
+    <a href="https://www.feweb.rf.gd" target="_blank" title="ja-jp feweb.rf.gd">Microsoft.com</a>
+
+    <!-- caret, 캐럿, ^는 값으로 시작하는 -->
+    <h2>[속성^="값"]</h2>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="test">The third div element.</div>
+    <div class="test_ex">The fourth div element.</div>
+    <p class="test">This is a paragraph.</p>
+    <p class="test_ex">This is a paragraph.</p>
+
+    <!-- dollar sign, 달러 사인, $는 값으로 끝나는 -->
+    <h2>[속성$="값"]</h2>
+
+
+    <!-- asterisk, 아스테리스크 -->
+    <h2>[속성*="값"]</h2>
+</body>
+
+</html>
