@@ -1,158 +1,23 @@
 @charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
 
-/* reset */
-* {
-    box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-ul,
-p {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-body {
-    background: #fff;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    vertical-align: top;
-}
-
-button {
-    border: none;
-}
-
-iframe {
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-
-::selection {
-    background: #FAF1C6;
-}
-
-/* typo */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
-/* 공통 */
-html {
-    font-size: 10px;
-}
-
-body {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.5rem;
-    color: #1b1b1b;
-}
-
-h2 {
-    font-size: 4.8rem;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-
-p {
-    font-weight: 300;
-}
-
-span {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-a {
-    color: #111;
-}
-
-/* 섹션2 */
-#S2>.inner>p {
-    color: #777;
-}
-
-#S2 #tabs>ul a {
-    color: #777;
-}
-
-#S2 h3.rank1 {
-    font-size: 4rem;
-    font-weight: 600;
-}
-
-/* 섹션3 */
-#s3 h2 {
-    font-size: 3rem;
-}
-
-/* 섹션4 */
-#s4 h2 {
-    font-size: 24px;
-    font-weight: 200;
-}
-
-#s4 h3 {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1;
-    /* text-transform: uppercase; */
-}
-
-#s4 p:first-of-type {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
-
-#s4 a {
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: #fff;
-}
-
-footer p {
-    line-height: 1.6;
-}
-
-/* header */
-header {
+/* fullpage */
+/* 왼쪽 하단에 있는 메뉴 */
+#minit_nav {
     z-index: 9999;
     position: fixed;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 900px;
-    top: 30px;
+    left: 0;
+    bottom: 0;
 }
 
 /* 푸터에 있는 p 높이 */
 .fp-auto-height div {
     height: 200px;
-    background: #FAF1C6;
+    color: white;
+    background: #000;
 }
 
 /* 푸터 동그라미 */
@@ -160,19 +25,34 @@ header {
     display: none;
 }
 
+/* common */
+/* section {
+    height: 100vh;
+} */
+
 .ibx {
     width: 1120px;
     margin: 0 auto;
 }
 
+/* header */
+header {
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: #ffffff88;
+}
+
+
 /* 섹션1 */
+
 /* 슬라이드 */
 .bx-wrapper {
     box-shadow: none;
     border: none;
     margin-bottom: 0;
 }
-
 /* 이미지를 뷰포트에 100% 채우기 */
 .bx-viewport {
     height: 100% !important;
@@ -181,9 +61,7 @@ header {
 .bx-wrapper li {
     width: 100vw;
     height: 100vh;
-}
-
-/* //뷰포트 */
+} /* //뷰포트 */
 
 .bx-wrapper .bx-controls-auto,
 .bx-wrapper .bx-pager {
@@ -207,19 +85,28 @@ header {
 }
 
 .bx-wrapper .bx-prev {
-    left: 130px;
-    background: url(../images/prev.png) no-repeat 0px 0px;
+    left: 160px;
+    background: url(../assets/prev.png) no-repeat 0px 0px;
 }
 
 .bx-wrapper .bx-next {
-    right: 130px;
-    background: url(../images/next.png) no-repeat 0px 0px;
+    right: 160px;
+    background: url(../assets/next.png) no-repeat 0px 0px;
 }
 
 /* next 버튼 호버시 사라지는 현상 초기화 */
 .bx-wrapper .bx-next:focus,
 .bx-wrapper .bx-next:hover {
     background-position: 0 0;
+}
+
+/* 슬라이드 중앙 텍스트 */
+#s1 .slideWrap p {
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* 섹션2 */
@@ -308,14 +195,10 @@ header {
     display: block;
 }
 
-/* 섹션3 */
-#s3 div {
-    text-align: center;
-}
 
 /* 섹션4 */
 #s4 {
-    background: url(../images/s4_bg.jpg) no-repeat 960px 0/cover;
+    background: url(../assets/s4_bg.jpg) no-repeat 960px 0/cover;
 }
 
 #s4 .ibx {
@@ -352,7 +235,7 @@ header {
 #s4 .link a {
     display: inline-block;
     padding: 16px 24px;
-    background: rgba(53, 53, 53, 0.39);
+    background: #353535;
     transition: .1s;
 }
 
@@ -363,19 +246,4 @@ header {
 
 #s4 .link a:first-child {
     margin-right: 20px;
-}
-
-footer p {
-    text-align: end;
-    margin-top: 40px;
-    margin-right: 20px;
-}
-
-footer span a {
-    font-size: 2rem;
-    color: rgba(53, 53, 53, 0.39);
-    position: relative;
-    padding: 3px;
-    top: -70px;
-    left: 1850px;
 }

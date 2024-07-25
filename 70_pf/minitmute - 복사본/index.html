@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minitmute_이희진</title>
+    <title>minitmute</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -13,23 +13,22 @@
     <!-- bxSlider.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
 
-    <script src="script/script.js"></script>
+    <script src="js/minit_fullpage.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/tabs.js"></script>
 </head>
 
 <body>
     <header>
-        <ul class="logo">
-            <li><a href="#s1"><img src="images/logo.svg" alt="logo"></a></li>
-        </ul>
-        <!-- <nav>
-            <ul class="logo_nav">
-                <li><a href="#s1">shop</a></li>
-                <li><a href="#"><strong>ⓜ</strong></a></li>
-                <li><a href="#">CART(0)</a></li>
-            </ul>
-            
-        </nav> -->
+        헤더
     </header>
+    <!-- nav -->
+    <!-- <ul id="minit_nav">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">홈</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">베스트 상품</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">ㅇㅇㅇㅇㅇㅇ</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">미닛뮤트 이야기</a></li>
+    </ul> -->
 
     <!-- section -->
     <div id="wrap">
@@ -37,13 +36,16 @@
             <div class="slideWrap">
                 <ul class="slider">
                     <li>
-                        <img src="images/s1.jpg" alt="슬라이드 이미지1">
+                        <img src="assets/s1.jpg" alt="슬라이드 이미지1">
+                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
                     </li>
                     <li>
-                        <img src="images/s2.jpg" alt="슬라이드 이미지2">
+                        <img src="assets/s2.jpg" alt="슬라이드 이미지2">
+                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
                     </li>
                     <li>
-                        <img src="images/s3.jpg" alt="슬라이드 이미지3">
+                        <img src="assets/s3.jpg" alt="슬라이드 이미지3">
+                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
                     </li>
                 </ul>
             </div>
@@ -64,15 +66,15 @@
                     <div id="tab1" class="on">
                         <ul>
                             <li>
-                                <a href="#" class="rank1"><img src="images/tab1_1.jpg" alt="1위"></a>
+                                <a href="#" class="rank1"><img src="assets/tab1_1.jpg" alt="1위"></a>
                                 <h3 class="rank1"><a href="#">1st leopard</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab1_2.jpg" alt="2위"></a>
+                                <a href="#"><img src="assets/tab1_2.jpg" alt="2위"></a>
                                 <h3><a href="#">2nd blue bell</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab1_3.jpg" alt="3위"></a>
+                                <a href="#"><img src="assets/tab1_3.jpg" alt="3위"></a>
                                 <h3><a href="#">3nd butter</a></h3>
                             </li>
                         </ul>
@@ -80,15 +82,15 @@
                     <div id="tab2">
                         <ul>
                             <li>
-                                <a href="#" class="rank1"><img src="images/tab2_1.jpg" alt="1위"></a>
+                                <a href="#" class="rank1"><img src="assets/tab2_1.jpg" alt="1위"></a>
                                 <h3 class="rank1"><a href="#">1st apricot</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab2_2.jpg" alt="2위"></a>
+                                <a href="#"><img src="assets/tab2_2.jpg" alt="2위"></a>
                                 <h3><a href="#">2nd butter</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab2_3.jpg" alt="3위"></a>
+                                <a href="#"><img src="assets/tab2_3.jpg" alt="3위"></a>
                                 <h3><a href="#">3nd blue bell</a></h3>
                             </li>
                         </ul>
@@ -96,32 +98,32 @@
                     <div id="tab3">
                         <ul>
                             <li>
-                                <a href="#" class="rank1"><img src="images/tab3_1.jpg" alt="1위"></a>
-                                <h3 class="rank1"><a href="#">1st woody</a></h3>
+                                <a href="#" class="rank1"><img src="assets/r3.png" alt="1위. 수박주스"></a>
+                                <h3 class="rank1"><a href="#">1위. 대파 송송 치즈 감자빵</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab3_2.jpg" alt="2위"></a>
-                                <h3><a href="#">2nd ivory</a></h3>
+                                <a href="#"><img src="assets/r2.png" alt="2위. 몽글젤리 복숭아 스무디"></a>
+                                <h3><a href="#">2위. 몽글젤리 복숭아 스무디</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab3_3.jpg" alt="3위"></a>
-                                <h3><a href="#">3nd shining</a></h3>
+                                <a href="#"><img src="assets/r1.jpg" alt="3위. 대파 송송 치즈 감자빵"></a>
+                                <h3><a href="#">3위. 수박주스</a></h3>
                             </li>
                         </ul>
                     </div>
                     <div id="tab4">
                         <ul>
                             <li>
-                                <a href="#" class="rank1"><img src="images/tab4_1.jpg" alt="1위"></a>
-                                <h3 class="rank1"><a href="#">1st caviar white</a></h3>
+                                <a href="#" class="rank1"><img src="assets/r2.png" alt="1위. 수박주스"></a>
+                                <h3 class="rank1"><a href="#">1위. 몽글젤리 복숭아 스무디</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab4_2.jpg" alt="2위"></a>
-                                <h3><a href="#">2nd caviar camel</a></h3>
+                                <a href="#"><img src="assets/r3.png" alt="2위. 몽글젤리 복숭아 스무디"></a>
+                                <h3><a href="#">2위. 대파 송송 치즈 감자빵</a></h3>
                             </li>
                             <li>
-                                <a href="#"><img src="images/tab4_3.jpg" alt="3위"></a>
-                                <h3><a href="#">3nd caviar black</a></h3>
+                                <a href="#"><img src="assets/r1.jpg" alt="3위. 대파 송송 치즈 감자빵"></a>
+                                <h3><a href="#">3위. 수박주스</a></h3>
                             </li>
                         </ul>
                     </div>
@@ -129,20 +131,19 @@
 
             </div><!-- //.ibx -->
         </section>
-
         <section id="s3" class="section">
-            <h2>Minitmute Meet in Tokyo</h2>
-            <div><video src="images/video.mp4" controls autoplay muted></video></div>
+            <h2>준비중...</h2>
         </section>
-
         <section id="s4" class="section">
             <div class="ibx">
                 <div class="cont">
-                    <h2>당신의 즐거운 여행을 위해</h2>
-                    <h3>enjoy <br> your trip !</h3>
+                    <h2>미닛뮤트 이야기</h2>
+                    <h3>hana tour<br> &amp; culture</h3>
+                    <h3>minitmute<br> &amp; travel</h3> <!-- hana tour &amp; culture -->
                     <p>여행을 하며 사용할 수 있는 가볍고 작은 크기의<br> 실용적인 가죽 가방을 만들고 싶다는 생각으로<br> 시작한 브랜드입니다.<br> </p>
                     <p>이미 포화 상태인 디자인 시장에서 다양하고 독특한 디자인을<br> 추구하기 보다는
                         소재와 퀄리티의 차별성을 두고 집중하고 있습니다.</p>
+                    <!-- <p>여권 포함 여행 필수품이 들어가는 크기와 가벼운 무게감을 유지하며<br> 다양한 가죽과 컬러감을 선보이고 있습니다.</p> -->
                     <div class="link">
                         <a href="#">브랜드 스토리</a>
                         <a href="#">협업문의</a>
@@ -154,16 +155,8 @@
         <!-- footer -->
         <footer class="section fp-auto-height">
             <div>
-                <p>COMPANY: MVILLAGE CO. | OWNER: SOO RIN JEON <br>
-                    SEOUL SEONGDONG-GU YEONMUJANG-GIL 57 2F<br>
-                    E-MAIL info@minitmute.com ㅣ MAIL ORDER NUMBER : 2023-SEOULSEONGDONG-0932<br>
-                    BUSINESS REGISTRATION NUMBER 228-86-02371 | KB 295401-01-239187<br>
-                    OPEN HOURS AM 10:00 - PM 4:00 | LUNCH TIME 1:00 PM - 2:00 PM | OFFICE DAY MON - FRI</p>
+                <p>Copyright All rights reserved.</p>
             </div>
-            <span class="fonta">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-solid fa-blog"></i></a>
-            </span>
         </footer>
     </div>
 
