@@ -23,6 +23,12 @@
             list-style: none;
         }
 
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
 
         /* 
             CSS 변수(variable)
@@ -84,9 +90,7 @@
                 4. 요소, ::가상요소
         */
 
-        .menu,
-        .main,
-        .aside {
+        .menu, .main, .aside {
             padding: 15px;
         }
 
@@ -108,6 +112,9 @@
         /* 메인 콘텐츠 */
         .main {
             color: var(--gray);
+        }
+        .main img:first-of-type {
+            display: none;
         }
 
         /* 사이드 콘텐츠 */
@@ -139,43 +146,31 @@
         */
 
         @media (min-width: 576px) {
-            .section {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
+            .section {display: flex; flex-wrap: wrap;}
             /* 
                 flex-grow: 1
                 flex-shrink: 0
                 flex-basis: auto (단위: %, px, ...)
                 flex: grow shrink basis;
             */
-            .menu {
-                flex: 33%;
-            }
+            .menu {flex:33%;}
+            .main {flex:67%;}
+            .aside {flex:100%;}
 
-            .main {
-                flex: 67%;
+            /* 킨 이미지 보이기+작은이미지 숨기기 update */
+            .main img:first-of-type {
+                display: block;
             }
-
-            .aside {
-                flex: 100%;
+            .main img:last-of-type {
+                display: none;
             }
         }
-
+        
         /* 최소 768이상의 장치: desktop */
         @media (min-width: 768px) {
-            .menu {
-                flex: 25%;
-            }
-
-            .main {
-                flex: 50%;
-            }
-
-            .aside {
-                flex: 25%;
-            }
+            .menu {flex:25%;}
+            .main {flex:50%;}
+            .aside {flex:25%;}
         }
     </style>
 </head>
@@ -205,6 +200,8 @@
             <h1>The City</h1>
             <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
                 the old town and the modern city.</p>
+            <img src="https://www.w3schools.com/css/img_flowers.jpg" alt="하니아">
+            <img src="https://www.w3schools.com/css/img_smallflower.jpg" alt="하니아">
         </main>
 
         <!-- 사이드 콘텐츠 -->
@@ -224,7 +221,7 @@
     <!-- 푸터 영역 -->
     <footer class="footer">
         <p>Copyright 2024 Chania. All rights reserved.</p>
-        </foot>
+    </foot>
 </body>
 
 </html>
