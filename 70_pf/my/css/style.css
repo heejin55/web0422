@@ -6,8 +6,16 @@ html {
     font-size:10px;
 }
 body {
+    /* font: 굵기 크기/줄간격 글꼴1,글꼴2 */
     font:1.5rem/1.5 "Noto Sans KR", Arial, sans-serif;
 }
 h2, h3 {
     font-weight: 300;
+}
+
+/* 이미지,비디오 반응형을 위한 초기값 지정 */
+img, video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
