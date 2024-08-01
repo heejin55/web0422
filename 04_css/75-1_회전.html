@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회전</title>
+    <style>
+        #rot3d {
+            width: 100px;
+            height: 100px;
+            perspective: 800px;
+        }
+        #rot3d:hover>div {
+            transform: rotateY(180deg);
+        }
+
+        #rot3d>div {
+            position: absolute;
+            /************글자 정중앙************/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /****************************/
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 1px #ddd;
+        }
+        #rot3d .front {
+            /* transform: rotateY(180deg); */
+            background: lightpink;
+            /* backface-visibility: hidden; */
+        }
+        #rot3d .front div {
+            transform: rotateY(180deg);
+        }
+        #rot3d .back {
+            background: lightgreen;
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>팜한농 벤치</h1>
+    <!-- https://www.farmhannong.com/kor/main/index.do 팜한농-->
+    <div id="rot3d">
+        <div class="front">
+            <div>3D</div>
+        </div>
+        <div class="back">
+            <div>Y</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -16,16 +16,18 @@ p {
         margin: 0 auto;
         width: 1024px;
     }
-
-    #ad_s1 img {
+    #ad_s1 {
         position: relative;
+        margin-top: 19px;
+        border: 1px solid red;
+    }
+    #ad_s1 img {
         max-width: 100%;
-        /* margin-top: 19px; */
     }
     
     #ad_s1>h2 {
         position: absolute;
-        top: 0px;
+        top: 65px;
     }
 
     #ad_s1>p {
