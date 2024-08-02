@@ -85,3 +85,44 @@ button {
 footer {
   color: #fff;
 }
+
+/* 배경색 */
+header {
+  background: #fff;
+}
+
+#sec1 b {
+  background: #eee;
+}
+
+#sec1 div {
+  background: #eee;
+}
+
+#sec2 h3 {
+  background: #000;
+}
+
+#sec2 div{
+  background: #ccc;
+}
+
+#sec3 div {
+  background: #ccc;
+}
+
+#sec3 a {
+  background: #ccc;
+}
+
+#sec4 button {
+  background: #000;
+}
+
+#sec4 .map {
+  background: #ccc;
+}
+
+footer{
+  background: #000;
+}
