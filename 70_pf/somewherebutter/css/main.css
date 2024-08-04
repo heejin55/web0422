@@ -52,24 +52,64 @@ header {
 /* 내비게이션 */
 .main {
     display: flex;
-    padding: 33px 0;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
 }
 .main>li>a {
     margin-right: 33px;
     font-size: 1.5rem;
 }
 
+
 .sub {
     visibility: hidden;
 }
 
 /* 폰트어썸_아이콘 */
-
+.fa_icon a{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.fa_icon:last-child{
+    margin-right: 40px;
+}
 
 /* 섹션1_비디오 */
-video {
+#s1 video {
     width: 100%;
     height: 100%;
 }
 
 /* 섹션2_오프라인 스토어 */
+#s2 {
+    display: flex;
+    justify-content: center;
+}
+
+#s2 img {
+    margin-right: 21px;
+}
+
+.offline {
+    width: 606px;
+    height: 529px;
+    background-color: #203E7F;
+    color: #fff;
+}
+
+.offline_text {
+    margin-left: 57px;
+}
+
+.offline_text>div {
+    font-size: 3rem;
+    margin-bottom: 35px;
+
+}
+
+.offline_text>a{
+    color:#fff;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
