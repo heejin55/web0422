@@ -54,7 +54,7 @@ section li {
 }
 
 #sec1 b {
-    padding: 8px 16px;
+    padding: 12px 16px;
     margin-right: 16px;
 }
 
@@ -62,9 +62,15 @@ section li {
 #sec2 h2 {
     margin-bottom: 48px;
 }
+
 #sec2 h3 {
     position: absolute;
     padding: 8px 24px;
+}
+
+#sec2 ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* 섹션3 */
@@ -76,7 +82,8 @@ section li {
     margin-bottom: 48px;
 }
 
-#sec h3, #sec3 li p:last-of-type {
+#sec h3,
+#sec3 li p:last-of-type {
     margin: 24px 0;
 }
 
@@ -97,15 +104,26 @@ section li {
 
 #sec4 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
 }
 
 #sec4 button {
     padding: 12px 20px;
+    margin: 16px 0 48px;
 }
 
+#sec4 .map {
+    height: 260px;
+    margin-bottom: 8px;
+}
+
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
 
 /*************************폰*****************************/
 nav {
@@ -121,18 +139,46 @@ nav {
 
 /* 768이상: 테블릿, 데스크탑 */
 @media (min-width: 768px) {
-    nav ul {
-        display: flex;
+
+    /* 내비게이션 */
+    nav {
+        display: block;
     }
 
     nav ul li:not(:first-child) {
         margin-left: 40px;
     }
 
-    #sec1>h2 {
-        top: 50%;
+    nav ul {
+        display: flex;
     }
 
+    /* 섹션1 */
+    #sec1 span {
+        display: inline-block;
+    }
+
+    /* 섹션2,3공통 */
+    section ul {
+        display: flex;
+    }
+
+    section li {
+        width: 355px;
+    }
+
+    #sec2 li:not(:nth-of-type(2n)) {
+        margin-right: 20px;
+    }
+
+    #sec3 li:not(:nth-of-type(4n)) {
+        margin-right: 20px;
+    }
+
+    /* 섹션4 */
+    #sec4 .map {
+        height: 420px;
+    }
 }
 
 
@@ -146,7 +192,7 @@ nav {
         margin: 0 auto;
     }
 
-    /* 섹션1,2,3공통 */
+    /* 섹션2,3공통 */
     section ul {
         display: flex;
     }
@@ -165,15 +211,18 @@ nav {
         height: 745px;
     }
 
-    /* 섹션2 */
-    #sec2 ul {
-        display: flex;
-        flex-wrap: wrap;
+    #sec1>h2 {
+        top: 50%;
     }
+
+    /* 섹션2 */
 
     #sec2 li {
         height: 240px;
     }
 
-    /* 섹션3 */
+    /* 섹션4 */
+    #sec4 .map {
+        height: 845px;
+    }
 }
