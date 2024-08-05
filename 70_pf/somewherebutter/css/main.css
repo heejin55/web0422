@@ -84,13 +84,10 @@ header {
 
 /* 섹션2_오프라인 스토어 */
 #s2 h2{
-    padding: 50px 0 17px 440px;
+    padding: 50px 0 17px 458px;
     font-size: 2rem;
 }
 
-/* #s2 img {
-    margin-right: 21px;
-} */
 .offline {
     display: flex;
     justify-content: center;
@@ -101,6 +98,7 @@ header {
     background-color: #203E7F;
     color: #fff;
     margin-left: 21px;
+    padding: 220px 0;
 }
 
 .offline_text>div {
@@ -115,4 +113,10 @@ header {
     font-size: 1.6rem;
     text-decoration: underline;
     margin-left: 57px;
+}
+
+/* 섹션3_뉴 버터 아이템 */
+.new_butter_item {
+    display: flex;
+    justify-content: center;
 }
