@@ -24,13 +24,26 @@ header {
 }
 
 
-/* 섹션2,3 공통 */
+/* 섹션들 공통 */
+section {
+    padding: 96px 32px 0;
+}
 
+section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+    /* 섹션3,4 */
+    margin-bottom: 24px;
+}
+
+section li {
+    margin-bottom: 20px;
+}
 
 /* 섹션1 */
 #sec1 {
     position: relative;
-    padding-top: 54px;
+    padding: 54px 0 0;
 }
 
 #sec1>h2 {
@@ -45,18 +58,65 @@ header {
     margin-right: 16px;
 }
 
+/* 섹션2 */
+#sec2 h2 {
+    margin-bottom: 48px;
+}
+#sec2 h3 {
+    position: absolute;
+    padding: 8px 24px;
+}
+
+/* 섹션3 */
+#sec3 h2 {
+    margin-bottom: 24px;
+}
+
+#sec3>p {
+    margin-bottom: 48px;
+}
+
+#sec h3, #sec3 li p:last-of-type {
+    margin: 24px 0;
+}
+
+#sec3 li {
+    margin-bottom: 48px;
+}
+
+#sec3 a {
+    display: flex;
+    text-align: center;
+    padding: 12px 0;
+}
+
+/* 섹션4 */
+#sec4>p {
+    margin-bottom: 24px;
+}
+
+#sec4 input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+#sec4 button {
+    padding: 12px 20px;
+}
+
+
+/*************************폰*****************************/
+nav {
+    display: none;
+}
+
 #sec1 span {
     display: none;
 }
 
-/* #sec1 img {
-    width: 100%;
-} */
-
-/* 폰 */
-nav {
-    display: none;
-}
+/*************************phone*****************************/
 
 
 /* 768이상: 테블릿, 데스크탑 */
@@ -64,11 +124,11 @@ nav {
     nav ul {
         display: flex;
     }
-    
+
     nav ul li:not(:first-child) {
         margin-left: 40px;
     }
-    
+
     #sec1>h2 {
         top: 50%;
     }
@@ -84,11 +144,36 @@ nav {
     section {
         width: 1480px;
         margin: 0 auto;
-        padding-top: 96px;
     }
+
+    /* 섹션1,2,3공통 */
+    section ul {
+        display: flex;
+    }
+
+    section li {
+        width: 355px;
+    }
+
+    section li:not(:nth-of-type(4n)) {
+        margin-right: 20px;
+    }
+
 
     /* 섹션1 */
     #sec1 div {
         height: 745px;
     }
+
+    /* 섹션2 */
+    #sec2 ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sec2 li {
+        height: 240px;
+    }
+
+    /* 섹션3 */
 }

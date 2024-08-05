@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #F4E8DF;
+    background: #F8EBDE;
 }
 
 body,
@@ -25,6 +25,7 @@ ul {
 img {
     width: 100%;
     height: auto;
+    vertical-align: top;
 }
 
 a {
@@ -32,7 +33,8 @@ a {
 }
 
 button {
-    border: 0
+    border: none;
+    cursor: pointer;
 }
 
 iframe {

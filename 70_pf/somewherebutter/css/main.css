@@ -37,6 +37,10 @@ a {
     color: #222;
 }
 
+img {
+    vertical-align: top;
+}
+
 /* 헤더 */
 header {
     display: flex;
