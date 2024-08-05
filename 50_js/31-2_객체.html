@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", ()=>{
+
+        const person = {
+            "이름": "존",
+            "성": "도",
+            "나이": 50,
+            "남자니?": true,
+            "성과이름": function(){
+                return person.이름 + " " + person.성
+                return this.이름 + " " + this.성
+            },
+            myCar: {
+                type: "Fiat",
+                model: "500",
+                color: "white"
+            }
+        };
+
+        // 요소 찾기
+        const div = document.querySelector('div');
+    
+        // 출력
+        div.innerHTML = 
+        `<b>이름은 어떻게 되세요?</b><br>
+         ${person.이름}
+          <br><b>성은어떻게 되세요?</b><br> 
+         ${person.성}
+          <br><b>나이는 어떻게 되세요?</b><br>
+         ${person.나이}
+         <br>
+         <br><b>남성분 이신가요?</b><br>
+         ${(person["남자니?"] ? "예" : "아니오")}
+         <br><b>이름을 다시 한 번 성과 함께 말해주세요?</b><br>
+         ${person.성과이름()}
+         입니다. <br><b>차를 가지고 있군뇨 ! 어떤 차인가요?</b><br>
+         ${person.myCar.type}
+          이구요. <br>모델명은
+         ${person.myCar.model}
+          이구요. <br> 색깔은
+         ${person.myCar.color}
+         입니다.`
+
+         const b = document.querySelectorAll('b');
+
+         console.log(b);
+
+         /* 
+            HTML 컬렉션 객체
+                lenght: 개수
+         */
+
+        /* 
+            객체.forEach(function(ele, idx){})
+        */
+       // 화살표 함수의 매개변수 괄호는 매개변수 1개일때만 생략할 수 있다.
+         b.forEach((x,i)=> {
+           x[i].style.color = "#333"
+           x[i].style.lineHeight = 2;
+           x[i].style.fontWeight = 'normal';
+           x[i].style.fontSize = '0.7rem';
+         });
+
+         /* 
+            for ~ of
+            for(let 변수명 of 컬렉션) {
+                변수명.코드;
+            }
+         */
+        // b요소 개수 만큼 for문을 반복한다.
+        //  for(let x of b) {
+        //    x.style.color = "#333"
+        //    x.style.lineHeight = 2;
+        //    x.style.fontWeight = 'normal';
+        //    x.style.fontSize = '0.7rem';
+        //  }
+
+         // 요소의 개수 만큼만 반복
+        //  for(let i = 0; i <= b.length; i++) {
+        //     b[i].style.color = "#333"
+        //     b[i].style.lineHeight = 2;
+        //     b[i].style.fontWeight = 'normal';
+        //     b[i].style.fontSize = '0.7rem';
+        //  }
+
+
+        console.log("객체.속성")
+        console.log(person.이름);
+        console.log(person.성);
+        console.log(person.나이);
+        console.log("객체.(메소드):");
+        console.log(person.성과이름);
+
+        console.log(객체["속성"]);
+        console.log(person["이름"]);
+        console.log(person["성"]);
+        console.log(person["나이"]);
+        console.log(person["남자니?"]);
+
+        console.log('객체.객체.속성:');
+        console.log(person.myCar.type);
+        console.log(person.myCar.model);
+        console.log(person.myCar.color);
+
+        person["이름"];
+
+
+        
+        const person5 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            "남자니?": true,
+
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            },
+            "소유하고 있는것": {
+                car: "2대",
+                home: "5채", 
+            }
+        };
+
+        person.fullname();
+
+
+        const person3 = {};
+
+        const person2 = {};
+
+        console.log(person2);
+
+        person2.이름 = "John";
+        person2.성 = "Doe";
+        person2.나이 = 50;
+        person2.eyeColor = "blue";
+
+
+        const person4 = new Object();
+
+
+        person3.이름 = "John";
+        person3.성 = "Doe";
+        person3.나이 = 50;
+        person3.eyeColor = "blue";
+
+    });
+    </script>
+</head>
+
+<body>
+    <h1>객체</h1>
+    <div>여기에 출력됩니다.</div>
+</body>
+
+</html>

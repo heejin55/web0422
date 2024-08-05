@@ -22,6 +22,7 @@ body {
 
 body,
 h1,
+h2,
 ul {
     margin: 0;
 }
@@ -82,29 +83,30 @@ header {
 }
 
 /* 섹션2_오프라인 스토어 */
-#s2 {
+#s2 h2{
+    padding: 50px 0 17px 440px;
+    font-size: 2rem;
+}
+
+/* #s2 img {
+    margin-right: 21px;
+} */
+.offline {
     display: flex;
     justify-content: center;
 }
-
-#s2 img {
-    margin-right: 21px;
-}
-
-.offline {
+.offline_text{
     width: 606px;
     height: 529px;
     background-color: #203E7F;
     color: #fff;
-}
-
-.offline_text {
-    margin-left: 57px;
+    margin-left: 21px;
 }
 
 .offline_text>div {
     font-size: 3rem;
     margin-bottom: 35px;
+    margin-left: 57px;
 
 }
 
@@ -112,4 +114,5 @@ header {
     color:#fff;
     font-size: 1.6rem;
     text-decoration: underline;
+    margin-left: 57px;
 }
