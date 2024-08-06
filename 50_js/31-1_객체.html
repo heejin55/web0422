@@ -6,145 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        window.addEventListener("DOMContentLoaded", ()=>{
+        window.addEventListener("DOMContentLoaded", () => {
 
 
-        /* 
-            객체
-                Object
+            /* 
+                객체 생성
+                    const 변수 = {
+                        속성: 값,
+                        속성: 값,
+                        속성: 값,
+                        ...
+                    };
+            */
 
-            객체 생성
-                const 변수 = {
-                    속성: 값,
-                    속성: 값,
-                    속성: 값
-                    ...
+            const person = {
+                // 속성은 ""을 묶어 사용 가능    
+                firstName: "존",
+                lastName: "도",
+                age: 50,
+                "남자니?": true,
+                성과이름: function () {
+                    // return person.firstName + " " + person.lastName
+                    // this는 객체 자신을 가리킨다.
+                    return this.firstName + " " + this.lastName
+                },
+                myCar: {
+                    type: "피아트",
+                    // 숫자 데이터의 경우 ""을 묶지 않는 것이 원칙!
+                    // 숫자형 문자 데이터의 경우는 묶을 수 있다.
+                    model: "500",
+                    color: "흰색"
                 }
-        */
+            };
 
-        // 속성은 ""을 묶어 사용 가능
-        // 숫자 데이터의 경우 ""을 묶지 않는 것이 원칙!
-        // 단, 숫자형 문자 데이터의 경우 묶을 수 있다.
-        const person = {
-            // 속성은 ""로 묶어서 사용 가능
-            "이름": "존",
-            "성": "도",
-            "나이": 50,
-            "남자니?": true,
-            "성과이름": function(){
-                return person.이름 + " " + person.성
-                // this는 객체 자신을 가리킨다.
-                return this.이름 + " " + this.성
-            },
-            myCar: {
-                type: "Fiat",
-                model: "500",
-                color: "white"
-            }
-        };
+            // 요소 찾기
+            const div = document.querySelector("div");
 
-        const div = document.querySelector('div');
-        // 출력
-        /* 
-            div의 내용으로 출력하기
-            div.innerText = "값"
-            div.innerHTML
-            div.TextContent
-        */
+            // 출력
+            /* 
+                <div>여기에 출력됩니다.</div>
+    
+                div의 내용으로 출력하기
+                    div.innerText = "값"
+                    div.textContent = "값"
+                    div.innerHTML = "값"
+            */
+            /* 
+                객체 접근 방법
+                    객체.속성
+                    객체["속성"] 
+                    
+                    객체.객체.속성
+            */
 
-        /* 
-            객체 접근 방법
-                객체.속성
-                객체["속성"]
-        */
+            div.innerHTML = "이름은 " 
+            + person.firstName
+            + " 성은 "
+            + person.lastName
+            + " 나이는 " 
+            + person.age
+            // + person.남자니? -> 에러
+            + "세<br>"
+            + "너 남자니? "
+            /* 
+                if (조건) {
+                    참
+                } else {
+                    거짓
+                }
 
-        // div요소 내용 바꾸기
-        div.innerHTML = "이름은 "
-        + person.이름
-        + " 성은 "
-        + person.성
-        + " 나이는 "
-        + person.나이
-        + "<br>"
-        + "너 남자니? "
-        + (person["남자니?"] ? "예" : "아니오")
-        + "<br>이름을 다시 한 번 성과 함께 말해주세요?<br>"
-        + person.성과이름()
-        + "입니다. 차를 가지고 있군뇨 ! 어떤 차인가요?<br>"
-        + person.myCar.type
-        + " 이구요. 모델명은 "
-        + person.myCar.model
-        + " 이구요. <br> 색깔은 "
-        + person.myCar.color
-        + "입니다."
+                조건(삼항) 연산자
+                    조건 ? 참 : 거짓
+                    true ? "예" : "아니오"
+            */
+            + (person["남자니?"] ? "예" : "아니오")
+            + "<br>이름을 다시 한 번 성과 함께 말해주세요?<br>"
+            + person.성과이름()
+            + "입니다. 차를 가지고 있군뇨! 어떤 차인가요?<br>"
+            + person.myCar.type
+            + " 이구요. 모델명은 "
+            + person.myCar.model
+            + " 이구요. <br>색깔은 "
+            + person.myCar.color
+            + "입니다."
 
 
-        console.log("객체.속성")
-        console.log(person.이름);
-        console.log(person.성);
-        console.log(person.나이);
-        // console.log(person.남자니?); -> 에러
-        console.log("객체.(메소드):");
-        console.log(person.성과이름);
+            // 속성 값 변경 및 추가
+            person.firstName = "John";
+            person.lastName = "Doe";
+            person.age = 50;
+            person.eyeColor = "blue";
+            
+            console.log(person);
 
-        console.log(객체["속성"]);
-        console.log(person["이름"]);
-        console.log(person["성"]);
-        console.log(person["나이"]);
-        console.log(person["남자니?"]);
-
-        console.log('객체.객체.속성:');
-        console.log(person.myCar.type);
-        console.log(person.myCar.model);
-        console.log(person.myCar.color);
-
-        person["이름"];
-
-
-        
-        const person5 = {
-            firstName: "John",
-            lastName: "Doe",
-            id: 5566,
-            "남자니?": true,
-            // 함수 값을 갖는 속성은 메소드이다.
-            fullName: function () {
-                // return person2.firstName + " " + person2.lastName;
-                // this는 person2를 참조한다. -> this는 person2 이다.
-                // 객체 내부의 this는 객체 자신을 가리킨다.
-                return this.firstName + " " + this.lastName;
-            },
-            "소유하고 있는것": {
-                car: "2대",
-                home: "5채", 
-            }
-        };
-
-        person.fullname();
-
-        // 객체 리터럴로 객체 생성
-        const person3 = {};
-
-        const person2 = {};
-
-        console.log(person2);
-        
-        // 속성 추가
-        person2.이름 = "John";
-        person2.성 = "Doe";
-        person2.나이 = 50;
-        person2.eyeColor = "blue";
-
-        // new 키워드로 객체 생성
-        const person4 = new Object();
-
-        // 속성 추가
-        person3.이름 = "John";
-        person3.성 = "Doe";
-        person3.나이 = 50;
-        person3.eyeColor = "blue";
-
-    });
+        }); //DOMContentLoaded
     </script>
 </head>
 
