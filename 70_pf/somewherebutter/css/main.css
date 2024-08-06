@@ -124,3 +124,7 @@ header {
     display: flex;
     justify-content: center;
 }
+
+.bxslider {
+    display: flex;
+}
