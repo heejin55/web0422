@@ -46,8 +46,8 @@ h2 {
 
 
 input, ::placeholder, button {
-  font: 1.5rem 'Noto Sans KR' 'sans-serif';
-  font-size: 1.5rem;
+  font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
 }
 
 
@@ -55,8 +55,9 @@ input, ::placeholder, button {
 .logo {
   font-size: 1.5rem;
   letter-spacing: 4px;
-  font-weight: 400;
+  font-weight: normal;
 }
+
 /* 섹션1 */
 #sec1 h2 {
   font-size: 3.6rem;  
@@ -65,6 +66,12 @@ input, ::placeholder, button {
   color: var(--white);
 }
 
+/* 섹션3 */
+#sec3 h3 {
+  font-size: 2.4rem;
+}
+
+/* 컬러 */
 a {
   color: var(--black);
 }
@@ -79,10 +86,7 @@ button {
 #sec2 h3 {
   color: var(--white);
 }
-/* 섹션3 */
-#sec3 h3 {
-  font-size: 2.4rem;
-}
+
 /* 섹션4 */
 
 /* 푸터 */
