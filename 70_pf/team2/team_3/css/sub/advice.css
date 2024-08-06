@@ -45,6 +45,15 @@ body {
     font-weight: 400;
 }
 
+#ad_s2>input {
+    font-size: 2.4rem;
+}
+
+#ad_s2>button {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 
 /* 레이아웃 */
 /* 섹션1 */
@@ -89,7 +98,16 @@ body {
 
     #ad_s2>input {
         width: 404px;
+        border: 0;
+        border-bottom: 1px solid #BEBFC5;
+        padding: 15px;
+        color: #BEBFC5;
     }
+
+    /* #ad_s2>input:focus {
+        border: none;
+        border-color: #BEBFC5;
+    } */
 
     #ad_s2>button {
         width: 180px;
@@ -97,6 +115,9 @@ body {
         background: #0032A0;
         cursor: pointer;
         border: none;
+    }
+    #ad_s2>button>img {
+        margin-right: 8px;
     }
     
     #ad_s2>h2 {
