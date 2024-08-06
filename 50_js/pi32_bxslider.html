@@ -5,29 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bxslider</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><!-- 제이쿼리 윗쪽-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script><!-- bx슬라이더 js 아래쪽-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css"><!-- bx슬라이더 css -->
+    <script>
+        // https://bxslider.com/
+        
+        /* 
+            bx슬라이더 활용법
+            1. 사이트의 HTML 코드를 <body>태그 사이에 붙여 넣기
+            2. img 태그의 이미지 경로와 파일 변경, alt속성 추가
+            3. <script> 태그 사이 제이쿼리 로드이벤트 작성 후 ->  $(() => {});
+            4. js 코드를 로드 이벤트 사이에 붙여 넣기 한다.
+            5. 제이쿼리, bxslider 라이브러리 파일을 연결한다.
+                라이브러리 파일은? cdnjs닷컴
+                가) 제이쿼리.min.js 첫번째링크 -> <script>
+                나) bx슬라이더.min.js 첫번째링크 -> <script>
+                다) bx슬라이더.min.css 다섯번째링크 -> <link>
+
+        */
+
+
+
+
+        // 로드 이벤트
+        // window.addEventListener("DOMContentLoaded", () => { });
+        // bxslider은 제이쿼리 플러그인 프로그램이다.
+        // $(document).ready(() => { });
+        $(() => {
+            $('.bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 600
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="bxslider">
-        <div><img src="../assets/R0000001Z8QU_KR.jpg" /></div>
-        <div><img src="../assets/R00000020VPN_KR.jpg" /></div>
-        <div><img src="../assets/R00000021TSS_KR.jpg" /></div>
+        <div><img src="../assets/bx_s1.jpg" alt="슬라이드 이미지1"></div>
+        <div><img src="../assets/bx_s2.jpg" alt="슬라이드 이미지2>"></div>
+        <div><img src="../assets/bx_s3.jpg" alt="슬라이드 이미지3"></div>
     </div>
-
-    <!-- 제이쿼리 라이브러리 파일 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
-    <script>
-        $('.bxslider').bxSlider({
-            mode: "fade",
-            auto: true,
-            autoControls: false,
-            stopAutoOnClick: true,
-            pager: false,
-            slideWidth: 1920
-        });
-    </script>
 </body>
 
 </html>
