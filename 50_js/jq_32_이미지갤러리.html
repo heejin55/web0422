@@ -52,7 +52,7 @@
             <a href="#">이미지3</a>
         </div>
         <div class="cont">
-            <img src="assets/pic_1.jpg" alt="이미지1">
+            <img src="../assets/pic_1.jpg" alt="이미지1">
         </div>
     </div>
 
@@ -66,16 +66,16 @@
         
         // 이벤트 처리
         btn1.click(function(){
-            cont.html ('<img src="assets/pic_1.jpg" alt="이미지1">');
+            cont.html ('<img src="../assets/pic_1.jpg" alt="이미지1">');
         });
         btn2.click(gallery);
         
         function gallery(){
-            cont.html ('<img src="assets/pic_2.jpg" alt="이미지2">');
+            cont.html ('<img src="../assets/pic_2.jpg" alt="이미지2">');
         };
 
         btn3.on('click',function(){
-            cont.html ('<img src="assets/pic_3.jpg" alt="이미지3">');
+            cont.html ('<img src="../assets/pic_3.jpg" alt="이미지3">');
         });
     </script>
 </body>
