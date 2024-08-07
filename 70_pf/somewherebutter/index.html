@@ -126,3 +126,58 @@
 </body>
 
 </html>
+<!-- 
+<div class="recommend" id="mainMakeityours">
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var makeItYoursHistory = WCKHistory.GetHistory().filter(function (item) {
+            return item.area === "P";
+        });
+
+        var makeItYours = [];
+        if (makeItYoursHistory.length > 0) {
+            if (makeItYoursHistory.length > 3) {
+                makeItYoursHistory = makeItYoursHistory.sort(function (a, b) {
+                    return b.idx - a.idx;
+                });
+            }
+            $.each(makeItYoursHistory, function (idx, item) {
+                if (makeItYours.length < 3) {
+                    makeItYours.push(item.code);
+                }
+            });
+        } else {
+            makeItYours.push("000000000");
+        };
+
+        var param = {
+            Type: 4,
+            Platform: 'pc',
+            ItemCd: makeItYours.join(',')
+        };
+
+        $.ajax({
+            async: true,
+            type: "GET",
+            data: param,
+            url: '/Product/GetMoreProductRecommendation',
+            beforeSend: function () {
+            },
+            complete: function (data) {
+                if (200 == data.status) {
+                    $('#mainMakeityours').append(data.responseText);
+                    if ($('#mainMakeityours').find("input[name='makeItYoursPrdCount']").val() < 6) {
+                        $('#mainMakeityours').hide();
+                    } else {
+                        $('#mainMakeityours').show();
+                    }
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+            }
+        });
+    });
+</script> -->
