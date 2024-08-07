@@ -1,6 +1,6 @@
 
 $(()=>{
-    $('.bxslider').bxSlider({
+    $('.new_butter_item').bxSlider({
         minSlides: 4,
         maxSlides: 5,
         slideWidth: 244,

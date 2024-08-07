@@ -75,109 +75,44 @@
     <!-- 섹션3_뉴 버터 아이템 -->
     <div id="s3">
         <h2>NEW BUTTER ITEM</h2>
-        <ul class="bxslider">
-            <li><img src="assets/slider1.png" alt="Skashi long sleeve knit - light blue">></li>
-            <li><img src="assets/slider2.png" alt="Skashi long sleeve knit - ivory"></li>
-            <li><img src="assets/slider3.png" alt="Lottie Bag - Baby Blue"></li>
-            <li><img src="assets/slider4.png" alt="Fle Chain Wallet - Baby Blue"></li>
-            <li><img src="assets/slider5.png" alt="Fle Chain Wallet - Butter"></li>
-            <li><img src="assets/slider6.png" alt="Fle Chain Wallet - Black"></li>
-            <li><img src="assets/slider7.png" alt="Lottie Bag - Peach"></li>
-            <!-- <li><img src="http://placehold.it/170x200&text=FooBar8" /></li> -->
-        </ul>
-
         <ul class="new_butter_item">
             <li>
-                <!-- <a href="#"><img src="assets/slider1.png" alt="Skashi long sleeve knit - light blue"></a> -->
+                <img src="assets/slider1.png" alt="Skashi long sleeve knit - light blue">
                 <a href="#">8th / 8.21 출고<br>Skashi long sleeve knit - light blue</a>
                 <a href="#">89,000원</a>
             </li>
             <li>
-                <!-- <a href="#"><img src="assets/slider2.png" alt="Skashi long sleeve knit - ivory"></a> -->
+                <img src="assets/slider2.png" alt="Skashi long sleeve knit - ivory">
                 <a href="#">7th / 8.21 출고<br>Skashi long sleeve knit - ivory</a>
                 <a href="#">89,000원</a>
             </li>
             <li>
-                <!-- <a href="#"><img src="assets/slider3.png" alt="Lottie Bag - Baby Blue"></a> -->
+                <img src="assets/slider3.png" alt="Lottie Bag - Baby Blue">
                 <a href="#">Lottie Bag - Baby Blue</a>
                 <a href="#">11,9000원</a>
             </li>
             <li>
-                <!-- <a href="#"><img src="assets/slider4.png" alt="Fle Chain Wallet - Baby Blue"></a> -->
+                <img src="assets/slider4.png" alt="Fle Chain Wallet - Baby Blue">
                 <a href="#">Fle Chain Wallet - Baby Blue</a>
                 <a href="#">79,000원</a>
             </li>
             <li>
-                <!-- <a href="#"><img src="assets/slider5.png" alt="Fle Chain Wallet - Butter"></a> -->
+                <img src="assets/slider5.png" alt="Fle Chain Wallet - Butter">
                 <a href="#">Fle Chain Wallet - Butter</a>
                 <a href="#">79,000원</a>
             </li>
             <li>
-                <!-- <a href="#"><img src="assets/slider6.png" alt="Fle Chain Wallet - Black"></a> -->
+                <img src="assets/slider6.png" alt="Fle Chain Wallet - Black">
                 <a href="#">Fle Chain Wallet - Black</a>
                 <a href="#">79,000원</a>
             </li>
             <li>
-                <!-- <a href="#"><img src="assets/slider7.png" alt="Lottie Bag - Peach"></a> -->
+                <img src="assets/slider7.png" alt="Lottie Bag - Peach">
                 <a href="#">Lottie Bag - Peach</a>
                 <a href="#">11,9000원</a>
             </li>
         </ul>
+
 </body>
 
 </html>
-<!-- 
-<div class="recommend" id="mainMakeityours">
-
-</div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var makeItYoursHistory = WCKHistory.GetHistory().filter(function (item) {
-            return item.area === "P";
-        });
-
-        var makeItYours = [];
-        if (makeItYoursHistory.length > 0) {
-            if (makeItYoursHistory.length > 3) {
-                makeItYoursHistory = makeItYoursHistory.sort(function (a, b) {
-                    return b.idx - a.idx;
-                });
-            }
-            $.each(makeItYoursHistory, function (idx, item) {
-                if (makeItYours.length < 3) {
-                    makeItYours.push(item.code);
-                }
-            });
-        } else {
-            makeItYours.push("000000000");
-        };
-
-        var param = {
-            Type: 4,
-            Platform: 'pc',
-            ItemCd: makeItYours.join(',')
-        };
-
-        $.ajax({
-            async: true,
-            type: "GET",
-            data: param,
-            url: '/Product/GetMoreProductRecommendation',
-            beforeSend: function () {
-            },
-            complete: function (data) {
-                if (200 == data.status) {
-                    $('#mainMakeityours').append(data.responseText);
-                    if ($('#mainMakeityours').find("input[name='makeItYoursPrdCount']").val() < 6) {
-                        $('#mainMakeityours').hide();
-                    } else {
-                        $('#mainMakeityours').show();
-                    }
-                }
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-
-            }
-        });
-    });
-</script> -->
