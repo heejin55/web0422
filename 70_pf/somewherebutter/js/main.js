@@ -5,6 +5,7 @@ $(()=>{
         maxSlides: 7,
         slideWidth: 243,
         slideMargin: 11,
-        moveSlides: 1
+        moveSlides: 1,
+        pager: false
       });
 });
