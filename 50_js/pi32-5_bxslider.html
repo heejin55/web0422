@@ -5,35 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bxslider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <style>
+        #slide_wrap {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 1140px;
+            border: 1px solid lime;
+        }
+
+        /* 이전/다음 버튼 */
+        .bx-wrapper .bx-controls-direction a {
+            /* 크기 */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            /* 기존 bx슬라이더의 여백 초기화 (기본값: -16px) */
+            margin-top: 0;
+            background: #c0c0c0 url(../assets/dessert39/btn-slider-arrow-white.svg) no-repeat 50%/35px;
+        }
+
+        /* 이전 */
+        .bx-wrapper .bx-controls-direction a.bx-prev {
+            left: -120px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        /* 다음 */
+        .bx-wrapper .bx-controls-direction a.bx-next {
+            right: -120px;
+        }
+
+        /* 다음 버튼 호버시 사라지는 현상 초기화 */
+        .bx-wrapper .bx-prev:focus,
+        .bx-wrapper .bx-prev:hover {
+            background-position: 50%;
+        }
+        .bx-wrapper .bx-next:focus,
+        .bx-wrapper .bx-next:hover {
+            background-position: 50%;
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
 
     <script>
         $(() => {
             $('.bxslider').bxSlider({
                 auto: true,
-                autoControls: true,
+                // autoControls: true,
                 stopAutoOnClick: true,
-                pager: true,
-                slideWidth: 600
+                pager: false,
+
+                // bx슬라이더의 캐러셀 옵션
+                slideWidth: 270, // ->슬라이드 아이템 1개 가로 크기, (기본값: 0)
+                // minSlides: 1, // 반응형, 최소 슬라이드 수(기본값: 1)
+                maxSlides: 5, // 반응형, 최소 슬라이드 수 (기본값: 1)
+                moveSlides: 1, // 1개의 슬라이드 이동 (기본값: 0)
+                slideMargin: 20 // 슬라이드 사이 간격 (기본값: 0)
+
             });
         });
     </script>
 </head>
 
 <body>
-    <div class="bxslider">
-        <div><img src="../assets/dessert39/cas1.png" alt="멀티캐러셀 이미지1"></div>
-        <div><img src="../assets/dessert39/cas2.png" alt="멀티캐러셀 이미지2>"></div>
-        <div><img src="../assets/dessert39/cas3.png" alt="멀티캐러셀 이미지3"></div>
-        <div><img src="../assets/dessert39/cas4.png" alt="멀티캐러셀 이미지4"></div>
-        <div><img src="../assets/dessert39/cas5.png" alt="멀티캐러셀 이미지5"></div>
-        <div><img src="../assets/dessert39/cas6.png" alt="멀티캐러셀 이미지6"></div>
-        <div><img src="../assets/dessert39/cas7.png" alt="멀티캐러셀 이미지7"></div>
-        <div><img src="../assets/dessert39/cas8.png" alt="멀티캐러셀 이미지8"></div>
-        <div><img src="../assets/dessert39/cas9.png" alt="멀티캐러셀 이미지9"></div>
-        <!-- <div><img src="../assets/dessert39/cas10.png" alt="멀티캐러셀 이미지10"></div> -->
+    <div id="slide_wrap">
+        <div class="bxslider">
+            <div><img src="../assets/dessert39/cas1.png" alt="멀티캐러셀 이미지1"></div>
+            <div><img src="../assets/dessert39/cas2.png" alt="멀티캐러셀 이미지2>"></div>
+            <div><img src="../assets/dessert39/cas3.png" alt="멀티캐러셀 이미지3"></div>
+            <div><img src="../assets/dessert39/cas4.png" alt="멀티캐러셀 이미지4"></div>
+            <div><img src="../assets/dessert39/cas5.png" alt="멀티캐러셀 이미지5"></div>
+            <div><img src="../assets/dessert39/cas6.png" alt="멀티캐러셀 이미지6"></div>
+            <div><img src="../assets/dessert39/cas7.png" alt="멀티캐러셀 이미지7"></div>
+            <div><img src="../assets/dessert39/cas8.png" alt="멀티캐러셀 이미지8"></div>
+            <div><img src="../assets/dessert39/cas9.png" alt="멀티캐러셀 이미지9"></div>
+            <!-- <div><img src="../assets/dessert39/cas10.png" alt="멀티캐러셀 이미지10"></div> -->
+        </div>
     </div>
 </body>
 
