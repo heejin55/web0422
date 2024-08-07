@@ -1,23 +1,20 @@
 @charset "utf-8";
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-/* 공통 */
+/* 공통(리셋) */
 * {
     box-sizing: border-box;
 }
 
-html {
-    background: #FCF8EB;
-    font-size: 10px;
-}
-
 * {
     border: 1px solid lime;
-}
-
-body {
-    font: 1.5rem Pretendard, sans-serif;
 }
 
 body,
@@ -41,6 +38,38 @@ img {
     vertical-align: top;
 }
 
+/* 폰트(타이포) */
+body {
+    font: 1.5rem/1.6 'Pretendard-Regular', sans-serif;
+}
+
+html {
+    background: #FCF8EB;
+    font-size: 10px;
+}
+
+.main>li>a {
+    font-size: 1.5rem;
+}
+
+#s2 h2{
+    font-size: 2rem;
+}
+
+#s3>h2 {
+    font-size: 4rem;
+}
+
+.offline_text{
+    background-color: #203E7F;
+    color: #fff;
+}
+
+.offline_text>a{
+    color:#fff;
+}
+
+
 /* 헤더 */
 header {
     display: flex;
@@ -63,7 +92,6 @@ header {
 }
 .main>li>a {
     margin-right: 33px;
-    font-size: 1.5rem;
 }
 
 
@@ -89,7 +117,6 @@ header {
 /* 섹션2_오프라인 스토어 */
 #s2 h2{
     padding: 50px 0 17px 458px;
-    font-size: 2rem;
 }
 
 .offline {
@@ -99,8 +126,6 @@ header {
 .offline_text{
     width: 606px;
     height: 529px;
-    background-color: #203E7F;
-    color: #fff;
     margin-left: 21px;
     padding: 220px 0;
 }
@@ -113,7 +138,6 @@ header {
 }
 
 .offline_text>a{
-    color:#fff;
     font-size: 1.6rem;
     text-decoration: underline;
     margin-left: 57px;
