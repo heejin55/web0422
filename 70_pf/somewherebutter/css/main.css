@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font: 1.2rem Pretendard, sans-serif;
+    font: 1.5rem Pretendard, sans-serif;
 }
 
 body,
@@ -120,7 +120,18 @@ header {
 }
 
 /* 섹션3_뉴 버터 아이템 */
-.new_butter_item {
-    display: flex;
-    justify-content: center;
+#s3 {
+    padding: 80px 0 266px 0;
+}
+
+#s3>h2 {
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: none;
+    margin: 0 auto;
 }
