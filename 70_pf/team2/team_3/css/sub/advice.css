@@ -57,7 +57,6 @@ body {
 
 /* 레이아웃 */
 /* 섹션1 */
-@media (min-width: 992px) {
     #ad_s1 {
         margin: 0 auto;
         width: 1024px;
@@ -122,5 +121,32 @@ body {
     
     #ad_s2>h2 {
         margin-bottom: 33px;
+    }
+
+    /* 섹션3 */
+    #ad_s3 .ad_cont>p{
+        display: inline;
+    }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 360px) {
+
+    #ad_s2 {
+        text-align: center;
+        padding: 60px 93px;
+    }
+
+    #ad_s2>input {
+        width: 290px;
+        margin-bottom: 27px;
+    }
+
+    #ad_s2>button {
+        width: 292px;
+        height: 52px;
+        padding: 18px 0;
     }
 }
