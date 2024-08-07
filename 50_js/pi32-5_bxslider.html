@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxslider</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+
+    <script>
+        $(() => {
+            $('.bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 600
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div><img src="../assets/bx_s1.jpg" alt="슬라이드 이미지1"></div>
+        <div><img src="../assets/bx_s2.jpg" alt="슬라이드 이미지2>"></div>
+        <div><img src="../assets/bx_s3.jpg" alt="슬라이드 이미지3"></div>
+    </div>
+</body>
+
+</html>
