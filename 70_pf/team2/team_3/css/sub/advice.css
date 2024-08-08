@@ -65,9 +65,6 @@ body {
         position: relative;
         margin-top: 19px;
     }
-    #ad_s1 img {
-        max-width: 100%;
-    }
     
     #ad_s1>h2 {
         position: absolute;
@@ -134,7 +131,6 @@ body {
         margin: 0 53px 22px 0;
     }
 
-    
 
 
 
@@ -142,12 +138,27 @@ body {
 
     /* 미디어쿼리_테블릿 */
 @media (min-width: 768px) {
+    #ad_s1 h2,
+    #ad_s1 p {
+        position: static;
+    }
+    
+    #ad_s1>h2 {
+        padding: 33px 0 23px 23px;
+    }
 
+    #ad_s1>p{
+        padding: 0 0 23px 23px;
+    }
 }
 
 
     /* 미디어쿼리_폰 */
 @media (min-width: 360px) {
+    #ad_s1 h2,
+    #ad_s1 p {
+        position: static;
+    }
 
     #ad_s2 {
         text-align: center;
