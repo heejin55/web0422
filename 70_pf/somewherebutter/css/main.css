@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -25,7 +26,8 @@ ul {
     margin: 0;
 }
 
-ul, li {
+ul,
+li {
     padding: 0;
     list-style: none;
 }
@@ -59,7 +61,7 @@ html {
     font-size: 1.2rem;
 }
 
-#s2 h2{
+#s2 h2 {
     font-size: 2rem;
 }
 
@@ -81,21 +83,21 @@ html {
     font-size: 2rem;
 }
 
-#s4 .s4_contText p:nth-of-type(2){
+#s4 .s4_contText p:nth-of-type(2) {
     font-size: 3rem;
     font-weight: 700;
 }
 
-#s4 .s4_contText p:nth-of-type(3){
+#s4 .s4_contText p:nth-of-type(3) {
     font-size: 3rem;
     font-weight: 500;
 }
 
-#s4 .s4_contText p:nth-of-type(4){
+#s4 .s4_contText p:nth-of-type(4) {
     font-size: 1.2rem;
 }
 
-#s4 .s4_contText p:nth-of-type(5){
+#s4 .s4_contText p:nth-of-type(5) {
     font-size: 1.4rem;
 }
 
@@ -105,8 +107,8 @@ html {
     color: #fff;
 }
 
-.offline_text>a{
-    color:#fff;
+.offline_text>a {
+    color: #fff;
 }
 
 #s3 .new_butter_item a:nth-of-type(2) {
@@ -135,6 +137,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .main>li {
     margin-right: 40px;
 }
@@ -148,7 +151,7 @@ header {
 } */
 
 /* 폰트어썸_아이콘 */
-.fa_icon a{
+.fa_icon a {
     font-size: 20px;
     margin-left: 20px;
 }
@@ -161,7 +164,7 @@ header {
 }
 
 /* 섹션2_오프라인 스토어 */
-#s2 h2{
+#s2 h2 {
     padding: 50px 0 17px 458px;
 }
 
@@ -169,7 +172,8 @@ header {
     display: flex;
     justify-content: center;
 }
-.offline_text{
+
+.offline_text {
     width: 606px;
     height: 529px;
     margin-left: 21px;
@@ -183,7 +187,7 @@ header {
 
 }
 
-.offline_text>a{
+.offline_text>a {
     font-size: 1.6rem;
     text-decoration: underline;
     margin-left: 57px;
@@ -225,7 +229,7 @@ header {
     position: relative;
     background-image: url(../assets/s4_bg_test.png);
     background-attachment: fixed;
-    background-size : cover;
+    background-size: cover;
 }
 
 /* #s4 ::before {
@@ -287,40 +291,27 @@ header {
     justify-content: space-between;
     width: 100%;
     height: 55px;
-    animation: textBar 1s infinite;
     /* margin-right: 756px; */
 }
 
+.slideTextBar div {
+    animation: textBar 5s infinite;
+    animation-play-state: running;
+}
+
 @keyframes textBar {
-    0% {
-        left: 0%;
+    from {
+        transform: translateX(0);
     }
 
-    10% {
-        left: -100%;
+    to {
+        transform: translateX(-50%);
+    }
+    from {
+        transform: translateX(0%);
     }
 
-    33% {
-        left: -100%;
-    }
-
-    43% {
-        left: -200%;
-    }
-
-    66% {
-        left: -200%;
-    }
-
-    76% {
-        left: -300%;
-    }
-
-    99.99% {
-        left: -300%;
-    }
-
-    100% {
-        left: 0%;
+    to {
+        transform: translateX(-50%);
     }
 }
