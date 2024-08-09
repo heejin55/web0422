@@ -7,7 +7,8 @@
     <title>햄버거버튼</title>
 
     <style>
-        .container {
+        .collapsedMenuIcon {
+            position: absolute;
             display: inline-block;
             cursor: pointer;
         }
@@ -37,7 +38,24 @@
 
 <script>
     window.addEventListener("DOMContentLoaded", ()=>{
-        function myFunction(x) {
+        const collapsedMenuIcon = document.querySelector('.collapsedMenuIcon');
+
+        //이벤트 처리~
+        collapsedMenuIcon.onclick = () => {
+            // 함수호출~
+            btnMotion(event.currentTarget) /* event.currentTarget는 이벤트 함수내에서 객체 자신! */
+        };
+        
+
+        // myFunction(this);
+        // 이벤트 함수 내에서 this는 window이다.
+        // console.log(collapsedMenuIcon);
+        // console.log(event.currentTarget);
+
+        // 호이스팅
+        // 함수 선언(정의)
+        function btnMotion(x) {
+            // x객체가 체인지 있으면 제거, 아니면 추가 (토글->추가 아님 제거)
         x.classList.toggle("change");
     }
     });
@@ -46,7 +64,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="collapsedMenuIcon">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>

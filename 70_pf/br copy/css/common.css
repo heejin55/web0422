@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/* 인풋,버튼,플레이스 홀더는 글자색, 크기, 글꼴 상속 X!!!
+단, a태그는 글자 크기는 상속 받음 컬러는 안받음
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  /* --변수명: 값; 
+    사용
+        속성: var(--변수명);
+  */
+  --black: #FF7A00;
+  --gray1: #111;
+  --gray3: #333;
+  --graya: #aaa;
+  --grayc: #ccc;
+  --white: #fff;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.5rem;
+  color: #3D332E;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "NanumSquareNeo", sans-serif;
+}
+
+/* 섹션 제목 */
+h2 {
+  font-size: 2.4rem;
+}
+
+
+input, ::placeholder, button {
+  font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* 헤더 */
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+
+/* 섹션1 */
+#sec1 h2 {
+  font-size: 3.6rem;  
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+/* 섹션3 */
+#sec3 h3 {
+  font-size: 2.4rem;
+}
+
+/* 컬러 */
+a {
+  color: var(--black);
+}
+button {
+  color: var(--white);
+}
+
+#sec1 b {
+  color: var(--white);
+}
+/* 섹션2 */
+#sec2 h3 {
+  color: var(--white);
+}
+
+/* 섹션4 */
+
+/* 푸터 */
+footer {
+  color: var(--white);
+}
+
+/* 배경색 */
+header {
+  background: var(--white);
+}
+
+#sec1 b {
+    background: rgba(255, 177, 8, 0.768);
+}
+
+#sec1 div {
+    background: var(--grayc);
+}
+
+#sec2 h3 {
+  background: var(--black);
+}
+
+#sec2 div{
+  background: #FFF9D5;
+}
+
+#sec3 div {
+  background: var(--grayc);
+}
+
+#sec3 a {
+  background: var(--white);
+}
+
+#sec4 button {
+  background: var(--graya);
+}
+
+#sec4 .map {
+  background: var(--grayc);
+}
+
+footer{
+  background:  var(--black);
+}

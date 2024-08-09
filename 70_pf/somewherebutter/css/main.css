@@ -80,13 +80,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 40px;
     /* width: 100%; */
     height: auto;
 }
 
 .logo {
     text-align: center;
-    padding: 33px 0;
 }
 
 /* 내비게이션 */
@@ -94,7 +94,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 40px;
 }
 .main>li {
     padding: 35px 0;
@@ -114,9 +113,7 @@ header {
     font-size: 20px;
     margin-left: 20px;
 }
-.fa_icon:last-child{
-    margin-right: 40px;
-}
+
 
 /* 섹션1_비디오 */
 #s1 video {
