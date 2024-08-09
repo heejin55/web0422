@@ -172,9 +172,6 @@ nav.change {
 @media (min-width: 768px) {
 
     /* 내비게이션 */
-    /* nav {
-        display: block;
-    } */
     nav {
         z-index: -1;
         position: static;
@@ -247,7 +244,6 @@ nav.change {
         width: 77.77%;
         /* width: 1480px; */
         margin: 0 auto;
-        border: 1px solid red;
     }
 
     /* 섹션1 */
