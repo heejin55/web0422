@@ -115,9 +115,51 @@ footer {
 }
 
 /*///////////////// 폰 ////////////////*/
-nav {
-    display: none;
+/* 햄버거 버튼 */
+.collapsedMenuIcon {
+    display: inline-block;
+    cursor: pointer;
 }
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 3px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*///////////////// 폰 ////////////////*/
+nav {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: -65%;
+    width: 65%;
+    height: 100vh;
+    background: #f3e5e5;
+    transition: .3s ease-out;
+}
+
+nav.change {
+    right: 0;
+}
+
 
 #sec1 span {
     display: none;
@@ -130,8 +172,27 @@ nav {
 @media (min-width: 768px) {
 
     /* 내비게이션 */
-    nav {
+    /* nav {
         display: block;
+    } */
+    nav {
+        z-index: -1;
+        position: static;
+        top: 0;
+        right: -65%;
+        width: auto;
+        height: auto;
+        background: transparent;
+        transition: .3s ease-out;
+    }
+    
+    nav.change {
+        right: 0;
+    }
+    
+    
+    #sec1 span {
+        display: none;
     }
 
     nav ul {
@@ -140,6 +201,10 @@ nav {
 
     nav ul li {
         margin-left: 40px;
+    }
+    
+    .collapsedMenuIcon {
+        display: none;
     }
 
     /* 섹션1 */
@@ -166,7 +231,7 @@ nav {
     #sec4 .map {
         height: 420px;
     }
-    
+
 }
 
 /* 992이상: 데스크탑 */
