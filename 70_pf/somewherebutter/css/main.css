@@ -184,13 +184,27 @@ header {
 
 /* 섹션4_썸웨어버터 컬렉션 */
 #s4 {
+    height: 830px;
+    position: relative;
     background-image: url(../assets/s4_bg.png);
     background-size : cover;
 }
 
+/* #s4 ::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 40%;
+} */
+
+
+
 #s4>div {
     display: flex;
-    position: relative;
 }
 
 .s4_contText {
