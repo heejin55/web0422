@@ -74,6 +74,11 @@ html {
     font-size: 1.6rem;
 }
 
+.s2_bg_ta,
+.s2_bg_ph {
+    display: none;
+}
+
 #s3>h2 {
     font-size: 4rem;
     font-weight: 200;
@@ -228,6 +233,7 @@ header {
 
 /* 섹션4_썸웨어버터 컬렉션 */
 #s4 {
+    width: 100vw;
     margin: 260px 0 93px 0;
     height: 830px;
     position: relative;
@@ -235,19 +241,6 @@ header {
     background-attachment: fixed;
     background-size: cover;
 }
-
-/* #s4 ::before {
-    position: absolute;
-    content: "";
-    background-color: #fff;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    opacity: 40%;
-} */
-
-
 
 #s4>div {
     display: flex;
@@ -366,7 +359,7 @@ header {
         display: none;
     }
 
-    .fa-instagram {
+    header .fa-instagram {
         display: none;
     }
 
@@ -397,10 +390,116 @@ header {
     .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
     }
+
+    #s2 h2 {
+        display: none;
+    }
+
+    #s2 .s2_bg_ta {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+
+    #s2 .s2_bg,
+    #s2 .s2_bg_ph {
+        display: none;
+    }
+
+    #s2 .offline {
+        position: relative;
+        margin: 70px 0 139px 0;
+    }
+
+    #s2 .offline_text {
+        background-color: transparent;
+        position: absolute;
+        left: -60px;
+        bottom: -170px;
+    }
+
+    #s4 {
+        position: relative;
+        height: 331px;
+        background-image: url(../assets/s4_bg_test.png) 0 0/contain;
+        background-attachment: fixed;
+    }
+
+    #s4 img{
+        max-width: 297px;
+        max-height: 215px;
+    }
+
+    #s4>div {
+        top: 63px;
+        left: 69px;
+    }
+
+    #s4 .s4_contImages {
+        padding-left: 35px;
+    }
+
+    #s4 .s4_contText p:nth-of-type(1) {
+        font-size: 8px;
+        margin: 0;
+    }
+    
+    #s4 .s4_contText p:nth-of-type(2) {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    
+    #s4 .s4_contText p:nth-of-type(3) {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    
+    #s4 .s4_contText p:nth-of-type(4) {
+        font-size: 4px;
+        margin-bottom: 7px;
+    }
+    
+    #s4 .s4_contText p:nth-of-type(5) {
+        font-size: 6px;
+    }
+
+    /* footer .slideTextBar {
+        flex-wrap: wrap;
+    } */
+
+    footer .footer_cs2, .footer_gide {
+        display: none;
+    }
+
+    footer .footer_icon img, 
+    footer .footer_icon p {
+        display: none;
+    }
+
+    footer .fa-instagram {
+        position: absolute;
+        bottom: -170px;
+        left: 400px;
+    }
+
+    footer .footer_icon {
+        width: 0;
+        border: none;
+        padding: 0;
+    }
+
+    footer .footer_cs_bank {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border: none;
+    }
 }
 
 /*  --------------------폰----------------- */
-@media (min-width: 360px) {
+@media (max-width: 360px) {
     nav {
         display: none;
         ;
@@ -436,5 +535,14 @@ header {
 
     .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .s2_bg_ph {
+        display: inline-block;
+    }
+
+    .s2_bg,
+    .s2_bg_ta {
+        display: none;
     }
 }
