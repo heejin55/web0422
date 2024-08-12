@@ -22,10 +22,7 @@ ul {
 img {
     width: 100%;
     height: 100%;
-    /* contain은 100% 이미지가 잘림없이 보여지며, 빈공간이 생길 수 있음 */
-    /* cover은 빈공간이 생기지 않지만, 이미지 일부가 잘릴 수 있다. */
     object-fit: cover;
-    /* object-position: x위치, y위치 */
     object-position: 50% 0%;
     vertical-align: top;
 }
@@ -82,7 +79,6 @@ h2 {
     font-size: 2.4rem;
 }
 
-
 input,
 ::placeholder,
 button {
@@ -117,7 +113,7 @@ body {
 }
 
 header {
-    background:#fff;
+    background: #fff;
 }
 
 a {
@@ -165,7 +161,7 @@ a {
     color: #121212
 }
 
-#sec3 ul a{
+#sec3 ul a {
     color: #FF9700;
     border: 1px solid #FF9700;
 }
@@ -335,7 +331,6 @@ footer {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-/*///////////////// 폰 ////////////////*/
 nav {
     z-index: -1;
     position: absolute;
@@ -345,21 +340,26 @@ nav {
     height: 100vh;
     background: #f3e5e5;
     transition: .3s ease-out;
+    padding: 50px 20px;
+}
+
+/* 폰 메뉴 */
+nav li {
+    padding: 10px;
 }
 
 nav.change {
     right: 0;
 }
 
-
 #sec1 span {
     display: none;
 }
 
-/*////////////////////////////////////*/
+/*///////////////// 폰 ////////////////*/
 
 
-/* 768이상: 테블릿 */
+/* 768: 테블릿 */
 @media (min-width: 768px) {
 
     /* 내비게이션 */
@@ -372,12 +372,12 @@ nav.change {
         height: auto;
         background: transparent;
         transition: .3s ease-out;
+        padding: 0;
     }
 
-    nav.change {
-        right: 0;
+    nav li {
+        padding: 0;
     }
-
 
     #sec1 span {
         display: none;
@@ -407,7 +407,6 @@ nav.change {
     }
 
     section li {
-        /* calc(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 한다. */
         width: calc(50% - 15px);
     }
 
@@ -422,18 +421,29 @@ nav.change {
 
 }
 
-/* 992이상: 데스크탑 */
+/* 992: 데스크탑 */
 @media (min-width: 992px) {
 
+    nav {
+        z-index: -1;
+        position: static;
+        top: 0;
+        right: -65%;
+        width: auto;
+        height: auto;
+        background: transparent;
+        transition: .3s ease-out;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 0;
+    }
+
+
     /* 섹션 공통 */
-    /* 
-        환산? 전체: 1920, 콘텐츠: 1480 
-        문> 1480은 1920 중에 몇 %인가?
-            1480 / 1903 * 100 = 77.77%
-    */
     section {
         width: 77.77%;
-        /* width: 1480px; */
         margin: 0 auto;
     }
 
@@ -444,7 +454,6 @@ nav.change {
 
     /* 섹션2,3 공통 */
     section li {
-        /* calc(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 한다. */
         width: calc(25% - 15px);
     }
 
@@ -456,11 +465,6 @@ nav.change {
     #sec1 div {
         height: 745px;
     }
-
-    /*  섹션2 */
-    /* #sec2 li {
-        height: 240px;
-    } */
 
     /* 섹션4 */
     #sec4 .map {
