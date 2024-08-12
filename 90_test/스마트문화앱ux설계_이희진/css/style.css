@@ -1,11 +1,198 @@
 @charset "utf-8";
-@import url("reset.css");
-@import url("common.css");
+
+/* 리셋 */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    /* contain은 100% 이미지가 잘림없이 보여지며, 빈공간이 생길 수 있음 */
+    /* cover은 빈공간이 생기지 않지만, 이미지 일부가 잘릴 수 있다. */
+    object-fit: cover;
+    /* object-position: x위치, y위치 */
+    object-position: 50% 0%;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* 공통 영역 */
 html {
     scroll-behavior: smooth;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+    color: #121212;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+    color: #121212;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "NanumSquareNeo", sans-serif;
+}
+
+/* 섹션 제목 */
+h2 {
+    font-size: 2.4rem;
+}
+
+
+input,
+::placeholder,
+button {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* 헤더 */
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: normal;
+}
+
+/* 섹션1 */
+#sec1 h2 {
+    font-size: 3.6rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+/* 섹션3 */
+#sec3 h3 {
+    font-size: 2.4rem;
+}
+
+
+/* 컬러 및 백그라운드 */
+body {
+    background-color: #fff;
+}
+
+header {
+    background:#fff;
+}
+
+a {
+    color: #006dcd;
+}
+
+#sec1 b {
+    color: #fff;
+    background: #006dcdc7;
+}
+
+#sec1 div {
+    background: #fff;
+}
+
+#sec1 h2 {
+    color: #fff;
+}
+
+#sec2 h2,
+#sec3 h2,
+#sec4 h2 {
+    color: #006dcdc7;
+}
+
+#sec2 h3 {
+    color: #fff;
+    background: #121212;
+}
+
+#sec3 div {
+    background: #fff;
+}
+
+#sec3>p>a {
+    color: #FF9700;
+    background: transparent;
+}
+
+#sec3 a {
+    background: #fff;
+}
+
+#sec3 h3 {
+    color: #121212
+}
+
+#sec3 ul a{
+    color: #FF9700;
+    border: 1px solid #FF9700;
+}
+
+#sec3 ul li>p:nth-of-type(1) {
+    color: #FF9700;
+}
+
+#sec4 p {
+    color: #FF9700;
+}
+
+#sec4 button {
+    color: #fff;
+    background: #FF9700;
+}
+
+#sec4 .map {
+    background: #fff;
+}
+
+footer {
+    color: #fff;
+    background: #006dcd;
+}
+
+/* 레이아웃 */
 
 /* 헤더 */
 header {
@@ -84,6 +271,10 @@ section li {
     display: block;
     text-align: center;
     padding: 12px 0;
+}
+
+#sec3>p>a {
+    text-align: start;
 }
 
 /* 섹션4 */
@@ -182,12 +373,12 @@ nav.change {
         background: transparent;
         transition: .3s ease-out;
     }
-    
+
     nav.change {
         right: 0;
     }
-    
-    
+
+
     #sec1 span {
         display: none;
     }
@@ -199,7 +390,7 @@ nav.change {
     nav ul li {
         margin-left: 40px;
     }
-    
+
     .collapsedMenuIcon {
         display: none;
     }
