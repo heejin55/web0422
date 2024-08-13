@@ -41,6 +41,7 @@ img {
     vertical-align: top;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 /* 폰트(타이포) */
@@ -290,22 +291,47 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 55px;
 }
 
 .textBar span {
     position: relative;
-    animation: marquee 5s linear infinite;
+    width: 100%;
+    margin-right: 100px;
+    animation: marquee 5s infinite;
 }
 
 @keyframes marquee {
     0% {
-        left: 0;
+        left: 0%;
     }
 
-    100% {
+    /* 10% {
         left: -100%;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    43% {
+        left: -200%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    76% {
+        left: -300%;
+    }
+
+    99.9% {
+        left: -300%;
+    } */
+
+    100% {
+        left: 100%;
     }
 
 }
