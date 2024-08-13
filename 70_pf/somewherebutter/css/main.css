@@ -39,6 +39,8 @@ a {
 
 img {
     vertical-align: top;
+    max-width: 100%;
+    height: auto;
 }
 
 /* 폰트(타이포) */
@@ -293,6 +295,7 @@ header {
 }
 
 .textBar span {
+    position: relative;
     animation: marquee 5s linear infinite;
 }
 
