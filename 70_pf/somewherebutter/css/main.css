@@ -296,7 +296,7 @@ header {
 
 .textBar span {
     position: relative;
-    width: 100%;
+    width: 300%;
     margin-right: 100px;
     animation: marquee 5s infinite;
 }

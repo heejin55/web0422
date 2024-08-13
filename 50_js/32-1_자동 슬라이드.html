@@ -46,7 +46,7 @@
         }
     </style>
 
-    <!-- <script>
+    <script>
         window.addEventListener("DOMContentLoaded", () => {
             // 요소 찾기
             const slide = document.querySelector("#slideWrap");
@@ -60,6 +60,7 @@
             const speed = 2000;
 
             // 슬라이드 개수
+            // length 속성은 nodeList(HTML 컬렉션)의 개수
             const slideCount = slideListItemImg.length + 1;
             console.log(slideCount);
 
@@ -67,21 +68,53 @@
             const slideWidth = 50;
             const slideHeight = 50;
 
+            // 함수호출
             slideSize();
 
             function slideSize() {
                 // 슬라이드 크기
+                //slide는 #slideWrap(div)
                 slide.style.width = slideWidth + "%";
                 slide.style.height = slideHeight + "%";
+
+                // slideList는 ul
                 slideList.style.width = 100 * slideCount + "%";
                 slideList.style.height = 100 + "%";
-                for (x of slideListItem) {
+
+                /* 
+                    0번 li -> w:100%;
+                    1번 li -> w:100%;
+                    2번 li -> w:100%;
+                    3번 li -> w:100%;
+                    -------
+                    결론은 4번 반복
+                    for(let i = 0, i < slideListItem.lenght + 1; 1++) {
+                    코드;
+                    }
+                */
+                // for (let i = 0; i < slideListItem.length; i++) {
+                //     slideListItem[i].style.width = 100 + '%';
+                // }
+
+                // 반복문!!! 슬라이드 이미지 반복(ver.ES6)
+                /* 
+                    for(const 변수 of HTML컬렉션)
+                */
+                for (const x of slideListItem) {
                     x.style.width = 100 + "%";
                 }
             }
 
             // ul의 첫 번째 요소 ul끝에 복제 (반드시 크기를 지정하고 복제해야 한다!)
-            slideList.appendChild(slideList.firstElementChild.cloneNode(true));
+            /* 
+                1. 객체.appendChild() -> 메소드, 요소 잘라서 맨 끝에 요소 추가
+                2. 객체.cloneNode() -> 메소드
+                3. firstElementChild -> 객체, 첫 번째 자식 요소
+            
+            */
+           //첫 번째 li 요소를 잘라서 ul 끝에 추가
+            //  slideList.appendChild(slideListItem[0]);
+             slideList.appendChild(slideList.firstElementChild.cloneNode(true));
 
             // 2초 마다 자동 슬라이드 함수 호출
             setInterval(autoSlide, speed);
@@ -90,7 +123,7 @@
             function autoSlide() {
                 idx++;
                 slideList.style.left = -100 * idx + "%";
-                slideList.style.transition = "1s";
+                slideList.style.transition = speed / 2000 + "s";
 
                 if (idx === slideCount) {
                     idx = 0;
@@ -99,13 +132,13 @@
                     setTimeout(() => {
                         idx = 1;
                         slideList.style.left = -100 * idx + "%";
-                        slideList.style.transition = "1s";
+                        slideList.style.transition = speed / 2000 + "s";
                     }, 0);
                 }
             }
         });
 
-    </script> -->
+    </script>
 </head>
 
 <body>
