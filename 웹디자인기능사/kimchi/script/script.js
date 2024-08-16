@@ -1,19 +1,16 @@
 
-
 $(() => {
-
     // 슬라이드
     let idx = 0;
-            setInterval(autoSlide, 1000);
+            setInterval(autoSlide, 2000);
             function autoSlide() {
 
                 // IDX 0 -> 1 -> 2 -> 0
-                (idx === 2) ? idx = 0 : idx++;
+                idx === 2 ? (idx = 0) : idx++;
 
-                // 1in, 0out -> 2in, 1out -> 0in, 2 out
-                $("#slide li").eq(idx).animate({ opacity: 1 }, 1000, function () {
+                $("#slide li").eq(idx).fadeIn(1000, function () {
                     if (idx === 0) idx = 3;
-                    $("#slide li").eq(idx - 1).animate({ opacity: 0 }, 1000);
+                    $("#slide li").eq(idx - 1).fadeOut(1000);
                     if (idx === 3) idx = 0;
                 });
             }
