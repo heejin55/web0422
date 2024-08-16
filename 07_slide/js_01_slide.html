@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드 - 가로</title>
+    <style>
+        /* 초기화 */
+        body,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+        /* 슬라이드 */
+        #slide {
+            width: 400px;
+            /* height: 350px;
+            overflow: hidden; */
+        }
+
+        #slide ul {
+            position: relative;
+            /* left: -100% -> -200% -> -300% -> 0 */
+            left: 0;
+            display: flex;
+            width: 400%;
+        }
+
+    </style>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- 제이쿼리 UI 라이브러리 -->
+    <script src="jquery-ui.min.js"></script>
+    <!-- https://api.jqueryui.com/easings/ -->
+    <script>
+        $(() => {
+            // 요소 찾기
+            const slideList = $('#slide ul');
+
+            slideList.animate({left: "-200%"}, 1000, "easeOutExpo");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="slide">
+        <ul>
+            <li><a href="#"><img src="slide1.jpg" alt="슬라이드 이미지1"></a></li>
+            <li><a href="#"><img src="slide2.jpg" alt="슬라이드 이미지2"></a></li>
+            <li><a href="#"><img src="slide3.jpg" alt="슬라이드 이미지3"></a></li>
+            <li><a href="#"><img src="slide1.jpg" alt="슬라이드 이미지1"></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
