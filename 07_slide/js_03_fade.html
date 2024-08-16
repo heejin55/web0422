@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드 - 페이드</title>
+    <style>
+        /* 초기화 */
+        body,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+            height: 350px;
+            vertical-align: top;
+            object-fit: cover;
+        }
+
+        /* 슬라이드 */
+        #slide {
+            height: 350px;
+            /* overflow: hidden; */
+            
+        }
+
+        #slide ul {
+            position: relative;
+            /* top: -100% -> -200% -> -300% -> 0 */
+            top: 0;
+            height: 1050px;
+            /* 350px의 3배 */
+        }
+
+        #slide li {
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+        }
+    </style>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            let idx = 0;
+            setInterval(autoSlide, 1000);
+            function autoSlide() {
+
+                // IDX 0 -> 1 -> 2 -> 0
+                (idx === 2) ? idx = 0 : idx++;
+
+                // 1in, 0out -> 2in, 1out -> 0in, 2 out
+                $("#slide li").eq(idx).animate({ opacity: 1 }, 1000, function () {
+                    if (idx === 0) idx = 3;
+                    $("#slide li").eq(idx - 1).animate({ opacity: 0 }, 1000);
+                    if (idx === 3) idx = 0;
+                });
+            }
+        });
+
+        /*
+             객체.show([시간], [가속도], [콜백함수]) ~ 나타남
+                객체.hide([시간], [가속도], [콜백함수]) ~ 사라짐
+                객체.toggle([시간], [가속도], [콜백함수]) ~ 나타남/사라짐 번갈아 반복
+                객체.slideDown([시간], [가속도], [콜백함수]) ~ 위에서 아래로 서서히 나타남
+                객체.slideUp([시간], [가속도], [콜백함수]) ~ 아래서 위로 서서히 사라짐
+                객체.slideToggle([시간], [가속도], [콜백함수])
+                객체.fadeIn([시간], [가속도], [콜백함수]) ~ 서서히 나타남
+                객체.fadeOut([시간], [가속도], [콜백함수]) ~ 서서히 사라짐
+                객체.fadeToggle([시간], [가속도], [콜백함수])
+
+                객체.animate({속성: 값, ...}, [시간], [가속도], [콜백함수])
+                    시간은 생략하면 400
+                    가속도는 생략하면 swing
+                    콜백함수는 메소드 실행후 실행할 함수 기록!
+        */
+    </script>
+</head>
+
+<body>
+    <div id="slide">
+        <ul>
+            <li><a href="#"><img src="slide1.jpg" alt="슬라이드 이미지1"></a></li>
+            <li><a href="#"><img src="slide2.jpg" alt="슬라이드 이미지2"></a></li>
+            <li><a href="#"><img src="slide3.jpg" alt="슬라이드 이미지3"></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
