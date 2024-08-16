@@ -24,8 +24,8 @@
         /* 슬라이드 */
         #slide {
             width: 400px;
-            /* height: 350px;
-            overflow: hidden; */
+            height: 350px;
+            overflow: hidden;
         }
 
         #slide ul {
@@ -33,13 +33,13 @@
             /* left: -100% -> -200% -> -300% -> 0 */
             left: 0;
             display: flex;
-            width: 400%;
+            width: 300%;
         }
 
     </style>
     <!-- 제이쿼리 라이브러리 -->
     <script src="jquery-3.7.1.min.js"></script>
-    <!-- 제이쿼리 UI 라이브러리 -->
+    <!-- 제이쿼리 UI 라이브러리 (animate 메소드의 가속도, 배경색)-->
     <script src="jquery-ui.min.js"></script>
     <!-- https://api.jqueryui.com/easings/ -->
     <script>
@@ -47,7 +47,26 @@
             // 요소 찾기
             const slideList = $('#slide ul');
 
-            slideList.animate({left: "-200%"}, 1000, "easeOutExpo");
+            // 자동 슬라이드
+            /* 
+                setInterval(함수, 시간) ~ 일정 시간 간격으로 함수 실행
+                setTimeout(함수, 시간) ~ 일정 시간 후 1번 함수 실행
+            */
+
+            // 위치 변수 선언
+            let idx = 0;
+
+            // 1초마다 autoSlide 호출
+            setInterval(autoSlide, 1000);
+            function autoSlide(){
+                // if (idx === 3) {
+                //     idx = 0;
+                // } else {
+                //     idx++;
+                // }
+                (idx === 2) ? idx = 0 : idx++;
+                slideList.animate({left: idx * -100 + '%'});
+            }
         });
     </script>
 </head>
@@ -58,7 +77,6 @@
             <li><a href="#"><img src="slide1.jpg" alt="슬라이드 이미지1"></a></li>
             <li><a href="#"><img src="slide2.jpg" alt="슬라이드 이미지2"></a></li>
             <li><a href="#"><img src="slide3.jpg" alt="슬라이드 이미지3"></a></li>
-            <li><a href="#"><img src="slide1.jpg" alt="슬라이드 이미지1"></a></li>
         </ul>
     </div>
 </body>
