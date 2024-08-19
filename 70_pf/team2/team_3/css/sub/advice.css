@@ -150,9 +150,21 @@ body {
     padding: 125px 0 32px 0;
 }
 
-#ad_s4>ul {
+#ad_s4 ul {
     display: flex;
     justify-content: center;
+}
+
+#ad_s4 ul li {
+    padding: 10px;
+}
+
+#ad_s4 .tabs>div {
+    display: none;
+}
+
+#ad_s4 .tabs .on {
+    display: block;
 }
 
 /* 섹션5_캐러셀 */
