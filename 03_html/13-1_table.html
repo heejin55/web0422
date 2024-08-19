@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블2</title>
+    <style>
+        table {
+            width: 300px;
+            height: 300px;
+            border: 1px solid lime;
+            border-collapse: collapse;
+            /* 
+                table과 td 사이 경계
+                    border-collapse: separate; (기본값)
+                    border-collapse: collapse; 붕괴
+             */
+        }
+
+        td {
+            border: 1px solid red;
+        }
+
+        tr:first-child td:first-child {
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        tr:nth-child(2) td:first-child {
+            text-align: right;
+            vertical-align: top;
+            /* border: 5px solid lavender; */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        테이블(표)의 기분 구조
+        <table> : 블록레벨요소이며 display: table;
+            <tr> : 블록레벨요소이며 display: table-row;
+                <td></td> : 블록레벨요소이며 display: table-cell;
+                            행을 합칠 경우 : rowspan="값"
+                            열을 합칠 경우 : colspan="값"
+            </tr>
+
+            <thead> : 테이블 헤더
+            <tbody> : 테이블 바디
+            <tfoot> : 테이블 푸터
+        </table>
+    -->
+            <table>
+                <tr>
+                    <!-- 1행 1열과 1행 2열을 합치기 -->
+                    <td colspan="2">1</td>
+                    <!-- 1행 3열과 2행 3열을 합치기 -->
+                    <td rowspan="2">3</td>
+                </tr>
+                <tr>
+                    <!-- 2행1열과 3행1열을 합치기 -->
+                    <td rowspan="2">4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <!-- 3행 2열과 3행 3열을 합치기 -->
+                    <td colspan="2">8</td>
+                </tr>
+            </table>
+</body>
+</html>
