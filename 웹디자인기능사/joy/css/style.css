@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: #333333;
+    background: #fff;
+}
+
+body,
+h1,
+p,
+ul {
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+/* 헤더 */
+header {
+    width: 200px;
+    height: 850px;
+}
+/* 로고 */
+h1 {
+    height: 200px;
+}
+/* 내비게이션 */
+.gnb .sub {
+    display: none;
+}
+
+/* 콘텐츠 */
+.wrap {
+    width: calc(100% - 200px);
+}
+
+.slide {
+    height: 400px;
+}
+
+.banner {
+    height: 200px;
+}
+
+.tabs {
+    height: 250px;
+}
+
+footer {
+    height: 100px;
+}

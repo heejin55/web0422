@@ -5,12 +5,12 @@ $(() => {
   const cont1 = $('#ad_s4 .tabs>div').eq(0);
   const cont2 = $('#ad_s4 .tabs>div').eq(1);
 
-  btn1.clik(() => {
+  btn1.click(() => {
     cont1.css({display: 'block'});
     cont2.css({display: 'none'});
   });
 
-  btn2.clik(() => {
+  btn2.click(() => {
     cont2.css({display: 'block'});
     cont1.css({display: 'none'});
   });
