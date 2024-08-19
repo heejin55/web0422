@@ -1,0 +1,23 @@
+포토샵 환경설정
+ -> window > workspace > Essentials > Reset Essentials
+
+이미지 가져오기
+ -> open > 새로운 창으로 열기
+    placs > 현재창에 이미지 가져오기
+
+일반 레이어를 스마트 오브젝트 레이어로 변형하는 방법
+ -> 마우스 오른쪽 클릭 > Convert to Smart Object > 손상을 줄일 수 있다.(백터)
+
+백그라운드를 일반 레이어로 변경하는 방법
+  -> 백그라운드 옆 자물쇠를 클릭하면 쉽게 일반 레이어로 변경할 수 있다.
+
+불투명도
+ -> Opacity > 모든 기능에 불투명도 적용
+    Fill > 레이어 스타일로 만든 콘텐츠에는 불투명도 적용x
+
+전경색/배경색 칠하기
+ -> 전경색 > alt+Del
+    배경색 > ctrl+Del
+
+새 레이어로 병합
+ -> ctrl + shfit + alt + e
