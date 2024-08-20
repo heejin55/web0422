@@ -92,17 +92,58 @@ h1 {
 
 .slide {
     height: 400px;
+    overflow: hidden;
     background: lavender;
 }
 
 .slide>ul {
-    display: flex;
-    overflow: hidden;
+    position: relative;
+    height: 400%;
+    animation: slide 2s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0%);
+    }
+    10% {
+        transform: translateY(-25%);
+    }
+    33% {
+        transform: translateY(-25%);
+    }
+    43% {
+        transform: translateY(-50%);
+    }
+    66% {
+        transform: translateY(-50%);
+    }
+    76% {
+        transform: translateY(-75%);
+    }
+    99.99% {
+        transform: translateY(-75%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.link {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .banner {
+    display: flex;
     height: 200px;
+    align-items: center;
     background: lavenderblush;
+}
+
+.banner img {
+    padding: 30px;
 }
 
 .tabs {
