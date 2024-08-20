@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
+    <title>메가커피</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/notice.css">
 </head>
 
 <body>
     <!-- 헤더 -->
     <header>
         <h1 class="logo">
-            <a href="#"><b>MB</b>MegaBox</a>
+            <a href="../index.html"><b>MB</b>MegaBox</a>
         </h1>
         <!-- 내비게이션 -->
         <nav>
@@ -20,7 +21,7 @@
                 <li><a href="#sec2">영화</a></li>
                 <li><a href="#sec3">이벤트</a></li>
                 <li><a href="#sec4">고객센터</a></li>
-                <li><a href="sub/notice.html">공지사항</a></li>
+                <li><a href="notice.html">공지사항</a></li>
             </ul>
         </nav>
 
@@ -30,35 +31,38 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-
     </header>
-    <div>
-        <span>MEGA NEWS</span>
-        <h2>MEGA NOTICE</h2>
-        <!-- 브레드 크럼(Breadcrumb)이란 주로 페이지 상단 좌측에 자리하여 유저가 웹사이트 내에서 어디에 있는지 알려주는 네비게이션 텍스트 입니다 -->
-        <div>
-            <ul>
-                <li><a href="../index.html">홈</a></li>
-                <li><a href="notice.html">메가소식</a></li>
-                <li><a href="notice.html">공지사항</a></li>
-            </ul>
+
+    <!-- 탑 영역-->
+    <div id="top">
+        <!-- #top을 flex 적용하면 .inner을 수직 중앙 배치할 수 있다. -->
+        <div class="inner">
+            <span>MEGA NEWS</span>
+            <h2>MEGA NOTICE</h2>
+            <div>
+                    <a href="../index.html">홈</a>
+                    <a href="notice.html">메가소식</a>
+                    <a href="notice.html">공지사항</a>
+            </div>
+                </div>
         </div>
-    </div>
-    <section>
+    <section id="notice">
         <h2>메가MGC커피 공지사항</h2>
         <p>메가MGC커피 소식을 알려드립니다.</p>
         <!-- *.jsp(자바 서버 페이지)는 백엔드 개발 -->
         <form action="notice.jsp">
-            <select name="" id="">
-                <option value="">제목</option>
-                <option value="">내용</option>
-                <option value="">작성자</option>
-            </select>
-            <input type="search" placeholder="검색어를 입력하세요">
-            <input type="submit" placeholder="검색">
+            <div>
+                <select name="" id="">
+                    <option value="">제목</option>
+                    <option value="">내용</option>
+                    <option value="">작성자</option>
+                </select>
+                <input type="search" placeholder="검색어를 입력하세요">
+            </div>
+                <input type="submit" placeholder="검색">
         </form>
         <!-- 공지사항 게시판 -->
-        <table>
+        <table id="board">
             <th>번호</th>
             <th>제목</th>
             <th>글쓴이</th>
@@ -66,34 +70,34 @@
             <th>조회</th>
             <tr>
                 <td>공지</td>
-                <td>메가MGC커피 원두 관련 공지</td>
-                <td>메가MGC커피</td>
-                <td>2023-02-21</td>
-                <td>1703</td>
+                <td><a href="#">메가MGC커피 원두 관련 공지</a></td>
+                <td><a href="#">메가MGC커피</a></td>
+                <td><a href="#">2023-02-21</a></td>
+                <td><a href="#">1703</a></td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>탄소중립실천포인트제 8월 인센티브 지급 일정 조정 안내</td>
-                <td>메가MGC커피</td>
-                <td>2024-08-02</td>
-                <td>359</td>
+                <td><a href="#">탄소중립실천포인트제 8월 인센티브 지급 일정 조정 안내</a></td>
+                <td><a href="#">메가MGC커피</a></td>
+                <td><a href="#">2024-08-02</a></td>
+                <td><a href="#">359</a></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>메가MGC커피 영양성분표 (24.07.25ver)</td>
-                <td>메가MGC커피</td>
-                <td>2024-07-03</td>
-                <td>601</td>
+                <td><a href="#">메가MGC커피 영양성분표 (24.07.25ver)</a></td>
+                <td><a href="#">메가MGC커피</a></td>
+                <td><a href="#">2024-07-03</a></td>
+                <td><a href="#">601</a></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>탄소중립실천포인트제 도입 안내</td>
-                <td>메가MGC커피</td>
-                <td>2023-03-16</td>
-                <td>1812</td>
+                <td><a href="#">탄소중립실천포인트제 도입 안내</a></td>
+                <td><a href="#">메가MGC커피</a></td>
+                <td><a href="#">2023-03-16</a></td>
+                <td><a href="#">1812</a></td>
             </tr>
         </table>
-        <div>
+        <div class="paging">
             <a href="#">처음</a>
             <a href="#">1</a>
             <a href="#">마지막</a>

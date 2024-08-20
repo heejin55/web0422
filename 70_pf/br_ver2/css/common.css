@@ -45,9 +45,11 @@ h2 {
 }
 
 
-input, ::placeholder, button {
+input,
+::placeholder,
+button {
   font-family: "Noto Sans KR", sans-serif;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 
@@ -58,9 +60,26 @@ input, ::placeholder, button {
   font-weight: normal;
 }
 
+#top h2 {
+  font-size: 3.2rem;
+  color: var(--black);
+}
+
+#top span {
+  font-size: 1.8rem;
+}
+
+#top a {
+  font-size: 1.4rem;
+}
+
+#notice h2 {
+  font-size: 3.2rem;
+}
+
 /* 섹션1 */
 #sec1 h2 {
-  font-size: 3.6rem;  
+  font-size: 3.6rem;
   letter-spacing: 4px;
   font-weight: 400;
   color: var(--white);
@@ -75,43 +94,38 @@ input, ::placeholder, button {
 a {
   color: var(--black);
 }
-button {
-  color: var(--white);
-}
 
-#sec1 b {
-  color: var(--white);
-}
-/* 섹션2 */
-#sec2 h3 {
-  color: var(--white);
-}
-
-/* 섹션4 */
-
-/* 푸터 */
+button,
+#top,
+#top a, 
+#sec1 b,
+#sec2 h3,
 footer {
   color: var(--white);
 }
 
 /* 배경색 */
+#top {
+  background: var(--gray3);
+}
+
 header {
   background: var(--white);
 }
 
 #sec1 b {
-    background: rgba(255, 177, 8, 0.768);
+  background: rgba(255, 177, 8, 0.768);
 }
 
 #sec1 div {
-    background: var(--grayc);
+  background: var(--grayc);
 }
 
 #sec2 h3 {
   background: var(--black);
 }
 
-#sec2 div{
+#sec2 div {
   background: #FFF9D5;
 }
 
@@ -131,6 +145,19 @@ header {
   background: var(--grayc);
 }
 
-footer{
-  background:  var(--black);
+footer {
+  background: var(--black);
+}
+
+/* 992이상: 데스크탑 */
+@media (min-width: 992px) {
+  #top h2 {
+    font-size: 6rem;
+    color: var(--black);
+  }
+  
+  #top span {
+    font-size: 2.4rem;
+  }
+
 }

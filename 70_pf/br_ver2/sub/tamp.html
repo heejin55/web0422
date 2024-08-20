@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
+    <title>서브탬플릿</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.svg">
+    <link rel="stylesheet" href="../css/tamp.css">
 </head>
 
 <body>
     <!-- 헤더 -->
     <header>
         <h1 class="logo">
-            <a href="#"><b>MB</b>MegaBox</a>
+            <a href="../index.html"><b>MB</b>MegaBox</a>
         </h1>
         <!-- 내비게이션 -->
         <nav>
@@ -20,7 +21,7 @@
                 <li><a href="#sec2">영화</a></li>
                 <li><a href="#sec3">이벤트</a></li>
                 <li><a href="#sec4">고객센터</a></li>
-                <li><a href="sub/notice.html">공지사항</a></li>
+                <li><a href="notice.html">공지사항</a></li>
             </ul>
         </nav>
 
@@ -32,17 +33,19 @@
         </div>
     </header>
 
-    <div>
-        <span>MEGA NEWS</span>
-        <h2>MEGA NOTICE</h2>
-        <div>
-            <ul>
-                <li><a href="../index.html">홈</a></li>
-                <li><a href="notice.html">메가소식</a></li>
-                <li><a href="notice.html">공지사항</a></li>
-            </ul>
+    <!-- 탑 영역-->
+    <div id="top">
+        <!-- #top을 flex 적용하면 .inner을 수직 중앙 배치할 수 있다. -->
+        <div class="inner">
+            <span>MEGA NEWS</span>
+            <h2>MEGA NOTICE</h2>
+            <div>
+                    <a href="../index.html">홈</a>
+                    <a href="notice.html">메가소식</a>
+                    <a href="notice.html">공지사항</a>
+            </div>
+                </div>
         </div>
-    </div>
     <section>
 
     </section>
