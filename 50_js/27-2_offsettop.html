@@ -23,6 +23,10 @@
             left: 200px;
             top: 200px;
         }
+
+        button {
+            transform: translateX(100px) translateY(100px);
+        }
     </style>
     <script>
         window.addEventListener("DOMContentLoaded", () => {
@@ -35,9 +39,11 @@
             const div = document.querySelector("div");
             const buttonEle = document.querySelector("button");
 
-            // 버튼을 클리하면 div의 위치 이동
+            // 버튼을 클릭하면 div가 버튼 가까이 위치 이동
             buttonEle.onclick = ()=>{
-                div.classList.add("move");
+                // div.classList.add("move");
+                div.style.left = buttonEle.offsetLeft + 'px';
+                div.style.top = buttonEle.offsetTop + 'px';
             };
 
             console.log("top:", div.offsetTop);

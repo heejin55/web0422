@@ -179,8 +179,12 @@ h1 {
     border-bottom: 1px solid #000;
 }
 
-#tab2 {
+#tab1, #tab2 {
     display: none;
+}
+
+.on {
+    display: block;
 }
 
 #tab2 ul {
