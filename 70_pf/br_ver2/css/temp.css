@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
     padding-top: 54px;
     text-align: center;
     line-height: 1;
@@ -33,26 +33,6 @@ header {
 #top a+a::before {
     content: "〉";
     margin: 0 12px;
-}
-
-/* 섹션 */
-#notice {
-    text-align: center;
-}
-#notice>p {
-    margin: 32px 0;
-}
-#notice .paging {
-    margin-top: 20px;
-}
-#notice .paging a {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 6px 10px;
-}
-#notice .paging a:nth-child(2) {
-    background: #352461;
-    color: #fff;
 }
 
 /* 푸터 */
@@ -107,75 +87,6 @@ nav.change {
     right: 0;
 }
 
-/* 섹션 */
-#notice {
-    padding: 48px 20px;
-}
-
-/* 검색 폼 */
-#notice form div {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-}
-#notice select {
-    flex: 0 0 29.5%;
-    height: 40px;
-    vertical-align: top;
-    border: 1px solid #ddd;
-}
-#notice [type="search"] {
-    flex: 0 0 69.5%;
-    height: 40px;
-    vertical-align: top;
-    border: 1px solid #ddd;
-}
-#notice [type="submit"] {
-    display: block;
-    width: 100%;
-    background: #352461;
-    color: #fff;
-    padding: 6px 0;
-    margin: 8px 0 48px 0;
-}
-
-#board tr:hover {
-    background: #f1f1f1;
-}
-#board th {
-    padding: 12px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-#board th:nth-of-type(2) {
-    width: 260px;
-}
-#board td {
-    padding: 16px 0;
-    border-bottom: 1px solid #ddd;
-}
-#board td:nth-of-type(2) a {
-    padding-right: 16px;
-    display: block;
-    /* ... 생략 효과 */
-    width: 260px;
-    overflow:hidden;
-    text-overflow: ellipsis;
-    text-wrap: nowrap;
-}
-#board td:nth-of-type(2) a:hover {
-    text-decoration: underline;
-}
-
-/* 
-    odd(홀수), 2n-1, 2n+1
-    even(짝수), 2n
-*/
-
-#board th:nth-of-type(odd), #board td:nth-of-type(2n-1) {
-    display: none;
-}
-
 /*////////////////////////////////////*/
 
 
@@ -202,10 +113,6 @@ nav.change {
 
     .collapsedMenuIcon {
         display: none;
-    }
-
-    #top {
-        height: 400px;
     }
 
 }

@@ -2,7 +2,6 @@
 @import url("reset.css");
 @import url("common.css");
 
-/* 공통 영역 */
 
 /* 헤더 */
 header {
@@ -22,14 +21,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
     padding-top: 54px;
+    height: 300px;
     text-align: center;
     line-height: 1;
 }
+
 #top h2 {
     margin: 20px 0 40px 0;
 }
+
 #top a+a::before {
     content: "〉";
     margin: 0 12px;
@@ -39,19 +40,23 @@ header {
 #notice {
     text-align: center;
 }
+
 #notice>p {
     margin: 32px 0;
 }
+
 #notice .paging {
     margin-top: 20px;
 }
+
 #notice .paging a {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 6px 10px;
 }
-#notice .paging a:nth-child(2) {
-    background: #352461;
+
+#notice .paging a:nth-child(2){
+    background: #FF7A00;
     color: #fff;
 }
 
@@ -62,10 +67,9 @@ footer {
 }
 
 /*///////////////// 폰 ////////////////*/
-/* 모바일 버튼 */
+/* 햄버거 버튼 */
 .collapsedMenuIcon {
     display: inline-block;
-    right: 30px;
     cursor: pointer;
 }
 
@@ -92,6 +96,7 @@ footer {
     transform: translate(0, -11px) rotate(45deg);
 }
 
+/*///////////////// 폰 ////////////////*/
 nav {
     z-index: -1;
     position: absolute;
@@ -99,12 +104,17 @@ nav {
     right: -65%;
     width: 65%;
     height: 100vh;
-    background: red;
-    transition: .3s ease-in-out;
+    background: #f3e5e5;
+    transition: .3s ease-out;
 }
 
 nav.change {
     right: 0;
+}
+
+
+#sec1 span {
+    display: none;
 }
 
 /* 섹션 */
@@ -112,29 +122,33 @@ nav.change {
     padding: 48px 20px;
 }
 
-/* 검색 폼 */
+/* 검색폼 */
 #notice form div {
     display: flex;
     justify-content: space-between;
     text-align: left;
 }
+
 #notice select {
     flex: 0 0 29.5%;
     height: 40px;
     vertical-align: top;
     border: 1px solid #ddd;
 }
+
 #notice [type="search"] {
     flex: 0 0 69.5%;
     height: 40px;
     vertical-align: top;
     border: 1px solid #ddd;
 }
+
 #notice [type="submit"] {
     display: block;
     width: 100%;
-    background: #352461;
+    background: #FF7A00;
     color: #fff;
+    border: none;
     padding: 6px 0;
     margin: 8px 0 48px 0;
 }
@@ -142,37 +156,44 @@ nav.change {
 #board tr:hover {
     background: #f1f1f1;
 }
-#board th {
+
+#board th{
     padding: 12px 0;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+
 #board th:nth-of-type(2) {
     width: 260px;
 }
+
 #board td {
     padding: 16px 0;
     border-bottom: 1px solid #ddd;
 }
+
 #board td:nth-of-type(2) a {
     padding-right: 16px;
     display: block;
-    /* ... 생략 효과 */
+
     width: 260px;
-    overflow:hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
 }
+
 #board td:nth-of-type(2) a:hover {
     text-decoration: underline;
 }
 
+/* 섹션 */
 /* 
-    odd(홀수), 2n-1, 2n+1
-    even(짝수), 2n
+    odd (홀수), 2n-1, 2n+1
+    even (짝수), 2n
 */
 
-#board th:nth-of-type(odd), #board td:nth-of-type(2n-1) {
+#board th:nth-of-type(odd),
+#board td:nth-of-type(2n-1){
     display: none;
 }
 
@@ -184,12 +205,23 @@ nav.change {
 
     /* 내비게이션 */
     nav {
-        display: block;
+        z-index: -1;
         position: static;
+        top: 0;
+        right: -65%;
         width: auto;
         height: auto;
         background: transparent;
-        transition: none;
+        transition: .3s ease-out;
+    }
+    
+    nav.change {
+        right: 0;
+    }
+    
+    
+    #sec1 span {
+        display: none;
     }
 
     nav ul {
@@ -199,7 +231,7 @@ nav.change {
     nav ul li {
         margin-left: 40px;
     }
-
+    
     .collapsedMenuIcon {
         display: none;
     }

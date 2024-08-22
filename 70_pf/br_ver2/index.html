@@ -8,18 +8,20 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+    <script src="js/mlang.js" type="module"></script>
 </head>
 
 <body>
+    <!-- https://www.w3schools.com/w3css/tryw3css_templates_architect.htm -->
     <!-- https://www.megabox.co.kr/ -->
     <!-- 헤더 -->
     <header>
         <!-- 로고 -->
         <h1 class="logo">
-            <a href="#"><b>MB</b>MegaBox</a>
+            <a href="#"><b>엠비</b><span>메가박스</span></a>
         </h1>
         <!-- 내비게이션 -->
-        <nav>
+        <nav class="gnb">
             <ul>
                 <li><a href="#sec2">영화</a></li>
                 <li><a href="#sec3">이벤트</a></li>
@@ -28,8 +30,13 @@
             </ul>
         </nav>
 
-         <!-- 햄버거 버튼 -->
-         <div class="collapsedMenuIcon">
+        <select name="" id="">
+            <option value="ko">KOR</option>
+            <option value="en">ENG</option>
+        </select>
+
+        <!-- 모바일 버튼 -->
+        <div class="collapsedMenuIcon">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -37,7 +44,7 @@
     </header>
     <!-- 섹션1 -->
      <section id="sec1">
-        <h2><b>MB</b><span>MegaBox</span></h2>
+        <h2><b>엠비</b><span>메가박스</span></h2>
         <div><img src="assets/main_banner.jpg" alt="메인 베너 이미지"></div>
      </section>
     <!-- 섹션2 -->
@@ -113,7 +120,7 @@
                 <h3>톡학생증으로 톡똑한 영화관람!</h3>
                 <p>2023.09.01(금)~2024.08.31(토)</p>
                 <p>톡학생증 발급하면 주중에는 무조건 영화 1만원, 톡학생증 발급하면 주말, 공휴일에도 영화 1.1만원, 메가박스가 처음이라면? 언제든 영화 9천원 관람! 보다 자세한 사항은 아래
-                    자세히 보기 버튼 누르면 확인하실 수 있습니다.</p>
+                    자세히 보기 버튼 누르면 확인하실 수...</p>
                 <a href="#">자세히 보기</a>
             </li>
         </ul>
