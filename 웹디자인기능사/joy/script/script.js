@@ -3,6 +3,12 @@
     const nav = $('.gnb>ul')
     const sub = $('.sub>li>a')
 
+    // 슬라이드
+    $('.slide li a:gt(0)').hide();
+
+    setInterval(() => {
+        $('.slide li a:first-child').fadeOut(1000).next('a').fadeIn(1000);
+    })
     
 
     // 탭
