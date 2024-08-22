@@ -51,12 +51,13 @@ h1 {
 /* 내비게이션 */
 
 .gnb>ul>li>a {
+    color: #fff;
     padding: 20px;
     display: block;
     text-align: center;
     background: #000;
 }
-.gnb>ul>li>a:hover,
+.gnb>ul>li:hover a,
 .gnb>ul>li>a:focus {
     background: #333333;
 }
@@ -97,37 +98,89 @@ h1 {
     overflow: hidden;
 }
 
-.slide>ul>li {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    /* animation: slide 2s infinite; */
+.slide ul {
+    height: 100%;
 }
 
-@keyframes slide {
+.slide li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide li {
+    opacity: 0;
+}
+.slide li:first-child {
+    opacity: 1;
+}
+
+/* 애니메이션 */
+.slide li:nth-of-type(1) {
+    animation: slide1 3s infinite;
+}
+.slide li:nth-of-type(2) {
+    animation: slide2 3s infinite;
+}
+.slide li:nth-of-type(3) {
+    animation: slide3 3s infinite;
+}
+
+@keyframes slide1 {
     0% {
-        transform: translateY(0%);
+        opacity: 0;
     }
     10% {
-        transform: translateY(-25%);
+        opacity: 1;
     }
     33% {
-        transform: translateY(-25%);
+        opacity: 1;
     }
     43% {
-        transform: translateY(-50%);
-    }
-    66% {
-        transform: translateY(-50%);
-    }
-    76% {
-        transform: translateY(-75%);
-    }
-    99.99% {
-        transform: translateY(-75%);
+        opacity: 0;
     }
     100% {
-        transform: translateY(0%);
+        opacity: 0;
+    }
+}
+@keyframes slide2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    43% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes slide3 {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    76% {
+        opacity: 1;
+    }
+    99.99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -146,6 +199,31 @@ h1 {
 
 .banner img {
     padding: 30px;
+}
+
+.pop {
+    font-size: 20px;
+    width: 300px;
+    height: 500px;
+    background: rgb(255, 186, 218);
+    text-align: center;
+    position: absolute;
+    padding: 70px;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50% -50%);
+    display: none;
+}
+.pop li:first-child {
+    margin-bottom: 20px;
+}
+
+.pop li:nth-of-type(2) {
+    text-decoration: underline;
+}
+
+button {
+    margin-top: 40px;
 }
 
 .tabs {
@@ -179,12 +257,9 @@ h1 {
     border-bottom: 1px solid #000;
 }
 
-#tab1, #tab2 {
-    display: none;
-}
 
 .on {
-    display: block;
+    display: none;
 }
 
 #tab2 ul {
