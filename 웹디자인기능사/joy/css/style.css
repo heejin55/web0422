@@ -56,18 +56,9 @@ h1 {
 }
 
 /* 내비게이션 */
-.gnb>ul {
-    transition: all 2s;
-}
 
-.sub {
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s;
-    height: 0;
-    padding: 10px 0 20px;
-    line-height: 2;
+.gnb>ul>li:hover>a{
+    background: #ccc;
 }
 
 .gnb>ul>li:hover .sub {
@@ -90,18 +81,21 @@ h1 {
 }
 
 .sub {
-    display: none;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    line-height: 2;
 }
 
 .gnb>ul>li:hover .sub {
     display: block;
-}
-
-.sub>ul>li:hover a,
-.sub>ul>li>a:focus {
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
     background: #fe8;
 }
-
 
 .sub li {
     text-align: center;
