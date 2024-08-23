@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+nav {
+    border: 2px solid greenyellow;
+}
+nav div {
+    border: 2px solid greenyellow;
+    display: inline;
+    inset-inline-end: 40px;
+    
+}
+section {
+    border: 2px solid greenyellow;
+}
+footer {
+    border: 2px solid greenyellow;
+}
