@@ -177,9 +177,20 @@ body {
     display: none;
 }
 
-
 #ad_s4 .tabs .on {
     display: block;
+}
+
+#ad_s4 #tab1>ul>li>span,
+#ad_s4 #tab2>ul>li>span {
+    display: block;
+    margin-bottom: 18px;
+    color:#000
+}
+
+#ad_s4 #tab1>ul>li,
+#ad_s4 #tab2>ul>li {
+    margin-right: 20px;
 }
 
 
@@ -215,16 +226,26 @@ body {
         justify-content: center;
         display: grid;
     }
+
+    #ad_s4 {
+        width: 768px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+
+    #ad_s4 .tabs>ul {
+        border: none;
+    }
+
+    #ad_s4 #tab1 ul{
+        width: 500px;
+        flex-wrap: wrap;
+    }
 }
 
 
 /* 미디어쿼리_폰 */
 @media (max-width: 360px) {
-
-    #ad_s1 h2,
-    #ad_s1 p {
-        position: static;
-    }
 
     #ad_s2 {
         text-align: center;
