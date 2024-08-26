@@ -7,12 +7,16 @@ $(() => {
 
   btn1.click(() => {
     cont1.css({display: 'block'});
+    cont1.css({color: '#0032A0'});
     cont2.css({display: 'none'});
+    cont2.css({color: '#000'});
   });
 
   btn2.click(() => {
     cont2.css({display: 'block'});
+    cont2.css({color: '#0032A0'});
     cont1.css({display: 'none'});
+    cont1.css({color: '#000'});
   });
 
   
