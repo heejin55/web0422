@@ -5,8 +5,9 @@ function UI() {
                 <Card 
                     key={idx}
                     cimg={item.cimg}
-                    cnumber={item.cnumber}
+                    cnumber={item.cnum}
                     cmenu={item.cmenu}
+                    csale={item.csale}
                     cmoney={item.cmoney}
                     cbtn={item.cbtn}
                 />
@@ -14,3 +15,5 @@ function UI() {
         </ul>
     );
 }
+
+

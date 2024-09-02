@@ -1,1 +1,123 @@
 @charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #fff;
+}
+
+
+body,
+ul {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* 레이아웃 */
+#root {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.card_list {
+    margin-right: 25px;
+    width: 190px;
+    height: 362px;
+    border-radius: 8px;
+    background-color: #F7F7F7;
+}
+
+.card_img {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 234px;
+}
+
+.card_list>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+    justify-content: center;
+}
+
+.card_number {
+    width: 19px;
+    height: 59px;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 26px 13px 24px 13px;
+}
+
+.card_menu {
+    width: 135px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 19px;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+    margin-top: -30px;
+
+}
+
+.card_sale {
+    color: #FA622F;
+    height: 19px;
+}
+
+.card_money {
+    display: block;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.card_btn {
+    /* margin: 0 0 11px 13px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card_btn>button {
+    width: 166px;
+    height: 36px;
+    font-size: 13px;
+    border: 1px solid #DFE4E8;
+    border-radius: 4px;
+    background: #fff;
+    color: #333;
+}
+
+.ri-shopping-cart-line {
+    margin-right: 6px;
+    font-size: 14px;
+}
