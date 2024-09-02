@@ -1,4 +1,4 @@
-function UI() {
+function Ui() {
     return (
         <ul className="container">
             {cards.map((item, idx) => (
