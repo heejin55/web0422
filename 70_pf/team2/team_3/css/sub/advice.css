@@ -41,8 +41,15 @@ body {
 }
 
 #ad_s1>h2 {
-    font-size: 4.4rem;
+    font-size: 5rem;
     font-weight: 400;
+    color: #fff
+}
+
+#ad_s1>p {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fff
 }
 
 #ad_s2>h2 {
@@ -59,12 +66,32 @@ body {
     color: #fff;
 }
 
+#ad_s5>h2,
+#ad_s5>.ad_s5_txt a,
+#ad_s5>.ad_slide p {
+    color: #0032A0;
+}
+
+#ad_s5>h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+#ad_s5>.ad_s5_txt {
+    font-size: 1.4rem;
+}
+
+#ad_s5>.ad_slide p {
+    font-size: 2.4rem;
+}
+
 
 /* 레이아웃 */
 /* 섹션1_이미지 */
 #ad_s1 {
     margin: 0 auto;
-    width: 1024px;
+    width: 1660px;
+    max-width: 100%;
 }
 
 #ad_s1 {
@@ -74,23 +101,15 @@ body {
 
 #ad_s1>h2 {
     position: absolute;
-    top: 65px;
-    left: 59px;
+    top: 120px;
+    left: 170px;
 }
-
 #ad_s1>p {
     position: absolute;
+    top: 180px;
+    left: 170px;
 }
 
-#ad_s1>p:nth-of-type(1) {
-    top: 149px;
-    left: 59px;
-}
-
-#ad_s1>p:nth-of-type(2) {
-    top: 230px;
-    left: 59px;
-}
 
 /* 섹션2_검색 */
 #ad_s2 {
@@ -196,31 +215,33 @@ body {
 
 /* 섹션5_캐러셀 */
 #ad_s5 {
-    margin-top: 140px;
-    margin-bottom: 240px;
+    margin: 140px 0 240px 280px;
     width: 1400px;
 }
 
 #ad_s5>h2 {
-    margin: 0 0 16px 350px;
+    margin: 0 0 16px 0;
 }
 
 #ad_s5 .ad_s5_txt {
     display: flex;
-    margin: 0 0 48px 350px;
+    margin: 0 0 48px 0;
 }
 
 #ad_s5 .ad_s5_txt>a {
-    margin-left: 18px;
-    margin-top: 5px;
+    margin: 5px 0 0 18px;
 }
 
 #ad_s5>.ad_slide {
-    margin-left: 350px;
+    margin: 0 -53px;
+}
+#ad_s5>.ad_slide>div {
+    margin: 0 53px;
 }
 
 #ad_s5>.ad_slide img {
     border-radius: 25px;
+    margin-bottom: 18px;
 }
 
 
