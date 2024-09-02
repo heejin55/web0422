@@ -15,5 +15,3 @@ function Ui() {
         </ul>
     );
 }
-
-
