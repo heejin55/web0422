@@ -197,10 +197,30 @@ body {
 /* 섹션5_캐러셀 */
 #ad_s5 {
     margin-top: 140px;
+    margin-bottom: 240px;
+    width: 1400px;
+}
+
+#ad_s5>h2 {
+    margin: 0 0 16px 350px;
 }
 
 #ad_s5 .ad_s5_txt {
     display: flex;
+    margin: 0 0 48px 350px;
+}
+
+#ad_s5 .ad_s5_txt>a {
+    margin-left: 18px;
+    margin-top: 5px;
+}
+
+#ad_s5>.ad_slide {
+    margin-left: 350px;
+}
+
+#ad_s5>.ad_slide img {
+    border-radius: 25px;
 }
 
 

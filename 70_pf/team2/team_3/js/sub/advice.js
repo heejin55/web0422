@@ -24,7 +24,11 @@ $(() => {
   // 섹션5 캐러셀
     $('.ad_slide').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 3, /* 현재 보이는 슬라이드 수 */
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '53px',
+        arrows: true,
+        appendArrows: $('#arrows')
       });
 });
