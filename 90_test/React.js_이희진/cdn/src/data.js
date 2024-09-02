@@ -8,11 +8,11 @@ const cards = [
         cbtn: "담기"
     },
     {
-        cimg: "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/396d26eb-4cdc-4291-9520-68e2a14e8c8c.jpg",
+        cimg: "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c056cd29-7df6-4b60-97c5-ea360da4707f.jpg?v=0418",
         cnum: 2,
-        cmenu: "[KF365]한돈 삼겹살 구이용 600g (냉장)",
-        csale: "25%",
-        cmoney: "13,450",
+        cmenu: "[압구정낙지]낙지 볶음 2종 (택1)",
+        csale: "28%",
+        cmoney: "7,100",
         cbtn: "담기"
     },
     {

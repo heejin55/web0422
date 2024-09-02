@@ -2,7 +2,7 @@ function UI() {
     return (
         <ul className="container">
             {cards.map((item, idx) => (
-                <Card 
+                <Card
                     key={idx}
                     cimg={item.cimg}
                     cnumber={item.cnum}
