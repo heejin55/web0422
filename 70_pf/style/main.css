@@ -38,7 +38,7 @@ nav li:first-child::after {
 header {
     /* 패럴렉스 스크롤링 기법 */
     line-height: 200px;
-    background: url(../assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
+    background: url(../evan/assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
 }
 
 /* main */
