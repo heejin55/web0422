@@ -125,11 +125,15 @@ section {
 }
 
 .home-icon {
+    grid-row: 1 / span 3;
     width: 100px;
     height: 100px;
     background: #eee;
-    border-radius: 5px;
-    border: 1px solid #eee
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: 0.3s;
+
 }
 
 h3 span {
@@ -161,7 +165,6 @@ footer p {
 
     header {
         line-height: 200px;
-        background: url(../evan/assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
     }
 
     section {
