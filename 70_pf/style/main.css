@@ -97,7 +97,7 @@ nav li:first-child::after {
 /* header */
 header {
     line-height: 150px;
-    background: url(../evan/assets/bgimg.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../evan/assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
 }
 
 /* main */
