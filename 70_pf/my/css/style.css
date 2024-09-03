@@ -1,12 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
 /* reset */
 
 
 /* typo */
 html {
+    scroll-behavior: smooth;
     font-size: 10px;
 }
 
@@ -36,6 +37,7 @@ video {
     object-fit: cover;
 }
 
+/* common */
 p {
     margin-bottom: 48px;
 }
@@ -49,7 +51,36 @@ p {
     margin-bottom: 16px;
 }
 
-/* common */
+.btn {
+    font-size: 1.6rem;
+    padding: 8px 24px;
+    margin-top: 60px;
+}
+
+i {
+    margin-right: 15px;
+}
+
+.container-fluid {
+    background: no-repeat 50% 50%/cover fixed;
+}
+
+#s1 .container-fluid {
+    height: 100vh;
+    background-image: url(../assets/main.jpg);
+}
+
+#s3 .container-fluid {
+    height: 400px;
+    background-image: url(../assets/pa1.jpg);
+}
+
+#s4 .container-fluid {
+    height: 400px;
+    background-image: url(../assets/pa2.jpg);
+}
+
+/* progress */
 .progress {
     height: 30px;
     font-size: 1.5rem;
@@ -93,16 +124,22 @@ p {
     padding: 8px;
 }
 
-#s3 .more {
-    font-size: 1.6rem;
-    padding: 8px 24px;
-    margin-top: 60px;
-}
+/* sec4 */
 
+
+/* footer */
 footer {
-    height: 300px;
+    text-align: center;
+    padding: 60px 0;
+    background: #FAF1C6;
+    color: #221b12;
 }
 
-i {
-    margin-right: 15px;
+footer a {
+    color: #221b12;
+}
+
+footer i {
+    margin: 16px 0;
+    font-size: 2.4rem;
 }
