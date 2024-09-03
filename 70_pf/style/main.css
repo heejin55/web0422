@@ -129,7 +129,7 @@ section {
     width: 100px;
     height: 100px;
     background: #eee;
-    border-radius: 8px;
+    border-radius: 5px;
     overflow: hidden;
     border: 1px solid #eee;
     transition: 0.3s;
