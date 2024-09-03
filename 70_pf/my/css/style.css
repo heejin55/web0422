@@ -14,14 +14,18 @@ body {
     font: 1.5rem/1.5 "Noto Sans KR", Arial, sans-serif;
 }
 
-h2,
-h3,
-h4 {
+h2 {
+    text-align: center;
     font-weight: 300;
+    margin: 90px 0 30px;
 }
 
-h4 {
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
     letter-spacing: 10px;
+    margin: 16px 0;
 }
 
 img,
@@ -32,10 +36,24 @@ video {
     object-fit: cover;
 }
 
+p {
+    margin-bottom: 48px;
+}
+
+.container {
+    margin-bottom: 60px;
+}
+
+.container>p {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
 /* common */
 .progress {
     height: 30px;
     font-size: 1.5rem;
+    padding: 0;
 }
 
 .progress:nth-of-type(1) .progress-bar {
@@ -52,6 +70,33 @@ video {
 
 .progress:nth-of-type(4) .progress-bar {
     width: 75%;
+}
+
+.counter {
+    background: #FAF1C6;
+    color: #221b12;
+    text-align: center;
+    padding: 32px;
+}
+
+.counter span {
+    display: block;
+    font-size: 2.4rem;
+}
+
+/* sec3 */
+#s3 {
+    text-align: center;
+}
+
+#s3 .col {
+    padding: 8px;
+}
+
+#s3 .more {
+    font-size: 1.6rem;
+    padding: 8px 24px;
+    margin-top: 60px;
 }
 
 footer {
