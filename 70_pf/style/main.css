@@ -65,6 +65,7 @@ h2 {
     height: 100px;
     background: #eee;
     border-radius: 5px;
+    border: 1px solid #eee
 }
 
 .home-description {
