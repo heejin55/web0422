@@ -1,23 +1,83 @@
 @charset "utf-8";
-@import url(reset.css);
-@import url(typo.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-/* :root는 HTML */
-:root {
-    /* to the top 버튼을 부드럽게 스크롤 */
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2');
+}
+
+
+/* common */
+html {
+    font-size: 10px;
     scroll-behavior: smooth;
 }
-/* layout(배치) */
-/* 박스모델 속성, display, position */
-nav {
-    /* height: 100px; */
-    line-height: 100px;
+
+body {
+    font: 1.5rem/1.5 Helvetica, Arial, sans-serif;
+    background-color: #fff;
 }
+
+body,
+ul,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+nav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    text-align: justify;
+    word-break: break-all;
+}
+
+a {
+    color: #444;
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* layout(배치) */
+nav {
+    line-height: 60px;
+}
+
 nav section {
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: center;
-    height: 100px; */
+    display: grid;
+    justify-content: end;
 }
 
 nav ul {
@@ -36,8 +96,7 @@ nav li:first-child::after {
 
 /* header */
 header {
-    /* 패럴렉스 스크롤링 기법 */
-    line-height: 200px;
+    line-height: 150px;
     background: url(../evan/assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
 }
 
@@ -46,19 +105,23 @@ main {
     padding-bottom: 200px;
 }
 
-section {
-    /* width: 940px; */
-    margin: 0 auto;
-    border: 1px solid red;
+h2 {
+    margin: 56px 0 24px;
 }
 
-h2 {
-    margin: 56px 0;
+section {
+    padding: 0 24px;
+}
+
+.about p {
+    text-indent: 32px;
 }
 
 .home-card {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100px auto;
+    column-gap: 24px;
+    margin-bottom: 32px;
 }
 
 .home-icon {
@@ -69,16 +132,41 @@ h2 {
     border: 1px solid #eee
 }
 
-.home-description {
-    /* width: 790px; */
-    border: 1px solid lime;
-}
-
 h3 span {
     font-weight: 400;
 }
 
 /* footer */
-footer {
+footer,
+footer p {
     text-align: center;
+}
+
+
+/* 미디어쿼리 */
+@media (min-width:992px) {
+    nav {
+        font-size: 2rem;
+        line-height: 100px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 56px 0;
+    }
+
+    header {
+        line-height: 200px;
+        background: url(../evan/assets/evan_bg.png) no-repeat 50% 50%/cover fixed;
+    }
+
+    section {
+        width: 50%;
+        margin: 0 auto;
+        padding: 0;
+    }
 }

@@ -6,46 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>애반 개인 사이트 콘텐츠 레이아웃</title>
     <style>
-        .home-card {
-            display: grid;
-            background-color: #2196F3;
+        body,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .inner {
             padding: 24px;
         }
 
-        .home-card div {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            font-size: 30px;
+        .home-card {
+            display: grid;
+            grid-template-columns: 100px auto;
+            column-gap: 24px;
+        }
+
+        .home-icon {
+            grid-row: 1/ 4
+                /* border: 1px solid red; */
         }
 
         @media (min-width:992px) {
             .home-card {
-                grid-template-columns: 100px auto;
-                column-gap: 50px;
-            }
-
-            .home-icon {
-                grid-row: 1/ 4
+                width: 50%;
+                margin: 0 auto;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="home-card">
-        <div class="home-icon">
-            <a href="minitmute" target="_blank"><img src="../70_pf/minitmute/images/thumb.svg" alt="미닛뮤트"></a>
-        </div>
-        <div class="home-title">
-            <h3>minitmute<span>(미닛뮤트)</span></h3>
-        </div>
-        <div class="home-description">
-            <p>Carousel(캐로셀), Scroll Motion(스크롤 모션), Parallax Scrolling(패럴렉스 스크롤링), Tab(탭) 반영한 RWD(적응형) 페이지 입니다.
-            </p>
-        </div>
-        <div class="home-btn">
-            <a href="#">Read more...</a>
+    <div class="inner">
+        <div class="home-card">
+            <div class="home-icon">
+                <a href="minitmute" target="_blank"><img src="../70_pf/minitmute/images/thumb.svg" alt="미닛뮤트"></a>
+            </div>
+            <div class="home-title">
+                <h3>minitmute<span>(미닛뮤트)</span></h3>
+            </div>
+            <div class="home-description">
+                <p>Carousel(캐로셀), Scroll Motion(스크롤 모션), Parallax Scrolling(패럴렉스 스크롤링), Tab(탭) 반영한 RWD(적응형) 페이지 입니다.
+                </p>
+            </div>
+            <div class="home-btn">
+                <a href="#">Read more...</a>
+            </div>
         </div>
     </div>
 </body>
