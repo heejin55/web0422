@@ -2,23 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
 
+/* reset */
+
+
 /* typo */
 html {
-    font-size:10px;
+    font-size: 10px;
 }
+
 body {
-    /* font: 굵기 크기/줄간격 글꼴1,글꼴2 */
-    font:1.5rem/1.5 "Noto Sans KR", Arial, sans-serif;
+    font: 1.5rem/1.5 "Noto Sans KR", Arial, sans-serif;
 }
-h2, h3 {
+
+h2,
+h3,
+h4 {
     font-weight: 300;
 }
 
-/* 이미지,비디오 반응형을 위한 초기값 지정 */
-img, video {
+h4 {
+    letter-spacing: 10px;
+}
+
+img,
+video {
     width: 100%;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+/* common */
+.progress {
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+.progress:nth-of-type(1) .progress-bar {
+    width: 70%;
+}
+
+.progress:nth-of-type(2) .progress-bar {
+    width: 85%;
+}
+
+.progress:nth-of-type(3) .progress-bar {
+    width: 90%;
+}
+
+.progress:nth-of-type(4) .progress-bar {
+    width: 75%;
+}
+
+footer {
+    height: 300px;
 }
 
 i {
