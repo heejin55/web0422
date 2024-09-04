@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 섹션1 */
+#s1 {
+    position: relative;
+    /*  display: flex;
+        justify-content: center;
+        align-items: center; */
+    height: 100vh;
+    overflow: hidden;
+}
+
+#s1 #clock {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+/* 날짜 */
+#clock .ddate {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #212121
+}
+
+/* 시간 */
+#clock .dtime {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #C2D0DE;
+    text-shadow: 0 0 1px #C2D0DE;
+    font-family: "HSGaeulSenggak20", sans-serif;
+}
+
+/* span의 크기를 지정하여 움직임 방지 */
+#s1 #clock .dtime span {
+    /* display: inline-block; */
+    width: 50px;
+}
+
+/* 시간의 : 표시 */
+#clock .dtime span:not(:last-child)::after {
+    content: " :";
+}

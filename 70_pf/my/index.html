@@ -8,13 +8,53 @@
     <link rel="icon" type="image/x-icon" href="assets/thumb.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="js/clock.js"></script>
 </head>
 
 <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!-- logo -->
+        <a class="navbar-brand" href="#s1">My_home</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#s2">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s3">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s4">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="s1">
         <div class="container-fluid">
-            <span>디지털 시계</span>
+            <div id="clock">
+                <div class="ddate">
+                    <span>년</span>
+                    <span>월</span>
+                    <span>일</span>
+                    <span>요일</span>
+                </div>
+                <div class="dtime">
+                    <span>시</span>
+                    <span>분</span>
+                    <span>초</span>
+                </div>
+            </div> <!-- // #clock -->
         </div>
     </div>
     <div id="s2">
@@ -37,10 +77,10 @@
             </div>
 
             <!-- 프로필2: 지식,기술 -->
-            <div class="row pb-5">
+            <div class="row">
                 <div class="col-md">
                     <div class="text-center mb-5"><i class="fa-solid fa-user"></i>Lee Hee Jin</div>
-                    <div><img src="assets/me2.png" alt="내 사진"></div>
+                    <div><img src="assets/me2.png" alt="나의 사진"></div>
                 </div>
                 <div class="col mt-5">
                     <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
@@ -55,8 +95,8 @@
             </div> <!-- //.row -->
 
             <!-- skill -->
-            <p class="mt-5">Im really good at:</p>
-            <div class="row">
+            <p>Im really good at:</p>
+            <div class="row m-0">
                 <h3>Photoshop</h3>
                 <div class="col-12 progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated">
@@ -88,16 +128,16 @@
         <!-- counter -->
         <div class="container-fluid counter">
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">2+</span>Team Projects
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">14+</span>Personal Projects
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">5+</span>Projects
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <span class="d-block">2+</span>National technical certification
                 </div>
             </div>
@@ -114,35 +154,35 @@
             <h2>MY WORK</h2>
             <p class="mb-5">다음은 저의 작업물 중 일부입니다.<br>더 자세히 보려면 클릭해주세요!</p>
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/1.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/2.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/3.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/4.jpg" alt="작품1">
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/5.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/6.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/7.jpg" alt="작품1">
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <img src="assets/8.jpg" alt="작품1">
                 </div>
             </div> <!-- //.row -->
 
-            <a href="#" class="btn btn-dark more">자세히 보기</a>
+            <a href="../index.html" class="btn btn-dark more">자세히 보기</a>
         </div> <!-- //.container -->
     </div> <!-- //#s3 -->
 
@@ -156,12 +196,12 @@
             <p class="mb-5"><em>I welcome the feedback!</em></p>
 
             <div class="row">
-                <div class="col-4 text-right">
+                <div class="col-sm col-md-4">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.672085941144!2d127.10743907631549!3d37.35027123649883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351997712!5m2!1sko!2skr"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-8">
+                <div class="col-sm col-md-8">
                     <div class="row">
                         <div class="col">
                             <ul>
@@ -174,8 +214,10 @@
                     <p>메모를 남겨주세요!</p>
                     <div class="col">
                         <form action="memo.jsp" class="text-right">
-                            <input type="text" name="user_name" placeholder="이름">
-                            <input type="email" name="user_mail" placeholder="이메일">
+                            <div>
+                                <input type="text" name="user_name" placeholder="이름">
+                                <input type="email" name="user_mail" placeholder="이메일">
+                            </div>
                             <input type="text" name="message" placeholder="메시지">
                             <button class="btn btn-dark more">메시지 전송하기</button>
                         </form>
@@ -187,7 +229,7 @@
 
     <!-- footer -->
     <footer>
-        <div><a href="#" class="btn btn-dark more">To the top</a></div>
+        <div><a href="#" class="btn btn-dark">To the top</a></div>
         <div class="sns">
             <a href="https://www.instagram.com/sandmute_/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://m.blog.naver.com/sandmute"><i class="fa-brands fa-blogger-b"></i></a>
