@@ -2,23 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
-/* reset */
-
-
-/* typo */
+/* common */
 html {
     scroll-behavior: smooth;
     font-size: 10px;
 }
 
 body {
-    font: 1.5rem/1.5 "Noto Sans KR", Arial, sans-serif;
+    font: 1.5rem/1.6 "Noto Sans KR", Arial, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 h2 {
     text-align: center;
     font-weight: 300;
-    margin: 90px 0 30px;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -29,6 +32,10 @@ h3 {
     margin: 16px 0;
 }
 
+p {
+    margin-bottom: 48px;
+}
+
 img,
 video {
     width: 100%;
@@ -37,13 +44,19 @@ video {
     object-fit: cover;
 }
 
-/* common */
-p {
-    margin-bottom: 48px;
+input {
+    border: none;
+}
+
+iframe {
+    width: 284px;
+    height: 160px;
+    border: none;
+    border-radius: 5px;
 }
 
 .container {
-    margin-bottom: 60px;
+    padding: 60px 0;
 }
 
 .container>p {
@@ -52,7 +65,7 @@ p {
 }
 
 .btn {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 8px 24px;
     margin-top: 60px;
 }
@@ -61,7 +74,11 @@ i {
     margin-right: 15px;
 }
 
+/* background-image: Parallax Scrolling */
 .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: no-repeat 50% 50%/cover fixed;
 }
 
@@ -78,6 +95,13 @@ i {
 #s4 .container-fluid {
     height: 400px;
     background-image: url(../assets/pa2.jpg);
+}
+
+/* background: title */
+.container-fluid>span {
+    font-size: 3.6rem;
+    letter-spacing: 10px;
+    color: #fff;
 }
 
 /* progress */
@@ -103,7 +127,9 @@ i {
     width: 75%;
 }
 
+/* counter */
 .counter {
+    display: block;
     background: #FAF1C6;
     color: #221b12;
     text-align: center;
@@ -115,7 +141,7 @@ i {
     font-size: 2.4rem;
 }
 
-/* sec3 */
+/* section3: portfolio */
 #s3 {
     text-align: center;
 }
@@ -124,7 +150,28 @@ i {
     padding: 8px;
 }
 
-/* sec4 */
+/* contact: sec4 */
+#s4 form input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+#s4 form button.btn {
+    margin-top: 16px;
+}
+
+#s4 [name="user_name"] {
+    margin-right: 1%;
+}
+
+#s4 [name*="user"] {
+    width: 49.2%;
+}
+
+#s4 [name*="message"] {
+    width: 100%;
+}
 
 
 /* footer */

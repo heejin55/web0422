@@ -13,7 +13,9 @@
 
 <body>
     <div id="s1">
-        <div class="container-fluid">디지털 시계</div>
+        <div class="container-fluid">
+            <span>디지털 시계</span>
+        </div>
     </div>
     <div id="s2">
         <div class="container">
@@ -110,7 +112,7 @@
         </div>
         <div class="container">
             <h2>MY WORK</h2>
-            <p class="mb-5">다음은 내 최신 작업 중 일부입니다.<br>이미지를 더 크게 보려면 클릭하세요.</p>
+            <p class="mb-5">다음은 저의 작업물 중 일부입니다.<br>더 자세히 보려면 클릭해주세요!</p>
             <div class="row">
                 <div class="col">
                     <img src="assets/1.jpg" alt="작품1">
@@ -140,7 +142,7 @@
                 </div>
             </div> <!-- //.row -->
 
-            <a href="#" class="btn btn-dark more">더보기</a>
+            <a href="#" class="btn btn-dark more">자세히 보기</a>
         </div> <!-- //.container -->
     </div> <!-- //#s3 -->
 
@@ -151,13 +153,15 @@
         </div>
         <div class="container">
             <h2>WHERE I WORK</h2>
-            <p class="mb-5">피드백을 환영합니다!</p>
+            <p class="mb-5"><em>I welcome the feedback!</em></p>
 
             <div class="row">
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.672085941144!2d127.10743907631549!3d37.35027123649883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351997712!5m2!1sko!2skr" width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-4 text-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.672085941144!2d127.10743907631549!3d37.35027123649883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351997712!5m2!1sko!2skr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col">
+                <div class="col-8">
                     <div class="row">
                         <div class="col">
                             <ul>
@@ -169,10 +173,10 @@
                     </div>
                     <p>메모를 남겨주세요!</p>
                     <div class="col">
-                        <form action="memo.js">
-                            <input type="text" placeholder="이름">
-                            <input type="email" placeholder="이메일">
-                            <input type="text" placeholder="메시지">
+                        <form action="memo.jsp" class="text-right">
+                            <input type="text" name="user_name" placeholder="이름">
+                            <input type="email" name="user_mail" placeholder="이메일">
+                            <input type="text" name="message" placeholder="메시지">
                             <button class="btn btn-dark more">메시지 전송하기</button>
                         </form>
                     </div>
