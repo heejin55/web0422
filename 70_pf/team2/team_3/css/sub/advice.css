@@ -14,6 +14,7 @@ p {
 }
 
 img {
+    height: auto;
     vertical-align: top;
     max-width: 100%;
     object-fit: cover;
@@ -107,6 +108,7 @@ body {
     top: 120px;
     left: 170px;
 }
+
 #ad_s1>p {
     position: absolute;
     top: 180px;
@@ -151,7 +153,12 @@ body {
     width: 100%;
     justify-content: center;
 }
-#ad_s3 .ad_cont>li {display: flex; align-items: center;}
+
+#ad_s3 .ad_cont>li {
+    display: flex;
+    align-items: center;
+}
+
 #ad_s3 .ad_cont>li>a {
     grid-row: 1 / 2;
 }
@@ -160,12 +167,13 @@ body {
 #ad_s3 img:nth-of-type(1),
 #ad_s3 img:nth-of-type(3) {
     margin-right: 53px;
-    padding: 10px;
+    padding: 12px;
 }
+
 #ad_s3 .ad_text,
 #ad_s3 .ad_text {
-    margin-right: 53px;
-    padding: 10px;
+    margin-right: 58px;
+    padding: 12px;
 }
 
 #ad_s3 .ad_text>a {
@@ -203,7 +211,7 @@ body {
 
 
 #ad_s4 .tabs>ul li {
-    padding: 12px;
+    padding: 10px;
 }
 
 #ad_s4 .tabs>div {
@@ -218,7 +226,7 @@ body {
 #ad_s4 #tab2>ul>li>span {
     display: block;
     margin-bottom: 18px;
-    color:#000
+    color: #000
 }
 
 #ad_s4 #tab1>ul>li,
@@ -249,6 +257,7 @@ body {
 #ad_s5>.ad_slide {
     margin: 0 -53px;
 }
+
 #ad_s5>.ad_slide>div {
     margin: 0 53px;
 }
@@ -259,22 +268,24 @@ body {
 }
 
 
-
-
 /* 미디어쿼리_테블릿 */
 @media (max-width: 768px) {
-
-    #ad_s1 h2,
-    #ad_s1 p {
-        position: static;
+    #ad_s1 img {
+        height: 280px;
+    }
+    
+    #ad_s1>h2,
+    #ad_s1>p {
+        font-size: 2.8rem;
+        left: 84px;
     }
 
     #ad_s1>h2 {
-        padding: 33px 0 23px 23px;
+        top: 57px;
     }
 
     #ad_s1>p {
-        padding: 0 0 23px 23px;
+        top: 90px;
     }
 
     #ad_s3 .ad_cont>li {
@@ -282,29 +293,60 @@ body {
         display: grid;
     }
 
-    #ad_s4 {
-        width: 768px;
-        margin: 0 auto;
-        border: 1px solid red;
+    #ad_s3 img:nth-of-type(1),
+    #ad_s3 img:nth-of-type(3),
+    #ad_s3 .ad_text,
+    #ad_s3 .ad_text {
+        margin: 0;
+        padding: 0;
     }
 
-    #ad_s4 .tabs>ul {
-        border: none;
+    #ad_s3 .ad_text>a {
+        display: block;
+        margin-bottom: 23px;
     }
 
-    #ad_s4 #tab1 ul{
-        width: 500px;
-        flex-wrap: wrap;
+    #ad_s3 .ad_text {
+        margin-bottom: 42px;
+    }
+
+    /* #ad_s4 .tabs ul {
+        display: grid;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #ad_s4 .tabs li {
+        width: 100%;
+        grid-row: 1 / 2;
+        border: 1px solid #DBDBDB;
+    } */
+
+    #ad_s5 {
+        margin-left: 51px;
     }
 }
 
 
 /* 미디어쿼리_폰 */
 @media (max-width: 360px) {
+    #ad_s1>h2,
+    #ad_s1>p {
+        font-size: 2.4rem;
+        left: 28px;
+    }
+
+    #ad_s1>h2 {
+        top: 60px;
+    }
+
+    #ad_s1>p {
+        top: 95px;
+    }
 
     #ad_s2 {
         text-align: center;
-        padding: 60px 93px;
+        padding: 0;
     }
 
     #ad_s2>input {
@@ -315,7 +357,11 @@ body {
     #ad_s2>button {
         width: 292px;
         height: 52px;
-        padding: 18px 0;
     }
+
+    #ad_s3 {
+        padding: 0 8px;
+    }
+
 
 }
