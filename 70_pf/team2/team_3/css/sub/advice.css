@@ -65,6 +65,11 @@ body {
     color: #fff;
 }
 
+#ad_s3 .ad_text {
+    text-wrap: wrap;
+    width: 410px;
+}
+
 #ad_s3 .ad_text>a {
     font-size: 2.6rem;
     font-weight: 700;
@@ -288,6 +293,19 @@ body {
         top: 90px;
     }
 
+    #ad_s2>h2,
+    #ad_s2>input {
+        font-size: 2.4rem;
+    }
+
+    #ad_s3 .ad_text {
+        width: 600px;
+    }
+
+    #ad_s3 .ad_cont>li>a>img {
+        width: 700px;
+        height: 575px;
+    }
     #ad_s3 .ad_cont>li {
         justify-content: center;
         display: grid;
@@ -323,17 +341,30 @@ body {
     } */
 
     #ad_s5 {
+        margin: 0;
+    }
+
+    #ad_s5>h2,
+    #ad_s5>div a {
         margin-left: 51px;
     }
+
+    /* #ad_s5 .ad_slide div img{
+        width: 400px;
+    } */
 }
 
 
 /* 미디어쿼리_폰 */
 @media (max-width: 360px) {
+    #ad_s1 {
+        background-image: url(../../assets/advice/ad_main_mo.png);
+    }
+
     #ad_s1>h2,
     #ad_s1>p {
         font-size: 2.4rem;
-        left: 28px;
+        left: 20px;
     }
 
     #ad_s1>h2 {
@@ -344,9 +375,13 @@ body {
         top: 95px;
     }
 
+    #ad_s2>h2,
+    #ad_s2>input {
+        font-size: 1.8rem;
+    }
+
     #ad_s2 {
         text-align: center;
-        padding: 0;
     }
 
     #ad_s2>input {
@@ -360,8 +395,32 @@ body {
     }
 
     #ad_s3 {
-        padding: 0 8px;
+        text-align: center;
+    }
+    
+    #ad_s3 .ad_cont>li>a>img {
+        width: 345px;
+        height: 283px;
     }
 
+    #ad_s3 .ad_text {
+        width: 260px;
+    }
+
+    #ad_s3 .ad_text a {
+        font-size: 2.2rem;
+    }
+
+    #ad_s3 .ad_text p {
+        font-size: 1.6rem;
+    }
+
+    #ad_s3 {
+        margin: 0 8px;
+    }
+
+    #ad_s5 .ad_slide div img{
+        width: 270px;
+    }
 
 }
