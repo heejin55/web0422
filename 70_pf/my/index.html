@@ -7,10 +7,17 @@
     <title>My_home page</title>
     <link rel="icon" type="image/x-icon" href="assets/thumb.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js "></script>
+
     <script src="js/clock.js"></script>
+    <script src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -120,8 +127,9 @@
                     <div class="progress-bar progress-bar-striped progress-bar-animated">
                         <span><b>75</b>%</span>
                     </div>
-                </div>
-            </div>
+                </div> <!-- .progress -->
+
+            </div> <!-- .row -->
 
         </div> <!-- //.container -->
 
@@ -129,19 +137,19 @@
         <div class="container-fluid counter">
             <div class="row">
                 <div class="col-sm">
-                    <span class="d-block">2+</span>Team Projects
+                    <span><b>2</b>+</span>Team Projects
                 </div>
                 <div class="col-sm">
-                    <span class="d-block">14+</span>Personal Projects
+                    <span><b>3</b>+</span>Personal Projects
                 </div>
                 <div class="col-sm">
-                    <span class="d-block">5+</span>Projects
+                    <span><b>5</b>+</span>Total Projects
                 </div>
                 <div class="col-sm">
-                    <span class="d-block">2+</span>National technical certification
+                    <span><b>2</b>+</span>National technical certification
                 </div>
             </div>
-        </div>
+        </div> <!-- .counter -->
 
     </div> <!-- //#s2 -->
 
@@ -153,23 +161,40 @@
         <div class="container">
             <h2>MY WORK</h2>
             <p class="mb-5">다음은 저의 작업물 중 일부입니다.<br>더 자세히 보려면 클릭해주세요!</p>
+            <!-- https://lokeshdhakar.com/projects/lightbox2/ -->
             <div class="row">
                 <div class="col-sm">
-                    <a href="../somewherebutter/"><img src="../somewherebutter/thumb2.svg" alt="썸웨어버터 반응형"></a>
+                    <!-- <a href="큰이미지" data-lightbox="roadtrip">-->
+                    <a href="assets/megabox.png" data-lightbox="roadtrip" data-title="http://heejinn.dothome.co.kr/somewherbutter">
+                        <img src="../somewherebutter/thumb2.svg" alt="썸웨어버터 반응형">
+                    </a>
+                </div>
+
+                <div class="col-sm">
+                    <a href="assets/megabox.png" data-lightbox="roadtrip"
+                        data-title="http://heejinn.dothome.co.kr/minitmute">
+                    <img src="../minitmute/thumb2.svg" alt="미닛뮤트 풀페이지">
+                    </a>
                 </div>
                 <div class="col-sm">
-                    <a href="../minitmute/"><img src="../minitmute/thumb2.svg" alt="미닛뮤트 풀페이지"></a>
+                    <a href="assets/megabox.png" data-lightbox="roadtrip"
+                        data-title="http://heejinn.dothome.co.kr/br_ver2">
+                    <img src="../br_ver2/thumb2.svg" alt="드파운드 반응형">
+                    </a>
                 </div>
                 <div class="col-sm">
-                    <a href="../br_ver2/"><img src="../br_ver2/thumb2.svg" alt="드파운드 반응형"></a>
-                </div>
-                <div class="col-sm">
-                    <a href="../team/"><img src="../team/thumb2.svg" alt="컴포즈커피_1차팀플"></a>
+                    <a href="assets/megabox.png" data-lightbox="roadtrip"
+                        data-title="http://heejinn.dothome.co.kr/team">
+                    <img src="../team/thumb2.svg" alt="컴포즈커피_1차팀플">
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <a href="../team2/team_3/html/sub/advice.html"><img src="../team2/thumb2.svg" alt="니베아_2차팀플_반응형"></a>
+                    <a href="assets/megabox.png" data-lightbox="roadtrip"
+                        data-title="http://heejinn.dothome.co.kr/team2">
+                    <img src="../team2/thumb2.svg" alt="니베아_2차팀플_반응형">
+                    </a>
                 </div>
                 <div class="col-sm">
                     <img src="assets/6.jpg" alt="작품1">
@@ -182,7 +207,7 @@
                 </div>
             </div> <!-- //.row -->
 
-            <a href="../index.html" class="btn btn-dark more">자세히 보기</a>
+            <a href="#" class="btn btn-dark more">자세히 보기</a>
         </div> <!-- //.container -->
     </div> <!-- //#s3 -->
 

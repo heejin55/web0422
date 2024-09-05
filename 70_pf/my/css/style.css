@@ -114,6 +114,27 @@ i {
     color: #fff;
 }
 
+/* seciton2: profile */
+#s2 .row {
+    overflow: hidden;
+}
+
+.profile1 {
+    transform: translateY(300px);
+    transition: transform .5s .2s;
+}
+
+.profile2 {
+    transform: translateY(300px);
+    transition: transform .5s .6s;
+}
+
+.photo {
+    transform: translateY(300px);
+    transition: transform .5s .8s;
+}
+
+
 /* progress */
 .progress {
     height: 30px;
@@ -122,22 +143,18 @@ i {
 }
 
 .progress:nth-of-type(1) .progress-bar {
-    width: 70%;
     background-color: #C2D0DE;
 }
 
 .progress:nth-of-type(2) .progress-bar {
-    width: 85%;
     background-color: #C2D0DE;
 }
 
 .progress:nth-of-type(3) .progress-bar {
-    width: 90%;
     background-color: #C2D0DE;
 }
 
 .progress:nth-of-type(4) .progress-bar {
-    width: 75%;
     background-color: #C2D0DE;
 }
 
@@ -208,13 +225,14 @@ footer a {
     color: #221b12;
 }
 
-footer i {
+footer .sns {
     margin: 16px 0;
     font-size: 2.4rem;
 }
 
 /* 데스크탑 */
 @media (min-width: 992px) {
+
     /* clock */
     #clock {
         left: auto;
@@ -223,6 +241,7 @@ footer i {
         text-align: right;
     }
 
+    /* skill */
     .skill {
         margin-top: 48px;
     }
