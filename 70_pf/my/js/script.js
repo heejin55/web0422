@@ -13,14 +13,14 @@ $(() => {
     // toggle 시스템
     let flag = 0;
 
-    vidBtn.click((e)=>{
+    vidBtn.click((e) => {
         if (flag === 0) {
             vid.play();
-            $(e.currentTarget).attr({class: "fa-regular fa-circle-pause"});
+            $(e.currentTarget).attr({ class: "fa-regular fa-circle-pause" });
             flag = 1;
         } else {
             vid.pause();
-            $(e.currentTarget).attr({class: "fa-regular fa-circle-play"});
+            $(e.currentTarget).attr({ class: "fa-regular fa-circle-play" });
             flag = 0;
         }
     });
@@ -29,7 +29,7 @@ $(() => {
     const btn = $(".btn");
     const snd = $(".snd").get(0);
 
-    btn.mouseenter(()=>{
+    btn.mouseenter(() => {
         snd.play();
     });
 
@@ -129,14 +129,44 @@ $(() => {
         $(location).attr({ href: lb_link, target: "_blank" });
     });
 
-     // portfolio more
-     const moreBtn = $("#s3 .more");
-     const pf2row = $("#s3 .pf2row");
- 
-     moreBtn.click(()=>{
-         event.preventDefault();
-         pf2row.css({display: "flex"});
-     });
- 
+    // portfolio more
+    const moreBtn = $("#s3 .more");
+    const pf2row = $("#s3 .pf2row");
+
+    moreBtn.click(() => {
+        event.preventDefault();
+        pf2row.css({ display: "flex" });
+    });
+
+    // pointer motion
+    const mp = $('.mp');
+
+    $('body').mousemove(() => {
+        mm(0); /* 큰원 */
+        mm(1); /* 작은원 */
+    });
+
+    function mm(i) {
+
+        /* 
+            ecent.pageX -> 마우스 x좌표
+            ecent.pageY -> 마우스 Y좌표
+
+            Vanilla JS
+            offsetWidth -> 패딩과 보더 포함
+            clientWidth -> 패딩만 포함
+
+            jQuery
+            outerWidth() -> 패딩과 보더 포함
+            innerWidth() -> 패딩만 포함
+
+        */
+
+        let x = event.pageX - mp.eq(i).outerWidth() / 2;
+        let y = event.pageY - mp.eq(i).outerWidth() / 2;
+
+        mp.eq(i).css({left: x + 'px', top: y + 'px'});
+    }
+
 
 }); // ready end

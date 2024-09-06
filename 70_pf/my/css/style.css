@@ -252,6 +252,29 @@ footer .sns {
     font-size: 2.4rem;
 }
 
+/* 마우스 포인터 */
+.mp {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mp1 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #C2D0DE;
+    /* background: url(mouse-cursor.png) no-repeat; */
+    /* ease-out을 사용! */
+    transition: .7s ease-out;
+}
+
+.mp2 {
+    width: 10px;
+    height: 10px;
+    background: #C2D0DE;
+    /* ease-out을 사용! */
+    transition: .1s ease-out;
+}
+
 /* 데스크탑 */
 @media (min-width: 992px) {
 
