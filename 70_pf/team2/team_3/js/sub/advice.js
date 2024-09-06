@@ -22,30 +22,32 @@ $(() => {
 
 
   // 섹션5 캐러셀
-  $('.ad_slide').slick({
-    infinite: true,
-    slidesToShow: 3, /* 현재 보이는 슬라이드 수 */
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '53px',
-    arrows: true,
+  $(function () {
+    $('.ad_slide').slick({
+      infinite: true,
+      slidesToShow: 3, /* 현재 보이는 슬라이드 수 */
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '53px',
+      arrows: true,
 
-    responsive: [ // 반응형 웹 구현 옵션
-      {
-        breakpoint: 769, //화면 사이즈 768px
-        settings: {
-          //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-          slidesToShow: 1,
-          centerPadding: '150px'
-        }
-      },
-      {
-        breakpoint: 361,
-        settings: {
-          width: 270
+      responsive: [ // 반응형 웹 구현 옵션
+        {
+          breakpoint: 768, //화면 사이즈 768px
+          settings: {
+            //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+            slidesToShow: 1,
+            centerPadding: '150px'
+          }
+        },
+        {
+          breakpoint: 360,
+          settings: {
+            width: 270
 
+          }
         }
-      }
-    ]
+      ]
+    });
   });
-});
+})
