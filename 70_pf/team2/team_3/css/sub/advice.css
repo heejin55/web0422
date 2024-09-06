@@ -103,8 +103,8 @@ body {
 /* 섹션1_이미지 */
 #ad_s1 {
     position: relative;
-    margin: 0 auto;
-    width: 1660px;
+    display: flex;
+    justify-content: center;
     margin-top: 19px;
 }
 

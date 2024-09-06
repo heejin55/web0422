@@ -1,16 +1,17 @@
 $(() => {
-    // vidoe player
+    // video player
     /* 
-         비디오 가져오기: 객체.get(0)
+        비디오 가져오기: 객체.get(0)
         비디오 플레이: 객체.play()
         비디오 일시정지: 객체.pause()
         비디오 정지: 객체.load()
-
     */
-    const vid = $("#s2 .vid viedo").get(0);
+
+    const vid = $("#s2 .vid video").get(0);
     const vidBtn = $("#s2 .vid i");
 
-    // toggle 시스템
+    // toggle 동작 만들기
+    // 하나의 버튼으로 두 개의 상태를 만든다.
     let flag = 0;
 
     vidBtn.click((e) => {
@@ -33,7 +34,6 @@ $(() => {
         snd.play();
     });
 
-
     // progress bar & counter
     // 요소 찾기
     const cntNumEle = $(".counter b");
@@ -49,7 +49,7 @@ $(() => {
 
     // 진행율바의 시작 값과 목표 값
     const progressBarStartNums = [0, 0, 0, 0];
-    const progressBarNums = [70, 85, 90, 75];
+    const progressBarNums = [90, 95, 90, 80];
 
     $(window).scroll(() => {
         let st = $(this).scrollTop();
@@ -133,40 +133,77 @@ $(() => {
     const moreBtn = $("#s3 .more");
     const pf2row = $("#s3 .pf2row");
 
-    moreBtn.click(() => {
-        event.preventDefault();
+    moreBtn.click((e) => {
+        // <a href="#"> -> a태그를 클릭하면 현재 페이지의 상단으로 올라간다.
+        // 기본 이벤트 방지
+        e.preventDefault();
         pf2row.css({ display: "flex" });
     });
 
-    // pointer motion
-    const mp = $('.mp');
+    // 마우스 포인터 모션 만들기
+    const mp = $(".mp");
 
-    $('body').mousemove(() => {
-        mm(0); /* 큰원 */
-        mm(1); /* 작은원 */
-    });
+    /* $("body").mousemove(() => {
+        // 큰원
+        mm(0);
+        // 작은원
+        mm(1);
+    }); */
+
+    setInterval(firefly, 3000);
+
+    function firefly(){
+        mm(0);
+        mm(1);
+    }
 
     function mm(i) {
 
         /* 
-            ecent.pageX -> 마우스 x좌표
-            ecent.pageY -> 마우스 Y좌표
+            event.pageX -> 마우스 x좌표
+            event.pageY -> 마우스 y좌표
 
-            Vanilla JS
-            offsetWidth -> 패딩과 보더 포함
-            clientWidth -> 패딩만 포함
-
-            jQuery
-            outerWidth() -> 패딩과 보더 포함
-            innerWidth() -> 패딩만 포함
-
+            Vanilla JS의 속성
+                offsetWidth, offsetHeight -> 패딩과 테두리 포함
+                clientWidth, clientHeight -> 패딩만 포함
+            jQuery 메서드
+                outerWidth(), outerHeight() -> 패딩과 테두리 포함
+                innerWidth(), innerHeight() -> 패딩만 포함
         */
 
-        let x = event.pageX - mp.eq(i).outerWidth() / 2;
-        let y = event.pageY - mp.eq(i).outerWidth() / 2;
+        // Math.floor() -> 내림
+        // Math.ceil() -> 올림
+        // Math.round() -> 반올림
+        // x: 50 ~ 1870 -> 랜덤(불규칙) -> Math.random()
+        // y: 100 ~ 800
+        // 0 <= Math.random() < 1
+        // 0 * 10 <= Math.random() * 10 < 1 * 10
 
-        mp.eq(i).css({left: x + 'px', top: y + 'px'});
+        // 1 ~ 6 사이 정수 출력
+        // 0 + 1 <= Math.floor(Math.random() * 6) + 1 < 6 + 1
+        // 0 ~ 2 사이 정수 출력
+        // 0 <= Math.floor(Math.random() * 3) < 3
+
+        // 1 <= Math.floor(Math.random() * 10) + 1 < 11
+        // 50 <= Math.floor(Math.random() * 1800) + 50 < 1920
+        
+        let x = Math.floor(Math.random() * 1800) + 50 - mp.eq(i).outerWidth() / 2;
+        let y = Math.floor(Math.random() * 800) + 50 - mp.eq(i).outerWidth() / 2;
+        // let x = event.pageX - mp.eq(i).outerWidth() / 2;
+        // let y = event.pageY - mp.eq(i).outerWidth() / 2;
+
+        mp.eq(i).css({left: x + "px", top: y + "px"});
     }
 
+    // 푸터 배경색 랜덤하게 바꾸기
+    const footerEle = $("footer");
+    const colors = ["##FAF1C6", "##FAF1C6", "##FAF1C6"];
+   
+    setInterval(bgcolor, 1000);
+    
+    function bgcolor(){
+        let color = colors[Math.floor(Math.random() * 3)];
+        footerEle.css({backgroundColor: color});
+    }
 
 }); // ready end
