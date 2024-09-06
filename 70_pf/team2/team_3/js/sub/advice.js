@@ -40,7 +40,7 @@ $(() => {
             slidesToScroll: 1,
             pager: true,
             infinite: true,
-            centerPadding: '40px',
+            centerPadding: '50px',
             centerMode: false
           }
         },

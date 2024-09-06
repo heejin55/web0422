@@ -43,10 +43,8 @@ body {
     font: normal 1.6rem/1.5 "Noto Sans KR";
 }
 
-#ad_s1>h2 {
-    font-size: 5rem;
+#ad_s1 span {
     font-weight: 400;
-    color: #fff
 }
 
 #ad_s1>p {
@@ -76,6 +74,11 @@ body {
 
 #ad_s3 .ad_text>a {
     font-size: 2.6rem;
+    font-weight: 700;
+}
+
+#ad_s4 #tab1 p>a>span,
+#ad_s4 #tab2 p>a>span {
     font-weight: 700;
 }
 
@@ -175,6 +178,10 @@ body {
     padding: 12px;
 }
 
+#ad_s3 img:hover {
+    opacity: 0.7;
+}
+
 #ad_s3 .ad_text,
 #ad_s3 .ad_text {
     margin-right: 58px;
@@ -184,6 +191,10 @@ body {
 #ad_s3 .ad_text>a {
     display: block;
     margin-bottom: 34px;
+}
+
+#ad_s3 .ad_text>a:hover {
+    color: #0032A0;
 }
 
 /* 섹션4_탭 */
@@ -269,7 +280,7 @@ body {
     #ad_s1 img {
         height: 280px;
     }
-    
+
     #ad_s1>h2,
     #ad_s1>p {
         font-size: 2.8rem;
@@ -297,8 +308,8 @@ body {
         width: 700px;
         height: 575px;
     }
+
     #ad_s3 .ad_cont>li {
-        justify-content: center;
         display: grid;
     }
 
@@ -310,13 +321,14 @@ body {
         padding: 0;
     }
 
-    #ad_s3 .ad_text>a {
-        display: block;
-        margin-bottom: 23px;
-    }
-
     #ad_s3 .ad_text {
         margin-bottom: 42px;
+    }
+
+    #ad_s3 .ad_text>a {
+        display: block;
+        margin-bottom: 24px;
+        font-size: 2.4rem;
     }
 
     #ad_s4 .tabs ul {
@@ -326,27 +338,47 @@ body {
         margin: 0;
     }
 
-    #ad_s4 span:nth-child(1) {
-        width: 37px;
-        height: 37px;
+    #ad_s4 .tabs>ul>li:nth-child(1)>a {
+        margin-right: 0;
+    }
+
+    #ad_s4 .tabs>ul {
+        border: 0;
+    }
+
+    #ad_s4 #tab1>ul>li>span,
+    #ad_s4 #tab2>ul>li>span {
+        color: #fff;
+        padding: 6px;
+        width: 40px;
+        height: 40px;
+        margin: 20px 0 0 20px;
         background: #0032A0;
         border-radius: 50%;
-        color: #fff;
     }
 
     #ad_s4 .tabs li {
         width: 357px;
         border: 1px solid #DBDBDB;
+        margin-right: 0;
+    }
+
+    #ad_s4 #tab1>ul>li {
+        margin-right: 0;
     }
 
     #ad_s5 {
-        margin: 30px 0 0 50px;
+        margin: 30px 0 0 0px;
     }
 
     #ad_s5>h2,
     #ad_s5>div a {
         margin-left: 0;
         overflow: hidden;
+    }
+
+    #ad_s5 .ad_slide>div {
+        margin: 0 10px;
     }
 
     #ad_s5 .bx-pager {
@@ -367,6 +399,7 @@ body {
     }
 
     #ad_s1>p {
+        width: 300px;
         font-size: 2.4rem;
         left: 20px;
     }
@@ -395,10 +428,9 @@ body {
     }
 
     #ad_s3 {
-        text-align: center;
         margin: 0 8px;
     }
-    
+
     #ad_s3 .ad_cont>li>a>img {
         width: 345px;
         height: 283px;
@@ -421,10 +453,26 @@ body {
         margin: 0 8px;
     }
 
-    #ad_s4 .tabs li {
+    #ad_s4 {
+        padding: 5px;
+    }
+
+    #ad_s4 .tabBtn {
+        width: 356px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #ad_s4 .tabBtn>li {
+        width: 178px;
+    }
+
+    #ad_s4 .tabs #tab1>ul,
+    #ad_s4 .tabs #tab2>ul {
+        width: 356px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     #ad_s5 {
