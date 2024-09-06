@@ -361,7 +361,8 @@ body {
         margin-right: 0;
     }
 
-    #ad_s4 #tab1>ul>li {
+    #ad_s4 #tab1>ul>li,
+    #ad_s4 #tab2>ul>li {
         margin-right: 0;
     }
 
@@ -392,7 +393,7 @@ body {
 
 
 /* 미디어쿼리_폰 */
-@media (max-width: 360px) {
+@media (max-width: 361px) {
     #ad_s1 {
         background-image: url(../../assets/advice/ad_main_mo.png);
     }
