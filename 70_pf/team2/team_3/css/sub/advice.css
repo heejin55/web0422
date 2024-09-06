@@ -187,7 +187,7 @@ body {
 }
 
 /* 섹션4_탭 */
-/* #ad_s4 {
+#ad_s4 {
     width: 100%;
     text-align: center;
 }
@@ -237,12 +237,12 @@ body {
 #ad_s4 #tab1>ul>li,
 #ad_s4 #tab2>ul>li {
     margin-right: 20px;
-} */
+}
 
 
 /* 섹션5_캐러셀 */
 #ad_s5 {
-    margin: 140px 0 240px 280px;
+    margin: 140px 280px 240px;
 }
 
 #ad_s5>h2 {
@@ -319,26 +319,43 @@ body {
         margin-bottom: 42px;
     }
 
-    /* #ad_s4 .tabs ul {
-        display: grid;
-        width: 100%;
-        justify-content: space-between;
+    #ad_s4 .tabs ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #ad_s4 span:nth-child(1) {
+        width: 37px;
+        height: 37px;
+        background: #0032A0;
+        border-radius: 50%;
+        color: #fff;
     }
 
     #ad_s4 .tabs li {
-        width: 100%;
-        grid-row: 1 / 2;
+        width: 357px;
         border: 1px solid #DBDBDB;
-    } */
+    }
 
     #ad_s5 {
-        margin: 0;
+        margin: 30px 0 0 50px;
     }
 
     #ad_s5>h2,
     #ad_s5>div a {
         margin-left: 0;
         overflow: hidden;
+    }
+
+    #ad_s5 .bx-pager {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        z-index: 22222;
     }
 }
 
@@ -402,6 +419,12 @@ body {
 
     #ad_s3 {
         margin: 0 8px;
+    }
+
+    #ad_s4 .tabs li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #ad_s5 {
