@@ -1,4 +1,39 @@
 $(() => {
+    // vidoe player
+    /* 
+         비디오 가져오기: 객체.get(0)
+        비디오 플레이: 객체.play()
+        비디오 일시정지: 객체.pause()
+        비디오 정지: 객체.load()
+
+    */
+    const vid = $("#s2 .vid viedo").get(0);
+    const vidBtn = $("#s2 .vid i");
+
+    // toggle 시스템
+    let flag = 0;
+
+    vidBtn.click((e)=>{
+        if (flag === 0) {
+            vid.play();
+            $(e.currentTarget).attr({class: "fa-regular fa-circle-pause"});
+            flag = 1;
+        } else {
+            vid.pause();
+            $(e.currentTarget).attr({class: "fa-regular fa-circle-play"});
+            flag = 0;
+        }
+    });
+
+    // audio button effect
+    const btn = $(".btn");
+    const snd = $(".snd").get(0);
+
+    btn.mouseenter(()=>{
+        snd.play();
+    });
+
+
     // progress bar & counter
     // 요소 찾기
     const cntNumEle = $(".counter b");
@@ -93,5 +128,15 @@ $(() => {
         const lb_link = $(event.currentTarget).text();
         $(location).attr({ href: lb_link, target: "_blank" });
     });
+
+     // portfolio more
+     const moreBtn = $("#s3 .more");
+     const pf2row = $("#s3 .pf2row");
+ 
+     moreBtn.click(()=>{
+         event.preventDefault();
+         pf2row.css({display: "flex"});
+     });
+ 
 
 }); // ready end

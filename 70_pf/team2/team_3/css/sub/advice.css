@@ -98,13 +98,9 @@ body {
 /* 레이아웃 */
 /* 섹션1_이미지 */
 #ad_s1 {
+    position: relative;
     margin: 0 auto;
     width: 1660px;
-    max-width: 100%;
-}
-
-#ad_s1 {
-    position: relative;
     margin-top: 19px;
 }
 
@@ -187,7 +183,7 @@ body {
 }
 
 /* 섹션4_탭 */
-#ad_s4 {
+/* #ad_s4 {
     width: 100%;
     text-align: center;
 }
@@ -237,13 +233,12 @@ body {
 #ad_s4 #tab1>ul>li,
 #ad_s4 #tab2>ul>li {
     margin-right: 20px;
-}
+} */
 
 
 /* 섹션5_캐러셀 */
 #ad_s5 {
     margin: 140px 0 240px 280px;
-    width: 1400px;
 }
 
 #ad_s5>h2 {
@@ -257,14 +252,6 @@ body {
 
 #ad_s5 .ad_s5_txt>a {
     margin: 5px 0 0 18px;
-}
-
-#ad_s5>.ad_slide {
-    margin: 0 -53px;
-}
-
-#ad_s5>.ad_slide>div {
-    margin: 0 53px;
 }
 
 #ad_s5>.ad_slide img {
@@ -346,7 +333,8 @@ body {
 
     #ad_s5>h2,
     #ad_s5>div a {
-        margin-left: 51px;
+        margin-left: 0;
+        overflow: hidden;
     }
 
     /* #ad_s5 .ad_slide div img{
