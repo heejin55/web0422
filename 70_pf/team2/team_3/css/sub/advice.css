@@ -208,7 +208,6 @@ body {
 }
 
 #ad_s4 ul {
-    width: 1020px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -216,6 +215,7 @@ body {
 }
 
 #ad_s4 .tabs>ul {
+    width: 1020px;
     border-bottom: 1px solid #EAEAEA;
     margin-bottom: 18px;
 }
@@ -331,19 +331,17 @@ body {
         font-size: 2.4rem;
     }
 
-    #ad_s4 .tabs ul {
+    #ad_s4 .tabs #tab1>ul,
+    #ad_s4 .tabs #tab2>ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 0;
     }
 
-    #ad_s4 .tabs>ul>li:nth-child(1)>a {
-        margin-right: 0;
-    }
-
     #ad_s4 .tabs>ul {
         border: 0;
+        width: 100%;
     }
 
     #ad_s4 #tab1>ul>li>span,
@@ -358,7 +356,7 @@ body {
     }
 
     #ad_s4 .tabs li {
-        width: 357px;
+        width: 356px;
         border: 1px solid #DBDBDB;
         margin-right: 0;
     }
@@ -374,6 +372,7 @@ body {
 
     #ad_s5>h2,
     #ad_s5>div a {
+        margin-left: 30px;
         overflow: hidden;
     }
 
@@ -467,18 +466,13 @@ body {
     }
 
     #ad_s4 .tabBtn {
-        width: 356px;
         display: flex;
         margin: 0 auto;
     }
 
-    #ad_s4 .tabBtn>li {
-        width: 178px;
-    }
 
-    #ad_s4 .tabs #tab1>ul,
-    #ad_s4 .tabs #tab2>ul {
-        width: 356px;
+    #ad_s4 .tabs #tab1 ul,
+    #ad_s4 .tabs #tab2 ul {
         display: flex;
         flex-direction: column;
         text-align: center;
