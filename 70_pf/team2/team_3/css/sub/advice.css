@@ -340,10 +340,6 @@ body {
         margin-left: 0;
         overflow: hidden;
     }
-
-    /* #ad_s5 .ad_slide div img{
-        width: 400px;
-    } */
 }
 
 
@@ -353,21 +349,16 @@ body {
         background-image: url(../../assets/advice/ad_main_mo.png);
     }
 
-    #ad_s1>h2,
     #ad_s1>p {
         font-size: 2.4rem;
         left: 20px;
     }
 
-    #ad_s1>h2 {
+    #ad_s1>p {
         top: 60px;
     }
 
-    #ad_s1>p {
-        top: 95px;
-    }
-
-    #ad_s2>h2,
+    #ad_s2>span,
     #ad_s2>input {
         font-size: 1.8rem;
     }
@@ -378,16 +369,17 @@ body {
 
     #ad_s2>input {
         width: 290px;
-        margin-bottom: 27px;
     }
 
     #ad_s2>button {
+        margin-top: 27px;
         width: 292px;
         height: 52px;
     }
 
     #ad_s3 {
         text-align: center;
+        margin: 0 8px;
     }
     
     #ad_s3 .ad_cont>li>a>img {
@@ -397,6 +389,7 @@ body {
 
     #ad_s3 .ad_text {
         width: 260px;
+        margin: 0 auto;
     }
 
     #ad_s3 .ad_text a {
@@ -411,8 +404,25 @@ body {
         margin: 0 8px;
     }
 
-    /* #ad_s5 .ad_slide div img{
-        width: 270px;
-    } */
+    #ad_s5 {
+        margin-top: 43px;
+    }
+
+    #ad_s5>h2,
+    #ad_s5 .ad_s5_txt {
+        margin-left: 35px;
+    }
+
+    #ad_s5>h2 {
+        font-size: 2rem;
+    }
+
+    #ad_s5 .ad_s5_txt>p {
+        font-size: 1.3rem;
+    }
+
+    #ad_s5 .ad_slide p {
+        font-size: 1.6rem;
+    }
 
 }
