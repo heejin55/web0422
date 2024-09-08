@@ -50,7 +50,7 @@ body {
 #ad_s1>p {
     font-size: 5rem;
     font-weight: 500;
-    color: #fff
+    color: #fff;
 }
 
 #ad_s2>h2 {
@@ -116,16 +116,10 @@ body {
     margin-top: 19px;
 }
 
-#ad_s1>h2 {
-    position: absolute;
-    top: 120px;
-    left: 170px;
-}
-
 #ad_s1>p {
     position: absolute;
-    top: 180px;
-    left: 170px;
+    top: 104px;
+    left: 258px;
 }
 
 
@@ -404,16 +398,17 @@ body {
 
     #ad_s1 .mo {
         display: block;
+        width: 100%;
     }
 
     #ad_s1>p {
         width: 300px;
-        font-size: 2.4rem;
-        left: 20px;
+        font-size: 3.4rem;
+        left: 30px;
     }
 
     #ad_s1>p {
-        top: 60px;
+        top: 64px;
     }
 
     #ad_s2>h2 {
