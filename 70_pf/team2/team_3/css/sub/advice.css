@@ -79,7 +79,7 @@ body {
 
 #ad_s4 .tabBtn a {
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 #ad_s4 #tab1 p>a>span,
@@ -386,7 +386,7 @@ body {
 
     #ad_s5>h2,
     #ad_s5>div a {
-        margin-left: 30px;
+        margin-left: 50px;
         overflow: hidden;
     }
 
@@ -492,6 +492,7 @@ body {
         margin: 0 8px;
     }
 
+    /* 섹션4 */
     #ad_s4 {
         padding: 5px;
     }
@@ -499,10 +500,6 @@ body {
     #ad_s4 .tabBtn {
         display: flex;
         margin: 0 auto;
-    }
-
-    #ad_s4 .tabBtn a {
-        font-size: 1.1rem;
     }
 
     #ad_s4 .tabs>ul {
@@ -546,11 +543,15 @@ body {
         border-radius: 50%;
     }
 
-    #ad_s4 .tabs li {
+    #ad_s4 .tabs .tabBtn>li {
         width: 356px;
+    }
+
+    #ad_s4 .tabs li {
         border: 1px solid #DBDBDB;
         margin-right: 0;
     }
+
     /* 섹션5 */
     #ad_s5 {
         margin-top: 43px;
@@ -567,7 +568,7 @@ body {
     #ad_s5 .ad_slide p {
         font-size: 1.6rem;
     }
-    
+
     #ad_s5 {
         justify-content: center;
         margin: 30px 0 0 0px;
