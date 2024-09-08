@@ -77,6 +77,11 @@ body {
     font-weight: 700;
 }
 
+#ad_s4 .tabBtn a {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
 #ad_s4 #tab1 p>a>span,
 #ad_s4 #tab2 p>a>span {
     font-weight: 700;
@@ -276,7 +281,7 @@ body {
 
 
 /* 미디어쿼리_테블릿 */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     #ad_s1 img {
         height: 280px;
     }
@@ -329,6 +334,10 @@ body {
         display: block;
         margin-bottom: 24px;
         font-size: 2.4rem;
+    }
+
+    #ad_s4 .tabBtn a {
+        font-size: 1.1rem;
     }
 
     #ad_s4 .tabs #tab1>ul,
@@ -393,7 +402,7 @@ body {
 
 
 /* 미디어쿼리_폰 */
-@media (max-width: 361px) {
+@media (max-width: 360px) {
     #ad_s1 {
         background-image: url(../../assets/advice/ad_main_mo.png);
     }
