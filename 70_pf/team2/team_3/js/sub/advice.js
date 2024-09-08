@@ -24,6 +24,7 @@ $(() => {
   // 섹션5 캐러셀
   $(function () {
     $('.ad_slide').slick({
+      autoplay: true,
       infinite: true,
       slidesToShow: 3, /* 현재 보이는 슬라이드 수 */
       slidesToScroll: 1,
