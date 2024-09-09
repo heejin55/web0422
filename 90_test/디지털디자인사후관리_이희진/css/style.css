@@ -213,6 +213,7 @@ header {
 
 .logo_nav .main {
     padding: 5px;
+    height: 20px;
 }
 
 .logo_nav .main>a:hover {
@@ -316,7 +317,7 @@ header {
 
 .bx-wrapper .bx-prev {
     left: 97px;
-    background: url(../assets/prve.png) no-repeat 0px 0px;
+    background: url(../assets/prev.png) no-repeat 0px 0px;
 }
 
 .bx-wrapper .bx-next {
