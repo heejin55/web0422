@@ -87,19 +87,19 @@ a {
 
 /* 헤더 */
 .logo_nav a {
-    color: #EC6CA2;
+    color: #1B1B1B;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 /* 섹션1 */
 .slidertxt a{
-    color: #8E8C8D;
+    color: #1B1B1B;
     font-weight: 600;
 }
 
 .slidertxt a:nth-of-type(2){
-    color: #EC6CA2;
+    color: #FAF1C6;
     font-size: 5rem;
     font-weight: 600;
 }
@@ -116,7 +116,7 @@ a {
 
 .slidertxt button {
     color: #fff;
-    background: #EC6CA2;
+    background: #FAF1C6;
     opacity: 0.4;
 }
 
@@ -124,13 +124,13 @@ a {
 #s2 h2 {
     font-weight: 700;
     font-size: 4.4rem;
-    color: #EC6CA2;;
+    color: #FAF1C6;
 }
 
 #s2 #tabs>ul>li:nth-child(1) {
     font-weight: 700;
     font-size: 2.4rem;
-    color: #000
+    color: #FAF1C6;
 }
 #s2 #tabs>ul>li>a:nth-child(2),
 #s2 #tabs>ul>li>a:nth-child(3) {
@@ -163,18 +163,22 @@ a {
 #s4 h2 {
     font-size: 24px;
     font-weight: 200;
+    color: #1B1B1B;
 }
 
 #s4 h3 {
     font-size: 64px;
     font-weight: 700;
     line-height: 1;
+    color: #fff;
+   
 }
 
 #s4 p:first-of-type {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.2;
+    color: #1B1B1B;
 }
 
 #s4 a {
@@ -215,7 +219,7 @@ header {
 .logo_right {
     position: absolute;
     z-index: 999999;
-    right: 64px;
+    right: 40px;
     top: 30px;
     display: flex;
 }
@@ -322,8 +326,13 @@ header {
     align-items: center;
 }
 
-#s2 #tabs>div>ul>li {
+#s2 #tabs>div>ul>li{
     margin-right: 24px;
+}
+
+#s2 #tabs>div>ul>li img{
+    margin-right: 24px;
+    border: 1px solid #eee;
 }
 
 #s2 #tabs>div>ul>li>a:nth-of-type(1) {
@@ -355,7 +364,7 @@ header {
 
 /* 섹션4 */
 #s4 {
-    background: url(../images/bx_s1.jpg) no-repeat 960px 0/cover;
+    background: url(../assets/bx_s1.jpg) no-repeat 0 0/cover;
 }
 
 #s4 .ibx {
@@ -376,7 +385,7 @@ header {
     top: 160px;
     width: 350px;
     height: 40px;
-    background: #FAF1C6;
+    background: #ac2c34;
 }
 
 #s4 h3 {
@@ -398,7 +407,7 @@ header {
 
 #s4 .link a:hover {
     transform: translateY(-4px);
-    background: #353535;
+    background: rgba(170, 46, 54, 0.8);
 }
 
 #s4 .link a:first-child {
