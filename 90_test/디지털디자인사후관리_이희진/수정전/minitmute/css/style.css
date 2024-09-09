@@ -32,14 +32,13 @@ a {
 
 img {
     width: 100%;
-    max-width: 100%;
+    height: 100%;
     object-fit: cover;
     vertical-align: top;
 }
 
 button {
     border: none;
-    cursor: pointer;
 }
 
 iframe {
@@ -52,10 +51,10 @@ iframe {
     background: #FAF1C6;
 }
 
-
-/* 타이포 */
+/* typo */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+/* 공통 */
 html {
     font-size: 10px;
 }
@@ -64,7 +63,6 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 1.5rem;
     color: #1b1b1b;
-    line-height: 1.5;
 }
 
 h2 {
@@ -78,80 +76,31 @@ h3 {
 }
 
 p {
-    font-weight: 400;
+    font-weight: 300;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 a {
-    color: #000;
-}
-
-/* 헤더 */
-.logo_nav a {
-    color: #1B1B1B;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-/* 섹션1 */
-.slidertxt a{
-    color: #1B1B1B;
-    font-weight: 600;
-}
-
-.slidertxt a:nth-of-type(2){
-    color: #FAF1C6;
-    font-size: 5rem;
-    font-weight: 600;
-}
-
-.slidertxt p {
-    font-weight: 400;
-    font-size: 1.4rem;
-}
-
-.slidertxt span {
-    font-size: 4rem;
-    font-weight: 500;
-}
-
-.slidertxt button {
-    color: #fff;
-    background: #FAF1C6;
-    opacity: 0.4;
+    color: #111;
 }
 
 /* 섹션2 */
-#s2 h2 {
-    font-weight: 700;
-    font-size: 4.4rem;
-    color: #8E8C8D;
+#S2>.inner>p {
+    color: #777;
 }
 
-#s2 #tabs>ul>li:nth-child(1) {
-    font-weight: 700;
-    font-size: 2.4rem;
-}
-#s2 #tabs>ul>li:nth-child(2),
-#s2 #tabs>ul>li:nth-child(3) {
-    font-weight: 200;
-    font-size: 1.8rem;
-    color: #8E8C8D;
+#S2 #tabs>ul a {
+    color: #777;
 }
 
-#s2 #tabs>div h3 {
-    font-size: 1.4rem;
-    font-weight: 400;
+#S2 h3.rank1 {
+    font-size: 4rem;
+    font-weight: 600;
 }
-
-#s2 #tabs>div a:nth-of-type(2) {
-    font-size: 1.2rem;
-    color: #ACACAC;
-}
-
-#s2 #tabs>div a:nth-of-type(3) {
-    font-size: 1.6rem;
-}
-
 
 /* 섹션3 */
 #s3 h2 {
@@ -162,22 +111,19 @@ a {
 #s4 h2 {
     font-size: 24px;
     font-weight: 200;
-    color: #1B1B1B;
 }
 
 #s4 h3 {
     font-size: 64px;
     font-weight: 700;
     line-height: 1;
-    color: #fff;
-   
+    /* text-transform: uppercase; */
 }
 
 #s4 p:first-of-type {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.2;
-    color: #1B1B1B;
 }
 
 #s4 a {
@@ -190,84 +136,18 @@ footer p {
     line-height: 1.6;
 }
 
-/* 레이아웃 시작 */
 /* header */
 header {
-    z-index: 999;
+    z-index: 9999;
     position: fixed;
     position: relative;
 }
 
 .logo {
     position: absolute;
-    left: 61px;
+    left: 900px;
     top: 30px;
 }
-
-.logo_nav {
-    position: absolute;
-    left: 250px;
-    top: 30px;
-    display: flex;
-}
-
-.logo_nav .main {
-    padding: 5px;
-    height: 20px;
-}
-
-.logo_nav .main>a:hover {
-    text-decoration: underline;
-}
-
-.logo_nav .sub li{
-    width: 200px;
-    
-}
-
-.logo_nav .sub a{
-    display: block;
-    background: #FAF1C6;
-    padding: 5px 7px;
-    opacity: 0.9;
-}
-
-.logo_nav .sub>li>a:hover {
-    text-decoration: underline;
-}
-
-.sub {
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    transition: .3s;
-    line-height: 2;
-} 
-
-.logo_nav .main:hover .sub {
-    opacity: 1;
-    visibility: visible;
-}
-
-.logo_nav a {
-    margin-right: 41px;
-}
-
-.logo_right {
-    position: absolute;
-    z-index: 999999;
-    right: 40px;
-    top: 30px;
-}
-
-.logo_right a {
-    display: flex;
-}
-
-.logo_right span {
-    margin-right: 18px;
-}
-
 
 /* 푸터에 있는 p 높이 */
 .fp-auto-height div {
@@ -310,18 +190,29 @@ header {
     bottom: 30px;
 }
 
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #353535;
+    margin: 0 10px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    transform: scale(1.5, 1.5);
+    background: #FAF1C6;
+    /* 동그라미 버튼 클릭 시 컬러 */
+}
+
 .bx-wrapper .bx-controls-direction a {
     width: 40px;
     height: 80px;
 }
 
 .bx-wrapper .bx-prev {
-    left: 97px;
+    left: 130px;
     background: url(../images/prev.png) no-repeat 0px 0px;
 }
 
 .bx-wrapper .bx-next {
-    right: 97px;
+    right: 130px;
     background: url(../images/next.png) no-repeat 0px 0px;
 }
 
@@ -331,62 +222,82 @@ header {
     background-position: 0 0;
 }
 
-.slidertxt {
-    position: absolute;
-    top: 320px;
-    left: 150px;
-}
-
-.slidertxt a {
-    display: block;
-}
-
-.slidertxt button {
-    border-radius: 20px;
-    width: 101px;
-    height: 44px;
-    margin-top: 44px;
-}
-
 /* 섹션2 */
-#s2 .ibx #tabs{
+#s2 .ibx h2 {
+    text-align: center;
+}
+
+#s2 .ibx h2+p {
+    text-align: center;
+    margin: 24px 0 48px;
+}
+
+/* 탭 공통 */
+#s2 #tabs {
+    position: relative;
+}
+
+#s2 #tabs ul {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
-#s2 #tabs>ul>li {
-    margin-right: 230px;
-    margin-bottom: 21px;
-    width: 90px;
+/* 탭의 버튼 */
+#s2 #tabs>ul {
+    position: absolute;
+    right: 0;
+    width: 474px;
 }
 
-/* 탭 콘텐츠 */
-#s2 #tabs>div>ul {
-    display: flex;
-    align-items: center;
+#s2 #tabs>ul>li:not(:first-child) {
+    margin: 0 16px;
 }
 
-#s2 #tabs>div>ul>li{
-    margin-right: 24px;
+#s2 #tabs>ul>li:not(:first-child)::before {
+    content: '|';
+    margin-right: 15px;
 }
 
-#s2 #tabs>div>ul>li img{
-    margin-right: 24px;
-    border: 1px solid #eee;
+/* 탭의 콘텐츠 */
+#s2 #tabs>div ul {
+    height: 432px;
 }
 
-#s2 #tabs>div>ul>li>a:nth-of-type(1) {
+#s2 #tabs>div ul li:nth-child(1) {
+    align-self: flex-start;
+}
+
+#s2 #tabs>div ul li:nth-child(2) {
+    margin: 0 30px 0 75px;
+}
+
+#s2 #tabs>div ul li {
+    height: 216px;
+}
+
+#s2 #tabs>div a {
     display: block;
-    margin-bottom: 16px;
-    width: 355px;
-    height: 355px;
+    width: 222px;
+    height: 168px;
 }
 
-#s2 #tabs>div a:nth-of-type(3) {
-    display: block;
-    margin-top: 17px;
+#s2 #tabs>div h3 {
+    margin-top: 16px;
 }
 
+#s2 #tabs>div a.rank1 {
+    width: 570px;
+    height: 432px;
+}
+
+#s2 #tabs>div a.rank1+h3 {
+    position: absolute;
+    width: 474px;
+    height: 48px;
+    right: 0;
+    top: 48px;
+    text-wrap: nowrap;
+}
 
 /* 탭의 기능 핵심 */
 #s2 #tabs>div {
@@ -401,13 +312,10 @@ header {
 #s3 div {
     text-align: center;
 }
-#s3 h2 {
-    padding: 10px;
-}
 
 /* 섹션4 */
 #s4 {
-    background: url(../images/bx_s1.jpg) no-repeat 0 0/cover;
+    background: url(../images/bx_s1.jpg) no-repeat 960px 0/cover;
 }
 
 #s4 .ibx {
@@ -428,7 +336,7 @@ header {
     top: 160px;
     width: 350px;
     height: 40px;
-    background: #ac2c34;
+    background: #FAF1C6;
 }
 
 #s4 h3 {
@@ -450,7 +358,7 @@ header {
 
 #s4 .link a:hover {
     transform: translateY(-4px);
-    background: rgba(170, 46, 54, 0.8);
+    background: #353535;
 }
 
 #s4 .link a:first-child {
