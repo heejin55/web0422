@@ -317,12 +317,12 @@ header {
 
 .bx-wrapper .bx-prev {
     left: 97px;
-    background: url(../assets/prev.png) no-repeat 0px 0px;
+    background: url(../images/prev.png) no-repeat 0px 0px;
 }
 
 .bx-wrapper .bx-next {
     right: 97px;
-    background: url(../assets/next.png) no-repeat 0px 0px;
+    background: url(../images/next.png) no-repeat 0px 0px;
 }
 
 /* next 버튼 호버시 사라지는 현상 초기화 */
@@ -407,7 +407,7 @@ header {
 
 /* 섹션4 */
 #s4 {
-    background: url(../assets/bx_s1.jpg) no-repeat 0 0/cover;
+    background: url(../images/bx_s1.jpg) no-repeat 0 0/cover;
 }
 
 #s4 .ibx {
