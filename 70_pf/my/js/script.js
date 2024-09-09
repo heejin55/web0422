@@ -196,14 +196,14 @@ $(() => {
     }
 
     // 푸터 배경색 랜덤하게 바꾸기
-    const footerEle = $("footer");
-    const colors = ["##FAF1C6", "##FAF1C6", "##FAF1C6"];
+    // const footerEle = $("footer");
+    // const colors = ["##FAF1C6", "##FAF1C6", "##FAF1C6"];
    
-    setInterval(bgcolor, 1000);
+    // setInterval(bgcolor, 1000);
     
-    function bgcolor(){
-        let color = colors[Math.floor(Math.random() * 3)];
-        footerEle.css({backgroundColor: color});
-    }
+    // function bgcolor(){
+    //     let color = colors[Math.floor(Math.random() * 3)];
+    //     footerEle.css({backgroundColor: color});
+    // }
 
 }); // ready end
