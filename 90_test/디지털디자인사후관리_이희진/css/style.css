@@ -124,18 +124,17 @@ a {
 #s2 h2 {
     font-weight: 700;
     font-size: 4.4rem;
-    color: #FAF1C6;
+    color: #8E8C8D;
 }
 
 #s2 #tabs>ul>li:nth-child(1) {
     font-weight: 700;
     font-size: 2.4rem;
-    color: #FAF1C6;
 }
 #s2 #tabs>ul>li>a:nth-child(2),
 #s2 #tabs>ul>li>a:nth-child(3) {
     font-weight: 100;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: #8E8C8D;
 }
 

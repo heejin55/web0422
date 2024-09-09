@@ -66,6 +66,30 @@ window.addEventListener("DOMContentLoaded", function () {
 
 });
 
+$(function () {
+    const bt1 = $('#tabs a').eq(0)
+    const bt2 = $('#tabs a').eq(1)
+    const bt3 = $('#tabs a').eq(2)
+    bt1.click(()=>{
+        bt1.css({color: '#000', fontSize: '2.4rem'});
+        bt2.css({color: '#8E8C8D', fontSize: '1.8rem'});
+        bt3.css({color: '#8E8C8D', fontSize: '1.8rem'});
+    });
+
+    bt2.click(()=>{
+        bt1.css({color: '#8E8C8D', fontSize: '1.8rem'});
+        bt2.css({color: '#000', fontSize: '2.4rem'});
+    });
+
+    bt3.click(()=>{
+        bt1.css({color: '#8E8C8D', fontSize: '1.8rem'});
+        bt2.css({color: '#8E8C8D', fontSize: '1.8rem'});
+        bt3.css({color: '#000', fontSize: '2.4rem'});
+    });
+        
+
+}); // document.ready() 
+
 // S3
 // 로드 이벤트
 window.addEventListener("DOMContentLoaded", function () {
