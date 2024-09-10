@@ -1,4 +1,19 @@
 $(() => {
+    // 요소찾기
+    const nav1 = $(".gnb1");
+    const nav2 = $(".gnb2");
+
+    $(window).scroll(() => {
+        let st = $(this).scrollTop();
+        if (st > 100) {
+            nav1.css({ opacity: 0 });
+            nav2.addClass("down");
+        } else {
+            nav1.css({ opacity: 1 });
+            nav2.removeClass("down");
+        }
+    });
+
     // video player
     /* 
         비디오 가져오기: 객체.get(0)
@@ -7,24 +22,24 @@ $(() => {
         비디오 정지: 객체.load()
     */
 
-    const vid = $("#s2 .vid video").get(0);
-    const vidBtn = $("#s2 .vid i");
+    // const vid = $("#s2 .vid video").get(0);
+    // const vidBtn = $("#s2 .vid i");
 
     // toggle 동작 만들기
     // 하나의 버튼으로 두 개의 상태를 만든다.
-    let flag = 0;
+    // let flag = 0;
 
-    vidBtn.click((e) => {
-        if (flag === 0) {
-            vid.play();
-            $(e.currentTarget).attr({ class: "fa-regular fa-circle-pause" });
-            flag = 1;
-        } else {
-            vid.pause();
-            $(e.currentTarget).attr({ class: "fa-regular fa-circle-play" });
-            flag = 0;
-        }
-    });
+    // vidBtn.click((e) => {
+    //     if (flag === 0) {
+    //         vid.play();
+    //         $(e.currentTarget).attr({ class: "fa-regular fa-circle-pause" });
+    //         flag = 1;
+    //     } else {
+    //         vid.pause();
+    //         $(e.currentTarget).attr({ class: "fa-regular fa-circle-play" });
+    //         flag = 0;
+    //     }
+    // });
 
     // audio button effect
     const btn = $(".btn");
@@ -152,7 +167,7 @@ $(() => {
 
     setInterval(firefly, 3000);
 
-    function firefly(){
+    function firefly() {
         mm(0);
         mm(1);
     }
@@ -186,21 +201,21 @@ $(() => {
 
         // 1 <= Math.floor(Math.random() * 10) + 1 < 11
         // 50 <= Math.floor(Math.random() * 1800) + 50 < 1920
-        
+
         let x = Math.floor(Math.random() * 1800) + 50 - mp.eq(i).outerWidth() / 2;
         let y = Math.floor(Math.random() * 800) + 50 - mp.eq(i).outerWidth() / 2;
         // let x = event.pageX - mp.eq(i).outerWidth() / 2;
         // let y = event.pageY - mp.eq(i).outerWidth() / 2;
 
-        mp.eq(i).css({left: x + "px", top: y + "px"});
+        mp.eq(i).css({ left: x + "px", top: y + "px" });
     }
 
     // 푸터 배경색 랜덤하게 바꾸기
     // const footerEle = $("footer");
     // const colors = ["##FAF1C6", "##FAF1C6", "##FAF1C6"];
-   
+
     // setInterval(bgcolor, 1000);
-    
+
     // function bgcolor(){
     //     let color = colors[Math.floor(Math.random() * 3)];
     //     footerEle.css({backgroundColor: color});
