@@ -297,42 +297,6 @@ header {
     position: relative;
     width: 300%;
     margin-right: 100px;
-    animation: marquee 5s infinite;
-}
-
-@keyframes marquee {
-    0% {
-        left: 0%;
-    }
-
-    /* 10% {
-        left: -100%;
-    }
-
-    33% {
-        left: -100%;
-    }
-
-    43% {
-        left: -200%;
-    }
-
-    66% {
-        left: -200%;
-    }
-
-    76% {
-        left: -300%;
-    }
-
-    99.9% {
-        left: -300%;
-    } */
-
-    100% {
-        left: 100%;
-    }
-
 }
 
 /* 푸터 콘텐츠 */
@@ -383,8 +347,8 @@ header {
     width: 480px;
 }
 
-/*  --------------------테블릿----------------- */
-@media (min-width: 768px) and (max-width:992px) {
+/*  -----------------------------------테블릿--------------------------------------- */
+@media (min-width: 768px) and (max-width:991px) {
     nav {
         display: none;
     }
@@ -448,8 +412,60 @@ header {
         bottom: -170px;
     }
 
+    #s3 {
+        padding: 0 10px;
+    }
+
+    /* /////////////////// */
     #s4 {
-        width: 100%;
+        width: 100vw;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    #s4>div {
+        display: flex;
+        text-align: center;
+        padding: 126px 0 0 153px;
+    }
+    
+    #s4 .s4_contImages img:nth-child(1) {
+        margin-right: 86px;
+    }
+    #s4 .s4_contImages img:nth-child(2) {
+        margin-right: 19px;
+    }
+    
+    #s4 .s4_contText {
+        position: absolute;
+        top: 150px;
+        left: 410px;
+    }
+    
+    .s4_contText p:nth-of-type(1) {
+        margin-bottom: 14px;
+    }
+    
+    .s4_contText p:nth-of-type(3) {
+        margin: 180px 0 85px 0;
+        text-decoration: underline;
+    }
+    
+    .s4_contText p:nth-of-type(5) {
+        margin: 18px 0 29px 0;
+    }
+    
+    #s4 .s4_contImages {
+        padding-left: 85px;
+    }
+    
+    #s4 .s4_contImages img:nth-of-type(1) {
+        margin-right: 19px;
+    }
+
+    /* //////////////////// */
+/* 
+    #s4 {
         height: 332px;
         background-size: contain;
         background-repeat: no-repeat;
@@ -519,7 +535,7 @@ header {
     #s4 .s4_contImages img:nth-last-of-type(1), 
     #s4 .s4_contImages img:nth-last-of-type(2) {
         max-width: 145px;
-    }
+    } */
 
 
     footer .footer_cs2, .footer_gide {
@@ -552,7 +568,7 @@ header {
 }
 
 /*  --------------------폰----------------- */
-@media (min-width: 360px) and (max-width:767px){
+@media (max-width:767px){
     nav {
         display: none;
         ;
