@@ -38,8 +38,8 @@ a {
 
 img {
     vertical-align: top;
+    width: 100%;
     max-width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
@@ -420,7 +420,8 @@ header {
     #s4 {
         width: 100vw;
         margin: 0;
-        height: 100vh;
+        height: 331px;
+        margin: 70px 0 54px 0;
     }
     
     #s4>div {
@@ -454,40 +455,26 @@ header {
     .s4_contText p:nth-of-type(5) {
         margin: 18px 0 29px 0;
     }
-    
+
     #s4 .s4_contImages {
-        padding-left: 85px;
+        display: flex;
+        padding-left: 0;
     }
     
     #s4 .s4_contImages img:nth-of-type(1) {
-        margin-right: 19px;
+        margin-right: 0;
+        width: 197px;
+        height: 214px;
     }
 
+    #s4 .s4_contImages img:nth-of-type(2),
+    #s4 .s4_contImages img:nth-of-type(3) {
+        width: 145px;
+        height: 217px;
+    } 
+
     /* //////////////////// */
-/* 
-    #s4 {
-        height: 332px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    
-    
-    #s4>div {
-        display: flex;
-        text-align: center;
-        padding: 63px 0 0 69px;
-    }
-    
-    #s4 .s4_contImages img:nth-child(1) {
-        margin-right: 35px;
-        max-width: 297px;
-    }
-    
-    #s4 .s4_contText {
-        position: absolute;
-        top: 150px;
-        left: 410px;
-    }
+
     
     .s4_contText p:nth-of-type(1) {
         margin-bottom: 14px;
@@ -531,11 +518,6 @@ header {
     #s4 .s4_contText p:nth-of-type(5) {
         font-size: 6px;
     }
-
-    #s4 .s4_contImages img:nth-last-of-type(1), 
-    #s4 .s4_contImages img:nth-last-of-type(2) {
-        max-width: 145px;
-    } */
 
 
     footer .footer_cs2, .footer_gide {
