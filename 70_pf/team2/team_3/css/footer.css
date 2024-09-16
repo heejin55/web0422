@@ -5,7 +5,7 @@ footer>ul {
     background: #0032A0;
 }
 
-footer h3 {
+footer>ul>li>h3 {
     color: #fff;
     font-size: 2.6rem;
 }
@@ -15,7 +15,7 @@ footer h3 {
     font-size: 1.6rem;
 }
 
-.fbottom h3 {
+.fbottom>h3 {
     font-size: 3.2rem;
     font-weight: 600;
     color: #0032A0;
@@ -26,7 +26,7 @@ footer h3 {
     color: #0032A0;
 }
 
-/* 레이아웃 */
+/* 레이아웃-데스크탑 */
 footer>ul {
     display: flex;
     justify-content: center;
@@ -57,4 +57,90 @@ footer>ul>li:nth-of-type(3) {
 
 .fbottom p {
     text-align: end;
+}
+
+/* 미디어_태블릿 */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        margin-top: 178px;
+    }
+
+    footer>ul {
+        padding: 60px 30px;
+    }
+
+    footer>ul>li>h3 {
+        font-size: 2.2rem;
+    }
+    
+    .fsub a {
+        font-size: 1.2rem;
+    }
+
+    footer>ul h3 {
+        width: 223px;
+    }
+
+    footer>ul>li {
+        margin-right: 10px;
+    }
+
+    .fbottom {
+        padding: 20px 23px;
+        justify-content: space-between;
+    }
+}
+
+/* 미디어_폰 */
+@media (max-width: 767px) {
+    footer {
+        margin-top: 130px;
+        position: relative;
+    }
+
+    footer>ul {
+        display: block;
+    }
+
+    footer>ul>li>h3 {
+        font-size: 1.8rem;
+    }
+
+    footer>ul h3 {
+        width: 360px;
+        padding-left: 19px;
+    }
+
+    footer>ul h3:nth-of-type(1) {
+        border-top: 1px solid #fff;
+    }
+
+    .fsub {
+        display: none;
+    }
+
+    .fbottom {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .fbottom>h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    .fbottom p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .fbottom span {
+        position: absolute;
+        top: 20px;
+        left: 130px;
+        color: #fff;
+        font-size: 1rem;
+        height: 56px;
+    }
 }
