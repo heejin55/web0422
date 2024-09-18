@@ -38,7 +38,6 @@ a {
 
 img {
     vertical-align: top;
-    width: 100%;
     max-width: 100%;
     object-fit: cover;
 }
@@ -348,7 +347,7 @@ header {
 }
 
 /*  -----------------------------------테블릿--------------------------------------- */
-@media (min-width: 768px) and (max-width:991px) {
+/* @media (min-width: 768px) and (max-width:991px) {
     nav {
         display: none;
     }
@@ -544,10 +543,10 @@ header {
         justify-content: space-between;
         border: none;
     }
-}
+} */
 
 /*  --------------------폰----------------- */
-@media (max-width:767px){
+/* @media (max-width:767px){
     nav {
         display: none;
         ;
@@ -621,4 +620,4 @@ header {
         display: flex;
         padding-left: 0;
     }
-}
+} */
