@@ -5,7 +5,7 @@ $(function () {
     $('#wrap').fullpage({
         menu: '#minit_nav',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        sectionsColor: ['#f1f1f1', '#f8f8f8', '#ffffff', '#f8f8f8'],
+        sectionsColor: ['#fff', '#FBF7E5', '#FBF7E5', '#fff'],
         // 오른쪽 인디케이터
         navigation: true,
         // 오른쪽 인디케이터 마우스 올렸을 때
@@ -50,18 +50,26 @@ window.addEventListener("DOMContentLoaded", function () {
     btn1.onclick = function () {
         resetF();
         cont1.classList.add('on');
+        resetB()
+        btn1.style.fontWeight = "600";
     };
     btn2.onclick = function () {
         resetF();
         cont2.classList.add('on');
+        resetB()
+        btn2.style.fontWeight = "600";
     };
     btn3.onclick = function () {
         resetF();
         cont3.classList.add('on');
+        resetB()
+        btn3.style.fontWeight = "600";
     };
     btn4.onclick = function () {
         resetF();
         cont4.classList.add('on');
+        resetB()
+        btn4.style.fontWeight = "600";
     };
 
     function resetF() {
@@ -71,6 +79,12 @@ window.addEventListener("DOMContentLoaded", function () {
         cont4.classList.remove('on');
     }
 
+    function resetB() {
+        btn1.style.fontWeight = "normal";
+        btn2.style.fontWeight = "normal";
+        btn3.style.fontWeight = "normal";
+        btn4.style.fontWeight = "normal";
+    }
 });
 
 // S3

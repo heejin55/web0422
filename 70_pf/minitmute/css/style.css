@@ -88,8 +88,15 @@ a {
     color: #111;
 }
 
+/* 헤더 */
+.logo_nav a {
+    color: #1B1B1B;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
 /* 섹션2 */
-#S2>.inner>p {
+#s2>.inner>p {
     color: #777;
 }
 
@@ -97,8 +104,12 @@ a {
     color: #777;
 }
 
-#S2 h3.rank1 {
-    font-size: 4rem;
+#s2 #tabs>ul>li:first-child {
+    font-weight: 600;
+}
+
+#s2 h3.rank1 {
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -118,6 +129,14 @@ a {
     font-weight: 700;
     line-height: 1;
     /* text-transform: uppercase; */
+}
+
+#s4 h3 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+   
 }
 
 #s4 p:first-of-type {
@@ -147,6 +166,71 @@ header {
     position: absolute;
     left: 900px;
     top: 30px;
+}
+
+/* nav 추가 */
+.logo_nav {
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    display: flex;
+}
+
+.logo_nav .main {
+    padding: 5px;
+    height: 20px;
+}
+
+.logo_nav .main>a:hover {
+    text-decoration: underline;
+}
+
+.logo_nav .sub li{
+    width: 200px;
+    
+}
+
+.logo_nav .sub a{
+    display: block;
+    background: #FAF1C6;
+    padding: 5px 7px;
+    opacity: 0.9;
+}
+
+.logo_nav .sub>li>a:hover {
+    text-decoration: underline;
+}
+
+.sub {
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .3s;
+    line-height: 2;
+} 
+
+.logo_nav .main:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo_nav a {
+    margin-right: 41px;
+}
+
+.logo_right {
+    position: absolute;
+    z-index: 999999;
+    right: 40px;
+    top: 30px;
+}
+
+.logo_right a {
+    display: flex;
+}
+
+.logo_right span {
+    margin-right: 18px;
 }
 
 /* 푸터에 있는 p 높이 */
@@ -315,7 +399,7 @@ header {
 
 /* 섹션4 */
 #s4 {
-    background: url(../images/bx_s1.jpg) no-repeat 960px 0/cover;
+    background: url(../images/bx_s1.jpg) no-repeat 0 0/cover; /* 이미지 꽉 차게 */
 }
 
 #s4 .ibx {
@@ -336,7 +420,7 @@ header {
     top: 160px;
     width: 350px;
     height: 40px;
-    background: #FAF1C6;
+    background: #ac2c34;
 }
 
 #s4 h3 {
@@ -358,13 +442,12 @@ header {
 
 #s4 .link a:hover {
     transform: translateY(-4px);
-    background: #353535;
+    background: rgba(170, 46, 54, 0.8);
 }
 
 #s4 .link a:first-child {
     margin-right: 20px;
 }
-
 footer p {
     text-align: end;
     margin-top: 40px;
