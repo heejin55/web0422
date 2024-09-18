@@ -48,14 +48,18 @@ window.addEventListener("DOMContentLoaded", function () {
     btn1.onclick = function () {
         resetF();
         cont1.classList.add('on');
+        pik1()
     };
     btn2.onclick = function () {
         resetF();
         cont2.classList.add('on');
+        pik2()
+        
     };
     btn3.onclick = function () {
         resetF();
         cont3.classList.add('on');
+        pik3()
     };
 
     function resetF() {
@@ -64,13 +68,47 @@ window.addEventListener("DOMContentLoaded", function () {
         cont3.classList.remove('on');
     }
 
+    function pik1() {
+        btn1.style.color = "#000";
+        btn1.style.fontWeight = "600";
+        btn1.style.fontSize = "2.4rem";
+        btn2.style.color = "#8E8C8D";
+        btn2.style.fontWeight = "100";
+        btn2.style.fontSize = "1.8rem";
+        btn3.style.color = "#8E8C8D";
+        btn3.style.fontWeight = "100";
+        btn3.style.fontSize = "1.8rem";
+    }
+    function pik2() {
+        btn1.style.color = "#8E8C8D";
+        btn1.style.fontWeight = "100";
+        btn1.style.fontSize = "1.8rem";
+        btn3.style.color = "#8E8C8D";
+        btn3.style.fontWeight = "100";
+        btn3.style.fontSize = "1.8rem";
+        btn2.style.color = "#000";
+        btn2.style.fontWeight = "600";
+        btn2.style.fontSize = "2.4rem";
+    }
+    function pik3() {
+        btn1.style.color = "#8E8C8D";
+        btn1.style.fontWeight = "100";
+        btn1.style.fontSize = "1.8rem";
+        btn2.style.color = "#8E8C8D";
+        btn2.style.fontWeight = "100";
+        btn2.style.fontSize = "1.8rem";
+        btn3.style.color = "#000";
+        btn3.style.fontWeight = "600";
+        btn3.style.fontSize = "2.4rem";
+    }
+
 });
 
 // S3
 // 로드 이벤트
 window.addEventListener("DOMContentLoaded", function () {
     // 요소 찾기
-    const p = document.querySelector("#s3 h2");
+    let p = document.querySelector("#s3 h2");
     const mbx = document.querySelector(".mbx");
 
     // 스크롤 이벤트
