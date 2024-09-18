@@ -1,22 +1,22 @@
 const mdata = {
     // 영어 데이터
     en: {
-        gnb: ["Moive", "Event", "CS Center", "Notice"],
-        mtit: ["MB", "MegaBox"],
-        stit: ["", "Movie", "Event", "CS Center"],
+        gnb: ["Featured Contents", "Newsroom", "Contact Us"],
+        mtit: ["CJ", "cjenm"],
+        stit: ["", "Featured Contents", "Newsroom", "Contact Us"],
         s2: {
-            img: ["assets/movie4.jpg","assets/movie3.jpg","assets/movie2.jpg","assets/movie1.jpg","assets/movie8.jpg","assets/movie7.jpg","assets/movie6.jpg","assets/movie5.jpg"],
-            tit: ["Pilot", "Deadpool and Wolverine", "Revolver", "Despicable Me 4", "Sarah's Hatching", "Inside Out 2", "Victory", "Detective Conan"]
+            img: ["images/Cont1.jpg","images/Cont2.jpg","images/Cont3.jpg","images/Cont4.jpg","images/Cont5.jpg","images/Cont6.jpg.jpg","images/Cont7.jpg","images/Cont8.jpg"],
+            tit: ["Thank you", "Let's carry Sunjae and run", "It's Seojin2", "I-LAND N/a", "I dream openly of Cinderella", "Girls' High School's mystery class 3", "Escape: PROJECT SILENCE", "Backpacker 2"]
         }  
     },
     // 한국어 데이터
     ko: {
-        gnb: ["영화", "이벤트", "고객센터", "공지사항"],
-        mtit: ["엠비", "메가박스"],
-        stit: ["","영화", "이벤트", "고객센터"],
+        gnb: ["주요 콘텐츠", "뉴스룸", "고객센터"],
+        mtit: ["씨제이", "씨제이이엔엠"],
+        stit: ["","콘텐츠", "뉴스룸", "고객센터"],
         s2: {
-            img: ["assets/movie1.jpg","assets/movie2.jpg","assets/movie3.jpg","assets/movie4.jpg","assets/movie5.jpg","assets/movie6.jpg","assets/movie7.jpg","assets/movie8.jpg"],
-            tit: ["파일럿", "데드풀과 울버린", "리볼버", "슈퍼배드4", "사라의 하츄핑", "인사이드 아웃2", "빅토리", "명탐정 코난"]
+            img: ["images/Cont1.jpg","images/Cont2.jpg","images/Cont3.jpg","images/Cont4.jpg","images/Cont5.jpg","images/Cont6.jpg.jpg","images/Cont7.jpg","images/Cont8.jpg"],
+            tit: ["감사합니다", "선재 업고 튀어", "서진이네2", "I-LAND N/a", "나는 대놓고 신데렐라를 꿈꾼다", "여고 추리반3", "탈출: PROJECT SILENCE", "백패커2"]
         }  
     },
 };
