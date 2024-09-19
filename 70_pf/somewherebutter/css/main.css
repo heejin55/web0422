@@ -180,14 +180,15 @@ header {
 }
 
 .sub {
-    /* overflow: hidden;
-    visibility: hidden; */
-    /* opacity: 0; */
-    /* height: 0; */
-    width: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 222px;
+    width: 1920px;
     padding: 10px 0 20px 0;
     transition: .3s;
     margin-top: 20px;
+    border-top: 1px solid #D9D9D9;
 }
 
 .main:hover .sub {
@@ -196,14 +197,9 @@ header {
     height: 222px;
 }
 
-.sub>li{
-    width: 480px;
-}
-
-.sub>.subm {
-    padding: 20px 0;
-    margin-right: 480px;
-    border: 1px solid #D9D9D9;
+.sub>li>a {
+    display: block;
+    padding: 10px;
 }
 
 /* 폰트어썸_아이콘 */
@@ -303,6 +299,7 @@ header {
 #s4 .s4_contImages img:nth-child(1) {
     margin-right: 86px;
 }
+
 #s4 .s4_contImages img:nth-child(2) {
     margin-right: 19px;
 }
