@@ -14,9 +14,10 @@
     box-sizing: border-box;
 }
 
-/* * {
-    border: 1px solid lime;
-} */
+body {
+    overflow-x: hidden;
+}
+
 body,
 h1,
 h2,
@@ -335,14 +336,8 @@ header {
 .slideTextBar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 55px;
-}
-
-.textBar span {
-    position: relative;
-    width: 300%;
-    margin-right: 100px;
 }
 
 /* 푸터 콘텐츠 */
@@ -369,6 +364,11 @@ header {
 
 .footer_text {
     display: flex;
+}
+
+footer .textBar span{
+    display: flex;
+    justify-content: center;
 }
 
 .footer_text>li {
