@@ -155,10 +155,6 @@ a {
 
 
 /* 섹션3 */
-#s3 .yigStore {
-    background: #EC6CA2;
-}
-
 #s3 h2 {
     font-size: 2.4rem;
     color: #EC6CA2;
@@ -179,7 +175,25 @@ a {
     color: #EC6CA2;
 }
 
-#s3 .yigBtn span {
+#s3 .yigBtn a {
+    font-size: 1.4rem;
+    color: #EC6CA2;
+}
+
+#s3 .yigStoreCont {
+    background: #EC6CA2;
+}
+
+#s3 .yigStoreCont a {
+    color: #fff;
+}
+
+#s3 .yigStoreCont input {
+    font-size: 1.5rem;
+    color: #757575;
+}
+
+#s3 .yigStoreCont span {
     font-weight: 700;
 }
 
@@ -380,9 +394,28 @@ header {
 
 /* 섹션3 */
 #s3 .yigStore {
+    margin-left: 360px;
+    display: flex;
+}
+
+#s3 .yigStoreTxt {
+    margin-right: 197px;
+}
+
+#s3 .yigBtn img {
+    width: 16px;
+    height: 12px;
+}
+
+#s3 .yigStoreCont {
     width: 482px;
     height: 177px;
     border-radius: 37px;
+}
+
+#s3 .yigStoreCont>img {
+    width: 150px;
+    height: 90px;
 }
 
 /* 섹션4 */
