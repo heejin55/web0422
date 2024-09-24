@@ -269,8 +269,8 @@ header {
 
 /* 푸터에 있는 p 높이 */
 .fp-auto-height div {
-    height: 200px;
-    background: #FAF1C6;
+    height: 300px;
+    background: #EC6CA2;
 }
 
 /* 푸터 동그라미 */
@@ -458,68 +458,12 @@ header {
 }
 
 /* 섹션4 */
-#s4 {
-    background: url(../images/bx_s1.jpg) no-repeat 960px 0/cover;
-}
 
-#s4 .ibx {
+
+/* 푸터 */
+footer .ftop {
     display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-#s4 .cont {
-    position: relative;
-    width: 560px;
-}
-
-#s4 .cont::after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: 160px;
-    width: 350px;
-    height: 40px;
-    background: #FAF1C6;
-}
-
-#s4 h3 {
-    z-index: 1;
-    position: relative;
-    margin: 24px 0 48px 0;
-}
-
-#s4 p:last-of-type {
-    margin: 24px 0;
-}
-
-#s4 .link a {
-    display: inline-block;
-    padding: 16px 24px;
-    background: rgba(53, 53, 53, 0.39);
-    transition: .1s;
-}
-
-#s4 .link a:hover {
-    transform: translateY(-4px);
-    background: #353535;
-}
-
-#s4 .link a:first-child {
-    margin-right: 20px;
-}
-
-footer p {
-    text-align: end;
-    margin-top: 40px;
-    margin-right: 20px;
-}
-
-footer span a {
-    font-size: 2rem;
-    color: rgba(53, 53, 53, 0.39);
-    position: relative;
-    padding: 3px;
-    top: -70px;
-    left: 1850px;
+    justify-content: space-between;
+    margin-top: 54px;
+    margin-left: 300px;
 }
