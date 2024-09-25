@@ -200,6 +200,10 @@ a {
     font-weight: 700;
 }
 
+#s3 button {
+    color: #fff;
+}
+
 /* 섹션4 */
 #s4 h2 {
     font-size: 2.4rem;
@@ -399,7 +403,7 @@ header {
 }
 
 #s3 .yigStoreTxt {
-    margin-right: 197px;
+    margin-right: 220px;
 }
 
 #s3 .yigStoreTxt h2{
@@ -457,6 +461,14 @@ header {
     position: absolute;
     top: 43px;
     right: 19px;
+}
+
+#s3 button {
+    width: 1070px;
+    height: 67px;
+    background: #EC6CA2;
+    border-radius: 5px;
+    margin: 92px 0 0 360px;
 }
 
 /* 섹션4 */
