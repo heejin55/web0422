@@ -49,7 +49,7 @@ iframe {
 }
 
 ::selection {
-    background: #FAF1C6;
+    background: #EC6CA2;
 }
 
 
@@ -202,28 +202,19 @@ a {
 
 /* 섹션4 */
 #s4 h2 {
-    font-size: 24px;
-    font-weight: 200;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #EC6CA2;
 }
 
-#s4 h3 {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1;
+#s4 p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #EC6CA2;
 }
 
-#s4 p:first-of-type {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
 
-#s4 a {
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: #fff;
-}
-
+/* 푸터 */
 footer a,
 footer p {
     color: #fff;
@@ -469,12 +460,36 @@ header {
 }
 
 /* 섹션4 */
+#s4 img {
+    margin-top: 70px;
+}
+#s4 h2 {
+    margin-bottom: 17px;
+}
+
+#s4 .fp-tableCell>div {
+    position: absolute;
+    top: 550px;
+    left: 355px;
+    text-align: center;
+}
+
+#s4 div::before {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 480px;
+    left: 321px;
+    border-top: 1px solid #8E8C8D;
+    width: 255px;
+}
+
 #s4 iframe {
     width: 958px;
     height: 540px;
-    position: relative;
-    top: 93px;
-    left: 635px;
+    position: absolute;
+    top: 350px;
+    left: 650px;
 }
 
 /* 푸터 */
