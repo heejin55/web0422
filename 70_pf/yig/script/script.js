@@ -5,7 +5,7 @@ $(function () {
     $('#wrap').fullpage({
         menu: '#yo_nav',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-        sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
+        sectionsColor: ['#fff', '#fff', '#F9F9F9', '#fff'],
         // 오른쪽 인디케이터
         navigation: true,
         // 오른쪽 인디케이터 마우스 올렸을 때

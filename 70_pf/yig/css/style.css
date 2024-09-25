@@ -49,19 +49,25 @@ iframe {
 }
 
 ::selection {
-    background: #EC6CA2;
+    background: #8E8C8D;
 }
 
 
 /* 타이포 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 html {
     font-size: 10px;
 }
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family:  "Pretendard-Regular", "Noto Sans KR", sans-serif;
     font-size: 1.5rem;
     color: #1b1b1b;
     line-height: 1.5;
@@ -353,13 +359,17 @@ header {
 }
 
 /* 섹션2 */
+#s2 .ibx {
+    margin-left: 190px;
+}
+
 #s2 .ibx #tabs{
     display: flex;
     align-items: center;
 }
 
 #s2 #tabs>ul>li {
-    margin-right: 230px;
+    margin-right: 210px;
     margin-bottom: 21px;
     width: 100px;
 }
@@ -397,8 +407,12 @@ header {
 }
 
 /* 섹션3 */
+#s3 .s3wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 #s3 .yigStore {
-    margin-left: 360px;
     display: flex;
 }
 
@@ -468,7 +482,7 @@ header {
     height: 67px;
     background: #EC6CA2;
     border-radius: 5px;
-    margin: 92px 0 0 360px;
+    margin: 92px 0 0 0;
 }
 
 /* 섹션4 */
@@ -482,17 +496,16 @@ header {
 #s4 .fp-tableCell>div {
     position: absolute;
     top: 550px;
-    left: 355px;
+    left: 321px;
     text-align: center;
 }
 
-#s4 div::before {
+#s4 div::after {
     content: "";
     position: absolute;
-    z-index: 999;
     top: 480px;
     left: 321px;
-    border-top: 1px solid #8E8C8D;
+    border-top: 1px solid #EC6CA2;
     width: 255px;
 }
 
@@ -518,18 +531,18 @@ footer .ftop p:nth-of-type(1) {
 footer .fmiddle {
     margin-top: 100px;
     display: flex;
-    justify-content: space-around;
-    padding: 0 290px;
+    justify-content: space-evenly;
+    padding: 0 240px;
 }
 
 footer .fbottom>span {
     margin-top: 18px;
     display: flex;
-    justify-content: space-around;
-    padding: 0 155px;
+    justify-content: space-evenly;
+    margin-left: -18px;
 }
 
 footer .fbottom>p {
-    margin-left: 347px;
+    margin-left: 364px;
     margin-top: 18px;
 }
