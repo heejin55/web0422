@@ -153,7 +153,6 @@ a {
     font-size: 1.6rem;
 }
 
-
 /* 섹션3 */
 #s3 h2 {
     font-weight: 600;
@@ -225,14 +224,26 @@ a {
     color: #fff;
 }
 
+footer a,
 footer p {
-    line-height: 1.6;
+    color: #fff;
+    font-weight: 900;
 }
+
+footer .ftop a {
+    font-size: 2.4rem;
+    line-height: 2.4;
+}
+
+footer .ftop p {
+    font-size: 1.4rem;
+}
+
 
 /* 레이아웃 시작 */
 /* header */
 header {
-    z-index: 999;
+    z-index: 9999;
     position: fixed;
     position: relative;
 }
@@ -269,7 +280,7 @@ header {
 
 /* 푸터에 있는 p 높이 */
 .fp-auto-height div {
-    height: 300px;
+    height: 200px;
     background: #EC6CA2;
 }
 
@@ -292,7 +303,7 @@ header {
 }
 
 /* 이미지를 뷰포트에 100% 채우기 */
-.bx-viewport {
+.bx-viewport img {
     height: 100% !important;
 }
 
@@ -463,7 +474,29 @@ header {
 /* 푸터 */
 footer .ftop {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 54px;
-    margin-left: 300px;
+}
+
+footer .ftop p:nth-of-type(1) {
+    margin-bottom: 42px;
+}
+
+footer .fmiddle {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 290px;
+}
+
+footer .fbottom>span {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 155px;
+}
+
+footer .fbottom>p {
+    margin-left: 347px;
+    margin-top: 18px;
 }
