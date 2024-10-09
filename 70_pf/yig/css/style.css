@@ -358,6 +358,10 @@ header {
     margin-top: 44px;
 }
 
+.slidertxt button:hover {
+    background: #FFC7C9;
+}
+
 /* 섹션2 */
 #s2 .ibx {
     margin-left: 190px;
