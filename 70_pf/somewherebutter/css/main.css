@@ -110,7 +110,7 @@ html {
 
 .offline_text,
 .slideTextBar {
-    background-color: #203E7F;
+    background-color: #2c4170;
     color: #fff;
 }
 
@@ -171,20 +171,20 @@ header {
     /* opacity: 0; */
     height: 0px;
     background: #FCF8EB;
-    transition: .3s;
+    transition: .5s;
 }
 
 .main:hover::before {
     visibility: visible;
     opacity: 1;
-    height: 222px;
+    height: 230px;
 }
 
 .sub {
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    height: 222px;
+    height: 230px;
     width: 1920px;
     padding: 10px 0 20px 0;
     transition: .3s;
@@ -195,12 +195,17 @@ header {
 .main:hover .sub {
     visibility: visible;
     opacity: 1;
-    height: 222px;
+    height: 230px;
 }
 
 .sub>li>a {
     display: block;
     padding: 10px;
+    transition: .3s;
+}
+
+.sub>li>a:hover {
+    text-decoration: underline;
 }
 
 /* 폰트어썸_아이콘 */
@@ -252,7 +257,7 @@ header {
 
 /* 섹션3_뉴 버터 아이템 */
 #s3 {
-    padding: 200px 0 0 0;
+    margin: 150px 0 0 0;
 }
 
 #s3>h2 {
