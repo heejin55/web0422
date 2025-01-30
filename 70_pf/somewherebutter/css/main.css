@@ -340,8 +340,10 @@ header {
 
 .s4_contText>.cc {
     text-align: center;
-    margin-top: 55px;
-    margin-left: -150px;
+}
+
+.s4_contImages {
+    align-items: center;
 }
 
 /* 푸터 */
