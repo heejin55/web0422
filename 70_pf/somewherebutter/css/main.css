@@ -299,7 +299,7 @@ header {
 #s4>div {
     display: flex;
     text-align: center;
-    padding: 126px 0 0 153px;
+    padding-top: 150px;
 }
 
 #s4 .s4_contImages img:nth-child(1) {
@@ -316,12 +316,13 @@ header {
     left: 410px;
 }
 
+
 .s4_contText p:nth-of-type(1) {
     margin-bottom: 14px;
 }
 
 .s4_contText p:nth-of-type(3) {
-    margin: 180px 0 85px 0;
+    margin: 120px 0 85px 0;
     text-decoration: underline;
 }
 
@@ -335,6 +336,12 @@ header {
 
 #s4 .s4_contImages img:nth-of-type(1) {
     margin-right: 19px;
+}
+
+.s4_contText>.cc {
+    text-align: center;
+    margin-top: 55px;
+    margin-left: -150px;
 }
 
 /* 푸터 */
